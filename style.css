@@ -5926,3 +5926,18 @@ nav .nav-link {
     color: #ffffff !important;
     -webkit-text-fill-color: #ffffff !important;
 }
+
+
+/* Reduce heading sizes across sections — one step smaller */
+.services-heading {
+    font-size: clamp(1.8rem, 3vw, 2.5rem) !important;
+}
+.products-heading,
+.features-heading,
+.process-heading,
+.industries-heading {
+    font-size: clamp(1.35rem, 2.8vw, 2rem) !important;
+}
+.blog-heading {
+    font-size: clamp(1rem, 1.8vw, 1.5rem) !important;
+}
