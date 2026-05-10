@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inter:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inter:wght@300;400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap");
 
 
 :root {
@@ -4544,7 +4544,7 @@ nav .nav-cta:hover { background: #3a2a1c !important; }
 nav .nav-link {
     font-family: 'Raleway', 'Host Grotesk', sans-serif !important;
     font-size: 0.92rem !important;
-    font-weight: 600 !important;
+    font-weight: 700 !important;
     letter-spacing: 0.08em !important;
 }
 
@@ -5911,6 +5911,9 @@ nav .nav-link {
 
 /* ============ END COMPREHENSIVE FIXES v3 ============ */
 
+/* About section — description light, name bold */
+.about-author-name { font-weight: 700 !important; }
+
 /* blog filtered tab — colLeft must span both grid columns so images match All Projects size */
 .blog-grid--filtered .blog-col-left { grid-column: 1 / -1 !important; }
 
@@ -5941,4 +5944,14 @@ nav .nav-link {
 }
 .blog-heading {
     font-size: clamp(1rem, 1.8vw, 1.5rem) !important;
+}
+
+/* About section description — light weight, same font family */
+.about-desc {
+    font-family: 'Host Grotesk', sans-serif;
+    font-size: clamp(0.95rem, 1.4vw, 1.2rem);
+    font-weight: 300;
+    line-height: 1.7;
+    color: #0c1b2a;
+    margin: 0 0 1rem;
 }
