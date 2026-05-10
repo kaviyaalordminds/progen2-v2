@@ -1032,42 +1032,42 @@
                 <div class="blog-grid">
                     <div class="blog-col blog-col-left">
                         <article class="blog-card" data-key="vagarai">
-                            <div class="blog-card-image"><img src="images/projectimg1.webp" alt="Vagarai Solar Park"></div>
+                            <div class="blog-card-image" onclick="openLightbox('images/projectimg1.webp','Vagarai Solar Park')" style="cursor:zoom-in"><img src="images/projectimg1.webp" alt="Vagarai Solar Park"></div>
                             <h3>10MW VAGARAI SOLAR PARK</h3>
                         </article>
                         <article class="blog-card" data-key="rooftop">
-                            <div class="blog-card-image"><img src="images/projectimg2.webp" alt="Rooftop"></div>
+                            <div class="blog-card-image" onclick="openLightbox('images/projectimg2.webp','Rooftop')" style="cursor:zoom-in"><img src="images/projectimg2.webp" alt="Rooftop"></div>
                             <h3>Rooftop</h3>
                         </article>
                         <article class="blog-card blog-card--extra" data-key="rooftop">
-                            <div class="blog-card-image"><img src="images/roofimg/roofimg1 (1).png" alt="Rooftop Solar"></div>
+                            <div class="blog-card-image" onclick="openLightbox('images/roofimg/roofimg1 (1).png','Rooftop Solar')" style="cursor:zoom-in"><img src="images/roofimg/roofimg1 (1).png" alt="Rooftop Solar"></div>
                             <h3>Rooftop</h3>
                         </article>
                         <article class="blog-card blog-card--extra" data-key="rooftop">
-                            <div class="blog-card-image"><img src="images/roofimg/roofimg1 (2).png" alt="Rooftop Solar"></div>
+                            <div class="blog-card-image" onclick="openLightbox('images/roofimg/roofimg1 (2).png','Rooftop Solar')" style="cursor:zoom-in"><img src="images/roofimg/roofimg1 (2).png" alt="Rooftop Solar"></div>
                             <h3>Rooftop</h3>
                         </article>
                         <article class="blog-card blog-card--extra" data-key="rooftop">
-                            <div class="blog-card-image"><img src="images/roofimg/roofimg1 (3).png" alt="Rooftop Solar"></div>
+                            <div class="blog-card-image" onclick="openLightbox('images/roofimg/roofimg1 (3).png','Rooftop Solar')" style="cursor:zoom-in"><img src="images/roofimg/roofimg1 (3).png" alt="Rooftop Solar"></div>
                             <h3>Rooftop</h3>
                         </article>
                         <article class="blog-card blog-card--extra" data-key="rooftop">
-                            <div class="blog-card-image"><img src="images/roofimg/roofimg1 (4).png" alt="Rooftop Solar"></div>
+                            <div class="blog-card-image" onclick="openLightbox('images/roofimg/roofimg1 (4).png','Rooftop Solar')" style="cursor:zoom-in"><img src="images/roofimg/roofimg1 (4).png" alt="Rooftop Solar"></div>
                             <h3>Rooftop</h3>
                         </article>
                     </div>
 
                     <div class="blog-col blog-col-right">
                         <article class="blog-card" data-key="kkp">
-                            <div class="blog-card-image"><img src="images/projectimg4.webp" alt="KKP Fabrics Solar Site"></div>
+                            <div class="blog-card-image" onclick="openLightbox('images/projectimg4.webp','KKP Fabrics Solar Site')" style="cursor:zoom-in"><img src="images/projectimg4.webp" alt="KKP Fabrics Solar Site"></div>
                             <h3>15MW KKP fabrics Site</h3>
                         </article>
                         <article class="blog-card" data-key="allwin">
-                            <div class="blog-card-image"><img src="images/projectimg3.webp" alt="Allwin Solar Site"></div>
+                            <div class="blog-card-image" onclick="openLightbox('images/projectimg3.webp','Allwin Solar Site')" style="cursor:zoom-in"><img src="images/projectimg3.webp" alt="Allwin Solar Site"></div>
                             <h3>2MW allwin Site</h3>
                         </article>
                         <article class="blog-card" data-key="therani">
-                            <div class="blog-card-image"><img src="images/projectimg5.webp" alt="KKP Fabrics Rooftop Solar"></div>
+                            <div class="blog-card-image" onclick="openLightbox('images/projectimg5.webp','KKP Fabrics Rooftop Solar')" style="cursor:zoom-in"><img src="images/projectimg5.webp" alt="KKP Fabrics Rooftop Solar"></div>
                             <h3>Therani 20MW Solar Park</h3>
                         </article>
                     </div>
@@ -1532,5 +1532,28 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
     <script src="script.js"></script>
+
+    <!-- Image Lightbox -->
+    <div id="imgLightbox" class="img-lightbox" onclick="if(event.target===this)closeLightbox()">
+        <button class="img-lightbox-close" onclick="closeLightbox()" aria-label="Close">&#x2715;</button>
+        <img id="imgLightboxImg" src="" alt="">
+    </div>
+    <script>
+        function openLightbox(src, alt) {
+            var lb = document.getElementById('imgLightbox');
+            var img = document.getElementById('imgLightboxImg');
+            img.src = src;
+            img.alt = alt || '';
+            lb.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeLightbox() {
+            document.getElementById('imgLightbox').classList.remove('open');
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
 </body>
 </html>

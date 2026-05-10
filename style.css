@@ -2751,8 +2751,8 @@ canvas{
 
 .contact-card-img {
     flex-shrink: 0;
-    width: 64px;
-    height: 64px;
+    width: 90px;
+    height: 90px;
     border-radius: 10px;
     overflow: hidden;
     display: flex;
@@ -2763,7 +2763,7 @@ canvas{
 }
 
 @media (min-width: 640px) {
-    .contact-card-img { width: 72px; height: 72px; }
+    .contact-card-img { width: 100px; height: 100px; }
 }
 
 .contact-card-img img {
@@ -4753,6 +4753,73 @@ nav .nav-link {
     .blog { padding-left: 1.25rem !important; padding-right: 1.25rem !important; }
     .blog-grid { grid-template-columns: 1fr !important; }
 }
+/* blog filter — fix image size consistency across tabs */
+/* at ≥901px blog-grid is forced 1fr 1fr; span colLeft across both tracks */
+.blog-grid--filtered .blog-col-left {
+    grid-column: 1 / -1 !important;
+    gap: 1.5rem;
+}
+/* at ≤900px the grid has its own 1fr 1fr rule; override to single column */
+@media (max-width: 900px) {
+    .blog-grid--filtered { grid-template-columns: 1fr !important; }
+}
+
+/* image lightbox */
+.img-lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.88);
+    z-index: 99999;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    cursor: zoom-out;
+}
+.img-lightbox.open {
+    display: flex;
+    animation: lbFadeIn 0.25s ease both;
+}
+.img-lightbox img {
+    max-width: 88vw;
+    max-height: 85vh;
+    border-radius: 14px;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.6);
+    animation: lbScaleIn 0.35s cubic-bezier(0.22,1,0.36,1) both;
+    cursor: default;
+    object-fit: contain;
+}
+.img-lightbox-close {
+    position: fixed;
+    top: 1.25rem;
+    right: 1.25rem;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #fff;
+    font-size: 1.2rem;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease, transform 0.2s ease;
+    z-index: 2;
+}
+.img-lightbox-close:hover {
+    background: rgba(255,255,255,0.28);
+    transform: scale(1.1);
+}
+@keyframes lbFadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@keyframes lbScaleIn {
+    from { opacity: 0; transform: scale(0.82); }
+    to   { opacity: 1; transform: scale(1); }
+}
 /* ============ END PROGEN FIXES v2 ====================== */
 
 /* =====================================================================
@@ -5843,3 +5910,19 @@ nav .nav-link {
 }
 
 /* ============ END COMPREHENSIVE FIXES v3 ============ */
+
+/* blog filtered tab — colLeft must span both grid columns so images match All Projects size */
+.blog-grid--filtered .blog-col-left { grid-column: 1 / -1 !important; }
+
+/* align both blog columns at the top — remove right-column stagger */
+.blog-col-right { margin-top: 0 !important; }
+
+/* Explore Our Work section — keep text white against dark background */
+.explore-eyebrow {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+.explore-heading {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
