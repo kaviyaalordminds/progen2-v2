@@ -386,6 +386,97 @@ function boardSectionHTML() {
   `;
 }
 
+function policiesSectionHTML() {
+  const policiesDocs = [
+    { name: 'CSR Policy', file: 'pdf/3. Policies/Policies/CSR Policy.pdf' },
+    { name: 'Policy for Determination of Materiality of Event', file: 'pdf/3. Policies/Policies/Policy for Determination of Materiality of Event - Print.pdf' },
+    { name: 'Policy on Related Party Transactions', file: 'pdf/3. Policies/Policies/Policy On Related Party Transactions  .pdf' },
+    { name: 'Risk Management Policy', file: 'pdf/3. Policies/Policies/Risk Management Policy.pdf' },
+    { name: 'Sexual Harassment Policy', file: 'pdf/3. Policies/Policies/Sexual Harassment Policy.pdf' },
+  ];
+  const mdDocs = [
+    { name: 'Alfred - Appointment', file: 'pdf/3. Policies/Terms of Conditions for appointment of independent directors/1. Appointment of Mananging Director/Alfred -  Appointment.pdf' },
+  ];
+  const wtdDocs = [
+    { name: 'Veena Jose - Appointment', file: 'pdf/3. Policies/Terms of Conditions for appointment of independent directors/2. Appointment of Whole Time Director/Veena Jose - Appointment  .pdf' },
+  ];
+  const idDocs = [
+    { name: 'Hari Basker - Appointment', file: 'pdf/3. Policies/Terms of Conditions for appointment of independent directors/3. Appointment of Independent Directors/Hari Basker -  Appointment (1).pdf' },
+    { name: 'Innocent - Appointment', file: 'pdf/3. Policies/Terms of Conditions for appointment of independent directors/3. Appointment of Independent Directors/Innocent -  Appointment.pdf' },
+    { name: 'Karthik - Appointment', file: 'pdf/3. Policies/Terms of Conditions for appointment of independent directors/3. Appointment of Independent Directors/Karthik - Appointment.pdf' },
+  ];
+
+  const docList = (docs) => docs.map(d => `
+    <a class="ir-doc-row" href="${esc(d.file)}" target="_blank" rel="noopener">
+      <span class="ir-doc-pdf">${ICONS.pdf}</span>
+      <span class="ir-doc-name">${esc(d.name)}</span>
+    </a>
+  `).join('');
+
+  return `
+    <!-- Policies Folder -->
+    <article class="ir-group-card" style="margin-top:1.5rem;">
+      <header class="ir-group-header" style="cursor:default;">
+        <div>
+          <h3>Policies</h3>
+          <p>${policiesDocs.length} documents</p>
+        </div>
+      </header>
+      <div class="ir-group-body">
+        ${docList(policiesDocs)}
+      </div>
+    </article>
+
+    <!-- Terms and Conditions Main Folder -->
+    <article class="ir-group-card" style="margin-top:1rem;">
+      <header class="ir-group-header" style="cursor:default;">
+        <div>
+          <h3>Terms of Conditions for Appointment of Independent Directors</h3>
+          <p>3 Folders</p>
+        </div>
+      </header>
+      <div class="ir-group-body">
+        <!-- Sub-folder 1 -->
+        <article class="ir-group-card" style="margin:1rem;">
+          <header class="ir-group-header" style="cursor:default;">
+            <div>
+              <h3>Appointment of Managing Director</h3>
+              <p>${mdDocs.length} document</p>
+            </div>
+          </header>
+          <div class="ir-group-body">
+            ${docList(mdDocs)}
+          </div>
+        </article>
+        <!-- Sub-folder 2 -->
+        <article class="ir-group-card" style="margin:1rem;">
+          <header class="ir-group-header" style="cursor:default;">
+            <div>
+              <h3>Appointment of Whole Time Director</h3>
+              <p>${wtdDocs.length} document</p>
+            </div>
+          </header>
+          <div class="ir-group-body">
+            ${docList(wtdDocs)}
+          </div>
+        </article>
+        <!-- Sub-folder 3 -->
+        <article class="ir-group-card" style="margin:1rem;">
+          <header class="ir-group-header" style="cursor:default;">
+            <div>
+              <h3>Appointment of Independent Directors</h3>
+              <p>${idDocs.length} documents</p>
+            </div>
+          </header>
+          <div class="ir-group-body">
+            ${docList(idDocs)}
+          </div>
+        </article>
+      </div>
+    </article>
+  `;
+}
+
 function committeesSectionHTML() {
   const members = [
     { photo: 'investorimages/BOD ENHANCED PHOTOS/6.png', name: 'MR. INNOCENT JUDEJOSEPH ANTONYJOSEPH', role: 'INDEPENDENT DIRECTOR', din: '10896507', email: 'jjinnocent78@gmail.com' },
@@ -516,9 +607,10 @@ function committeesSectionHTML() {
 function renderGroups() {
   const area = $('#groupsArea');
   const search = document.querySelector('.ir-search');
-  if (search) search.style.display = (activeId === 'board' || activeId === 'committees') ? 'none' : '';
+  if (search) search.style.display = (activeId === 'board' || activeId === 'committees' || activeId === 'policies') ? 'none' : '';
   if (activeId === 'board') { area.innerHTML = boardSectionHTML(); return; }
   if (activeId === 'committees') { area.innerHTML = committeesSectionHTML(); return; }
+  if (activeId === 'policies') { area.innerHTML = policiesSectionHTML(); return; }
 
   const groups = DOCUMENT_GROUPS[activeId] || [];
   let filtered = groups;
