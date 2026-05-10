@@ -513,6 +513,120 @@ function committeesSectionHTML() {
   `;
 }
 
+function financialSectionHTML() {
+  const annualDocs = [
+    { name: 'Accounting Policies', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Accounting Policies.pdf' },
+    { name: 'Addendum to the Notice - 8th AGM', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Addendum to the Notice - 8th AGM.pdf' },
+    { name: 'Assets and Liabilities', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Assets and liablaities.pdf' },
+    { name: 'Benefit, Plan, Cost', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Benefit , Plan, Cost.pdf' },
+    { name: 'Contingent Liabilities and Commitment', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/contingent liabilities and commitement.pdf' },
+    { name: 'Corporate Information', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Corporate Information.pdf' },
+    { name: 'Disclosure Requirement', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Disclosure requirement.pdf' },
+    { name: 'Foreign Exchange Transaction', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/foreign Exchange Transaction.pdf' },
+    { name: 'Goods and Services Tax', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Goods and Services Tax.pdf' },
+    { name: 'Impairment Assets', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Impairment Assets.pdf' },
+    { name: 'Other Disclosure', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Other Disclosure.pdf' },
+    { name: 'Prior Period Comparatives', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Prior Period Comparatives.pdf' },
+    { name: 'Raw Materials - Total Consumption', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Raw Materials - Total consumption.pdf' },
+    { name: 'Segment Reporting', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Segment Reporting.pdf' },
+    { name: 'Significant Accounting Ratio', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Significant Accounting Ratio.pdf' },
+    { name: 'Tax and Cash Flow Statement', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Tax and Cash flow Statement.pdf' },
+    { name: 'Transaction with Relative Parties', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Transaction with Relative Parties.pdf' },
+  ];
+  const audit2023Docs = [
+    { name: 'Progen R Pvt Ltd - Annual Report 2023', file: 'pdf/4. Financial Information/Financials Prior to Conversion/2022-2023 Audit Report/Progen R Pvt Ltd - Annual Report  2023.pdf' },
+  ];
+  const audit2024Docs = [
+    { name: 'Progen R Pvt Ltd - Annual Report 31-March-2024', file: 'pdf/4. Financial Information/Financials Prior to Conversion/2023-2024 Audit Report/Progen R Pvt Ltd - Annual Report 31-March-2024.pdf' },
+  ];
+
+  const docList = (docs) => docs.map(d => `
+    <a class="ir-doc-row" href="${esc(d.file)}" target="_blank" rel="noopener">
+      <span class="ir-doc-pdf">${ICONS.pdf}</span>
+      <span class="ir-doc-name">${esc(d.name)}</span>
+    </a>
+  `).join('');
+
+  return `
+    <!-- Annual Report 2024-2025 Folder -->
+    <article class="ir-group-card" style="margin-top:1.5rem;">
+      <header class="ir-group-header" style="cursor:default;">
+        <div>
+          <h3>Annual Report - 2024-2025</h3>
+          <p>${annualDocs.length} documents</p>
+        </div>
+      </header>
+      <div class="ir-group-body">
+        ${docList(annualDocs)}
+      </div>
+    </article>
+
+    <!-- Financials Prior to Conversion Main Folder -->
+    <article class="ir-group-card" style="margin-top:1rem;">
+      <header class="ir-group-header" style="cursor:default;">
+        <div>
+          <h3>Financials Prior to Conversion</h3>
+          <p>2 Folders</p>
+        </div>
+      </header>
+      <div class="ir-group-body">
+        <!-- Sub-folder 1 -->
+        <article class="ir-group-card" style="margin:1rem;">
+          <header class="ir-group-header" style="cursor:default;">
+            <div>
+              <h3>2022-2023 Audit Report</h3>
+              <p>${audit2023Docs.length} document</p>
+            </div>
+          </header>
+          <div class="ir-group-body">
+            ${docList(audit2023Docs)}
+          </div>
+        </article>
+        <!-- Sub-folder 2 -->
+        <article class="ir-group-card" style="margin:1rem;">
+          <header class="ir-group-header" style="cursor:default;">
+            <div>
+              <h3>2023-2024 Audit Report</h3>
+              <p>${audit2024Docs.length} document</p>
+            </div>
+          </header>
+          <div class="ir-group-body">
+            ${docList(audit2024Docs)}
+          </div>
+        </article>
+      </div>
+    </article>
+  `;
+}
+
+function announcementsSectionHTML() {
+  const shareholdingDocs = [
+    { name: 'Shareholders Pattern', file: 'pdf/6. Corporate Announcement/ShareHolding Pattern/Shareholders Pattern (4).pdf' },
+  ];
+
+  const docList = (docs) => docs.map(d => `
+    <a class="ir-doc-row" href="${esc(d.file)}" target="_blank" rel="noopener">
+      <span class="ir-doc-pdf">${ICONS.pdf}</span>
+      <span class="ir-doc-name">${esc(d.name)}</span>
+    </a>
+  `).join('');
+
+  return `
+    <!-- ShareHolding Pattern Folder -->
+    <article class="ir-group-card" style="margin-top:1.5rem;">
+      <header class="ir-group-header" style="cursor:default;">
+        <div>
+          <h3>ShareHolding Pattern</h3>
+          <p>${shareholdingDocs.length} document</p>
+        </div>
+      </header>
+      <div class="ir-group-body">
+        ${docList(shareholdingDocs)}
+      </div>
+    </article>
+  `;
+}
+
 function policiesSectionHTML() {
   const policiesDocs = [
     { name: 'CSR Policy', file: 'pdf/3. Policies/Policies/CSR Policy.pdf' },
@@ -607,10 +721,12 @@ function policiesSectionHTML() {
 function renderGroups() {
   const area = $('#groupsArea');
   const search = document.querySelector('.ir-search');
-  if (search) search.style.display = (activeId === 'board' || activeId === 'committees' || activeId === 'policies') ? 'none' : '';
+  if (search) search.style.display = (activeId === 'board' || activeId === 'committees' || activeId === 'policies' || activeId === 'announcements' || activeId === 'financial') ? 'none' : '';
   if (activeId === 'board') { area.innerHTML = boardSectionHTML(); return; }
   if (activeId === 'committees') { area.innerHTML = committeesSectionHTML(); return; }
   if (activeId === 'policies') { area.innerHTML = policiesSectionHTML(); return; }
+  if (activeId === 'announcements') { area.innerHTML = announcementsSectionHTML(); return; }
+  if (activeId === 'financial') { area.innerHTML = financialSectionHTML(); return; }
 
   const groups = DOCUMENT_GROUPS[activeId] || [];
   let filtered = groups;
