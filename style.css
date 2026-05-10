@@ -33,7 +33,7 @@ h1 {
 }
 
 p {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 0.8rem;
     font-weight: 500;
 }
@@ -80,21 +80,25 @@ nav {
     gap: 1.25rem;
     background: #ffffff;
     border-radius: 10px;
-    padding: 0.5rem 2rem;
+    padding: 0 2rem;
+    min-height: 70px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     z-index: 100;
+    overflow: visible;
 }
 
 .nav-logo {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     flex-shrink: 0;
 }
 
 .nav-logo img {
-    width: 140px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
+    display: block;
 }
 
 .nav-links {
@@ -561,7 +565,7 @@ canvas{
 
 .service-title {
     font-family: "Host Grotesk", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: #111;
     margin: 0;
@@ -570,7 +574,7 @@ canvas{
 
 .service-desc {
     font-family: "Host Grotesk", sans-serif;
-    font-size: 0.95rem;
+    font-size: 1.00rem;
     line-height: 1.55;
     color: #555;
     margin: 0;
@@ -774,7 +778,7 @@ canvas{
 }
 
 .team-bio p {
-    font-family: "Host Grotesk", sans-serif;
+    font-family: 'Raleway', 'Host Grotesk', sans-serif !important;
     font-size: 0.95rem;
     font-weight: 400;
     line-height: 1.7;
@@ -4511,8 +4515,8 @@ nav {
     width: calc(100% - 2rem) !important;
     max-width: 1180px !important;
 }
-nav .nav-logo { flex-shrink: 0; }
-nav .nav-logo img { width: 165px !important; height: 56px !important; }
+nav .nav-logo { flex-shrink: 0; overflow: visible; }
+nav .nav-logo img { width: 130px !important; height: 60px !important; object-fit: contain !important; }
 
 nav .nav-links {
     position: static !important;
@@ -5946,10 +5950,9 @@ nav .nav-link {
     font-size: clamp(1rem, 1.8vw, 1.5rem) !important;
 }
 
-/* About section description — light weight, same font family */
 .about-desc {
-    font-family: 'Host Grotesk', sans-serif;
-    font-size: clamp(0.95rem, 1.4vw, 1.2rem);
+    font-family: 'Raleway', 'Host Grotesk', sans-serif !important;
+    font-size: clamp(0.95rem, 1.4vw, 1.0rem);
     font-weight: 300;
     line-height: 1.7;
     color: #0c1b2a;

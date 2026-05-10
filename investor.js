@@ -317,20 +317,21 @@ function personCardHTML(p) {
 
 function boardSectionHTML() {
   const profiles = [
-    { name: 'Profile - MR. Alfred Vinod Antony', file: 'pdfs/KMP/Profile - MR.Alfred Vinod Antony.pdf' },
-    { name: 'Profile - Mrs. Veena Jose', file: 'pdfs/KMP/Profile - Mrs.Veena Jose.pdf' },
-    { name: 'Profile - MR. J J Innocent', file: 'pdfs/KMP/Profile - MR.J J Innocent.pdf' },
-    { name: 'Profile - MR. Karthik', file: 'pdfs/KMP/Profile - MR. Karthik.pdf' },
-    { name: 'Profile - MR. Hari Basker R', file: 'pdfs/KMP/Profile - MR.Hari Basker R.pdf' },
+    { name: 'Profile - MR. Alfred Vinod Antony', file: 'pdf/1- Board Of Directors Key Personn/KMP/Profile - MR.Alfred Vinod Antony.pdf' },
+    { name: 'Profile - Mrs. Veena Jose', file: 'pdf/1- Board Of Directors Key Personn/KMP/Profile - Mrs.Veena Jose.pdf' },
+    { name: 'Profile - MR. J J Innocent', file: 'pdf/1- Board Of Directors Key Personn/KMP/Profile - MR.J J Innocent.pdf' },
+    { name: 'Profile - MR. Karthik', file: 'pdf/1- Board Of Directors Key Personn/KMP/Profile - MR. Karthik.pdf' },
+    { name: 'Profile - MR. Hari Basker R', file: 'pdf/1- Board Of Directors Key Personn/KMP/Profile - MR.Hari Basker R.pdf' },
   ];
   const appointments = [
-    { name: 'A. Karthi - Appointment Letter', file: 'pdfs/KMP/1. A Karthi - Appointment.pdf' },
-    { name: 'A.K. Anand - Appointment Letter', file: 'pdfs/KMP/2. A K Anand - Appointment.pdf' },
-    { name: 'Balaji R - Appointment Letter', file: 'pdfs/KMP/3. Balaji - Appointment.pdf' },
-    { name: 'Sundararajan A - Appointment Letter', file: 'pdfs/KMP/4. Sundararajan - Appointment.pdf' },
-    { name: 'R. Manju - Appointment Letter', file: 'pdfs/KMP/5. R Manju Appointment.pdf' },
-    { name: 'Justin A. Vadakkethala - Appointment Letter', file: 'pdfs/KMP/6. Mr. Justin - Appointment letter.pdf' },
+    { name: 'A. Karthi - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/SMP- Appointment -1/1. A Karthi - Appointment.pdf' },
+    { name: 'A.K. Anand - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/SMP- Appointment -1/2. A K Anand - Appointment.pdf' },
+    { name: 'Balaji R - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/SMP- Appointment -1/3. Balaji - Appointment.pdf' },
+    { name: 'Sundararajan A - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/SMP- Appointment -1/4. Sundararajan - Appointment.pdf' },
+    { name: 'R. Manju - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/SMP- Appointment -1/5. R Manju Appointment.pdf' },
+    { name: 'Justin A. Vadakkethala - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/SMP- Appointment -1/6. Mr. Justin - Appointment letter.pdf' },
   ];
+
   const docList = (docs) => docs.map(d => `
     <a class="ir-doc-row" href="${esc(d.file)}" target="_blank" rel="noopener">
       <span class="ir-doc-pdf">${ICONS.pdf}</span>
@@ -343,6 +344,7 @@ function boardSectionHTML() {
       <p class="ir-section-label">Details of Directors</p>
       <div class="ir-people-grid">${BOARD_DIRECTORS.map(personCardHTML).join('')}</div>
     </div>
+    <!-- Director Profiles -->
     <article class="ir-group-card" style="margin-top:1.5rem;">
       <header class="ir-group-header" style="cursor:default;">
         <div>
@@ -350,71 +352,101 @@ function boardSectionHTML() {
           <p>${profiles.length} documents</p>
         </div>
       </header>
-      <div class="ir-group-body">${docList(profiles)}</div>
+
+      <div class="ir-group-body">
+        ${docList(profiles)}
+      </div>
     </article>
+
+    <!-- Appointment Letters Main Folder -->
     <article class="ir-group-card" style="margin-top:1rem;">
       <header class="ir-group-header" style="cursor:default;">
         <div>
           <h3>Appointment Letters</h3>
-          <p>${appointments.length} documents</p>
+          <p>1 Folder</p>
         </div>
       </header>
-      <div class="ir-group-body">${docList(appointments)}</div>
+
+      <div class="ir-group-body">
+        <!-- Inner Folder -->
+        <article class="ir-group-card" style="margin:1rem;">
+          <header class="ir-group-header" style="cursor:default;">
+            <div>
+              <h3>SMP- Appointment -1</h3>
+              <p>${appointments.length} documents</p>
+            </div>
+          </header>
+
+          <div class="ir-group-body">
+            ${docList(appointments)}
+          </div>
+        </article>
+      </div>
     </article>
   `;
 }
 
 function committeesSectionHTML() {
   const members = [
-    // { photo: 'investorimages/BOD ENHANCED PHOTOS/1.png', name: 'MR. ALFRED VINOD ANTONY', role: 'MANAGING DIRECTOR', din: '02776734' },
     { photo: 'investorimages/BOD ENHANCED PHOTOS/6.png', name: 'MR. INNOCENT JUDEJOSEPH ANTONYJOSEPH', role: 'INDEPENDENT DIRECTOR', din: '10896507', email: 'jjinnocent78@gmail.com' },
-    { photo: 'investorimages/BOD ENHANCED PHOTOS/3.png', name: 'MR. KARTHIK VELUCHAMY KOTTUR', role: 'INDEPENDENT DIRECTOR', din: '01973367', email: '' },
+    { photo: 'investorimages/BOD ENHANCED PHOTOS/3.png', name: 'MR. KARTHIK VELUCHAMY KOTTUR', role: 'INDEPENDENT DIRECTOR', din: '01973367', email: 'karthik@deccanindustries.com' },
     { photo: 'investorimages/BOD ENHANCED PHOTOS/4.png', name: 'MRS. VEENA JOSE', role: 'WHOLE TIME DIRECTOR', din: '08017313', email: 'veena@progenrenewables.com' },
-    { photo: 'investorimages/BOD ENHANCED PHOTOS/5.png', name: 'MR. HARI BASKER', role: 'INDEPENDENT DIRECTOR', din: '11281446', email: 'ISOteam@progenrenewables.com' },
-
+    { photo: 'investorimages/BOD ENHANCED PHOTOS/5.png', name: 'MR. HARI BASKER', role: 'INDEPENDENT DIRECTOR', din: '11281446', email: 'r.haribhaskaran@gmail.com' },
   ];
   const COMMITTEES = [
     {
-      title: 'Stakeholder committee', members: [
+      title: 'Stakeholder committee',
+      members: [
         { photo: Innocent, name: 'MR. INNOCENT JUDEJOSEPH ANTONYJOSEPH', role: 'Non-Executive Independent Director - Chairman', din: '10896507' },
         { photo: Alfred, name: 'MR. ALFRED VINOD ANTONY', role: 'Managing Director - Member', din: '02776734' },
         { photo: Veena, name: 'MRS. VEENA JOSE', role: 'Whole-Time Director - Member', din: '08017313' },
       ]
     },
     {
-      title: 'IPO Committee', members: [
+      title: 'IPO Committee',
+      members: [
         { photo: Alfred, name: 'MR. ALFRED VINOD ANTONY', role: 'Managing Director - Chairman', din: '02776734' },
         { photo: Veena, name: 'MRS. VEENA JOSE', role: 'Whole-Time Director - Member', din: '08017313' },
       ]
     },
     {
-      title: 'Audit Committee', members: [
+      title: 'Audit Committee',
+      members: [
         { photo: Innocent, name: 'MR. INNOCENT JUDEJOSEPH ANTONYJOSEPH', role: 'Non-Executive Independent Director - Chairman', din: '10896507' },
         { photo: Karthik, name: 'MR. KARTHIK VELUCHAMY KOTTUR', role: 'Non-Executive Independent Director - Member', din: '01973367' },
         { photo: Veena, name: 'MRS. VEENA JOSE', role: 'Whole-Time Director - Member', din: '08017313' },
-        
       ]
     },
     {
-      title: 'Nomination & Remuneration Committee', members: [
+      title: 'Nomination & Remuneration Committee',
+      members: [
         { photo: Hari, name: 'MR. RADHAKRISHNAN HARI BASKER', role: 'Non-Executive Independent Director - Chairman', din: '11281446' },
         { photo: Innocent, name: 'MR. INNOCENT JUDEJOSEPH ANTONYJOSEPH', role: 'Non-Executive Independent Director - Member', din: '10896507' },
       ]
     },
   ];
-  const docs = [
-    { name: 'Constitution of Nomination and Remuneration Committee', file: 'investor/Board Committees/1. Constitution of Nomination and Remuneration Commitee.pdf' },
-    { name: 'Constitution of Audit Committee', file: 'investor/Board Committees/2. Constitution of Audit Committee.pdf' },
-    { name: 'Approve Constitution of IPO Committee', file: 'investor/Board Committees/4. Approve Constitution of IPO commitee.pdf' },
-    { name: 'Constitution of Stakeholder\'s Relationship Committee', file: 'investor/Board Committees/5. Constitution of stakeholder_s Relationship Commitee.pdf' },
+  const audit_committee_docs = [
+    { name: 'Constitution of Audit Committee', file: 'pdf/2. Borad Committees/1.Audit Committee/1. Constitution of Audit Committee.pdf' },
   ];
-  const docList = docs.map(d => `
+  const stakeholder_committee_docs = [
+    { name: 'Constitution of Stakeholders Relationship Committee', file: 'pdf/2. Borad Committees/3.StakeHolders Relationship Committee/1. Constitution of stakeholders Relationship Committee.pdf' },
+  ];
+
+  const audit_committee_docList = (audit_committee_docs) => audit_committee_docs.map(d => `
     <a class="ir-doc-row" href="${esc(d.file)}" target="_blank" rel="noopener">
       <span class="ir-doc-pdf">${ICONS.pdf}</span>
       <span class="ir-doc-name">${esc(d.name)}</span>
       <span class="ir-doc-download">${ICONS.download}</span>
     </a>
   `).join('');
+  const stakeholder_committee_docList = (stakeholder_committee_docs) => stakeholder_committee_docs.map(d => `
+    <a class="ir-doc-row" href="${esc(d.file)}" target="_blank" rel="noopener">
+      <span class="ir-doc-pdf">${ICONS.pdf}</span>
+      <span class="ir-doc-name">${esc(d.name)}</span>
+      <span class="ir-doc-download">${ICONS.download}</span>
+    </a>
+  `).join('');
+
   return `
     <div class="ir-people-block">
       <p class="ir-section-label">Board Committees</p>
@@ -436,14 +468,47 @@ function committeesSectionHTML() {
       <p class="ir-section-label">Nomination & Renumeration Committees</p>
       <div class="ir-people-grid">${COMMITTEES[3].members.map(personCardHTML).join('')}</div>
     </div>
+
+    <!-- Main Folder -->
     <article class="ir-group-card" style="margin-top:1.5rem;">
       <header class="ir-group-header" style="cursor:default;">
         <div>
           <h3>Committee Constitution Documents</h3>
-          <p>${docs.length} documents</p>
+          <p>1 Folder</p>
         </div>
       </header>
-      <div class="ir-group-body">${docList}</div>
+
+      <div class="ir-group-body">
+        <!-- Inner Folder -->
+        <article class="ir-group-card" style="margin:1rem;">
+          <header class="ir-group-header" style="cursor:default;">
+            <div>
+              <h3>Audit Committee</h3>
+              <p>${audit_committee_docs.length} documents</p>
+            </div>
+          </header>
+
+          <div class="ir-group-body">
+            ${audit_committee_docList(audit_committee_docs)}
+          </div>
+        </article>
+      </div>
+
+      <div class="ir-group-body">
+        <!-- Inner Folder -->
+        <article class="ir-group-card" style="margin:1rem;">
+          <header class="ir-group-header" style="cursor:default;">
+            <div>
+              <h3>StakeHolders Relationship Committee</h3>
+              <p>${stakeholder_committee_docs.length} documents</p>
+            </div>
+          </header>
+
+          <div class="ir-group-body">
+            ${stakeholder_committee_docList(stakeholder_committee_docs)}
+          </div>
+        </article>
+      </div>
     </article>
   `;
 }

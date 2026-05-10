@@ -44,52 +44,63 @@ nav {
     top: 1rem;
     left: 50%;
     transform: translateX(-50%);
-    width: calc(100% - 2rem);
-    max-width: 1180px;
-    display: flex;
-    align-items: center;
+    width: calc(100% - 2rem) !important;
+    max-width: 1180px !important;
+    display: flex !important; 
+    align-items: center !important;
     justify-content: space-between;
-    gap: 1.25rem;
+    gap: 1.25rem !important;
     background: #ffffff;
     border-radius: 10px;
-    padding: 0.75rem 1.75rem;
+    padding: 0.75rem 1.75rem !important;
+    min-height: 70px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     z-index: 100;
+    overflow: visible;
+} 
+
+nav .nav-logo img {
+    width: 130px !important;
+    height: 60px !important;
+    object-fit: contain !important;
 }
 
 .nav-logo {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     flex-shrink: 0;
 }
 .nav-logo img {
-    width: 165px;
-    height: 56px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
+    display: block;
 }
 
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 1.75rem;
-    position: static;
-    left: auto;
-    transform: none;
-    margin: 0 auto;
-    flex-wrap: nowrap;
+    gap: 2rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .nav-link {
-    font-family: 'Inter', 'Host Grotesk', sans-serif;
-    font-size: 0.98rem;
+    font-family: "Host Grotesk", sans-serif;
+    font-size: 0.92rem;
     font-weight: 600;
-    color: #241910;
+    color: var(--fg);
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
     transition: color 0.3s;
     white-space: nowrap;
 }
-.nav-link:hover { color: var(--emerald-500); }
+
+.nav-link:hover {
+    color: #1a8fe3;
+}
 .nav-link.active { color: var(--emerald-600); }
 
 .nav-cta {
@@ -129,7 +140,7 @@ nav {
     display: block;
     width: 22px;
     height: 2px;
-    background: #241910;
+    background: var(--fg);
     border-radius: 2px;
     transition: transform 0.3s, opacity 0.3s;
 }
