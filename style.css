@@ -5929,8 +5929,9 @@ nav .nav-link {
 
 
 /* Reduce heading sizes across sections — one step smaller */
-.services-heading {
-    font-size: clamp(1.8rem, 3vw, 2.5rem) !important;
+.services-heading,
+.team-heading {
+    font-size: clamp(1.35rem, 2.8vw, 2rem) !important;
 }
 .products-heading,
 .features-heading,
