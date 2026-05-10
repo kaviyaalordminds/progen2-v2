@@ -1683,7 +1683,7 @@ canvas{
 }
 
 .feature-item:hover .feature-icon::before {
-    transform: scale(1);
+    transform: scale(0);
 }
 
 .feature-item:hover .feature-icon svg {
