@@ -59,21 +59,23 @@ nav {
     overflow: visible;
 } 
 
-nav .nav-logo img {
+/* nav .nav-logo img {
     width: 130px !important;
     height: 60px !important;
     object-fit: contain !important;
-}
+} */
 
 .nav-logo {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-}
-.nav-logo img {
-    width: 80px;
     height: 80px;
+}
+
+.nav-logo img {
+    max-height: 75px;
+    width: auto;
     object-fit: contain;
     display: block;
 }

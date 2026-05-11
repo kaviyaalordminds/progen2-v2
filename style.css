@@ -87,16 +87,24 @@ nav {
     overflow: visible;
 }
 
-.nav-logo {
+/* .nav-logo {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+} */
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 80px;
 }
 
 .nav-logo img {
-    width: 80px;
-    height: 80px;
+    max-height: 75px;
+    width: auto;
     object-fit: contain;
     display: block;
 }
@@ -4516,7 +4524,6 @@ nav {
     max-width: 1180px !important;
 }
 nav .nav-logo { flex-shrink: 0; overflow: visible; }
-nav .nav-logo img { width: 130px !important; height: 60px !important; object-fit: contain !important; }
 
 nav .nav-links {
     position: static !important;
