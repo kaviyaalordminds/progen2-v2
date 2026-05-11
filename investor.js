@@ -140,7 +140,7 @@ const DOCUMENT_GROUPS = {
   ],
   policies: [
     {
-      title: 'Policies and Code of Conduct', docs: [
+      title: 'Policies', docs: [
         { name: 'Code of Conduct', file: 'pdf/Polices and Code of Conduct/Code of Conduct..pdf', date: '—' },
         { name: 'CSR Policy', file: 'pdf/Polices and Code of Conduct/CSR Policy.pdf', date: '—' },
         { name: 'Policy for Determining Material Subsidiaries', file: 'pdf/Polices and Code of Conduct/Policy for Determining Material Subsidiaries..pdf', date: '—' },

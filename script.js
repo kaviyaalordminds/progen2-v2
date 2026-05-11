@@ -281,16 +281,16 @@ document.addEventListener('DOMContentLoaded', () => {
             email: 'ISOteam@progenrenewables.com',
             bio1: 'Hari brings extensive industry experience to ProGen\'s board, advising on project execution standards, operational risk, and strategic partnerships.',
             bio2: 'His independent counsel supports the company\'s commitment to sound governance and sustainable, high-quality solar deployment.'
-        },
-        {
-            img: 'investorimages/BOD ENHANCED PHOTOS/2.png',
-            name: 'Mr. Shripathy',
-            location: 'Additional Director',
-            din: 'DIN: 01828942',
-            email: 'shripathy@progenrenewables.com',
-            bio1: 'Shripathy joins the ProGen board to strengthen oversight across emerging business areas, bringing deep functional expertise and strategic perspective.',
-            bio2: 'His addition to the board reinforces ProGen\'s leadership bench as the company expands its renewable energy footprint across India.'
         }
+        // {
+        //     img: 'investorimages/BOD ENHANCED PHOTOS/2.png',
+        //     name: 'Mr. Shripathy',
+        //     location: 'Additional Director',
+        //     din: 'DIN: 01828942',
+        //     email: 'shripathy@progenrenewables.com',
+        //     bio1: 'Shripathy joins the ProGen board to strengthen oversight across emerging business areas, bringing deep functional expertise and strategic perspective.',
+        //     bio2: 'His addition to the board reinforces ProGen\'s leadership bench as the company expands its renewable energy footprint across India.'
+        // }
     ];
 
     let currentSlide = 0;
