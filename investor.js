@@ -45,7 +45,7 @@ const SIDEBAR_CATEGORIES = [
   { id: 'credit', label: 'Credit Rating', short: 'Credit' },
   { id: 'rta', label: 'Registrar and Share Transfer Agent', short: 'RTA' },
   { id: 'investorcontact', label: 'Contact for Investors', short: 'Contact' },
-  { id: 'annual', label: 'Annual Report', short: 'Annual Report' },
+  // { id: 'annual', label: 'Annual Report', short: 'Annual Report' },
   { id: 'disclosure', label: 'Disclosure - Annual Return', short: 'Disclosure' },
   { id: 'moa', label: 'MoA - Memorandum of Association', short: 'MoA' },
 ];
@@ -65,7 +65,8 @@ const Veena = 'investorimages/BOD ENHANCED PHOTOS/4.png';
 const Innocent = 'investorimages/BOD ENHANCED PHOTOS/6.png';
 const Karthik = 'investorimages/BOD ENHANCED PHOTOS/3.png';
 const Hari = 'investorimages/BOD ENHANCED PHOTOS/5.png';
-const Subhasree = 'investorimages/BOD ENHANCED PHOTOS/Subhasree.jpg';
+const Subhasree = 'investorimages/BOD ENHANCED PHOTOS/7.jpg';
+const Selvakumaran = 'investorimages/BOD ENHANCED PHOTOS/8.jpeg';
 
 const BOARD_DIRECTORS = [
   { photo: Alfred, name: 'MR. ALFRED VINOD ANTONY', role: 'MANAGING DIRECTOR', din: '02776734', email: 'alfred@progenrenewables.com' },
@@ -74,6 +75,7 @@ const BOARD_DIRECTORS = [
   { photo: Karthik, name: 'MR. KARTHIK VELUCHAMY KOTTUR', role: 'INDEPENDENT DIRECTOR', din: '01973367', email: '' },
   { photo: Hari, name: 'MR. HARI BASKER', role: 'INDEPENDENT DIRECTOR', din: '11281446', email: 'ISOteam@progenrenewables.com' },
   { photo: Subhasree, name: 'MS. G. SUBHASREE', role: 'COMPANY SECRETARY', din: '', email: 'CS@progenrenewables.com' },
+  { photo: Selvakumaran, name: 'MR. SELVAKUMARAN CHANDRASEKARAN', role: 'DIRECTOR', din: '08355365', email: 'selvas.themechanicalengineer@gmail.com' },
 ];
 
 const BOARD_KMPS = [
