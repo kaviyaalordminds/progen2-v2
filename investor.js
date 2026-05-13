@@ -157,7 +157,7 @@ const DOCUMENT_GROUPS = {
     },
   ],
   investorcontact: [
-    { title: 'Contact for Investors', docs: [], comingSoon: true },
+    { title: 'Contact for Investors', docs: []},
   ],
   annual: [
     {
@@ -167,27 +167,7 @@ const DOCUMENT_GROUPS = {
     },
   ],
   disclosure: [
-    {
-      title: 'Form AOC-4', docs: [
-        { name: 'Form AOC-4 - 25.12.2018', file: 'investor/Disclosure - Annual Return/Form AOC-4-25122018_signed.pdf', date: '25.12.2018' },
-        { name: 'Form AOC-4 - 02.09.2020', file: 'investor/Disclosure - Annual Return/Form AOC-4-02092020_signed.pdf', date: '02.09.2020' },
-        { name: 'Form AOC-4 - 20.02.2021', file: 'investor/Disclosure - Annual Return/Form AOC-4-20022021_signed.pdf', date: '20.02.2021' },
-        { name: 'Form AOC-4 - 01.02.2022', file: 'investor/Disclosure - Annual Return/Form AOC-4-01022022_signed.pdf', date: '01.02.2022' },
-        { name: 'Form AOC-4 - 21.02.2023', file: 'investor/Disclosure - Annual Return/Form AOC-4-21022023_signed.pdf', date: '21.02.2023' },
-        { name: 'Form AOC-4 - 10.01.2024', file: 'investor/Disclosure - Annual Return/Form AOC-4-10012024_signed.pdf', date: '10.01.2024' },
-      ]
-    },
-    {
-      title: 'Form MGT-7 / MGT-7A', docs: [
-        { name: 'Form MGT-7 - 25.12.2018', file: 'investor/Disclosure - Annual Return/Form MGT-7-25122018_signed.pdf', date: '25.12.2018' },
-        { name: 'Form MGT-7 - 02.09.2020', file: 'investor/Disclosure - Annual Return/Form MGT-7-02092020_signed.pdf', date: '02.09.2020' },
-        { name: 'Form MGT-7 - 12.02.2021', file: 'investor/Disclosure - Annual Return/Form MGT-7-12022021_signed.pdf', date: '12.02.2021' },
-        { name: 'Form MGT-7A - 01.02.2022', file: 'investor/Disclosure - Annual Return/Form MGT-7A-01022022_signed.pdf', date: '01.02.2022' },
-        { name: 'Form MGT-7 - 22.02.2023', file: 'investor/Disclosure - Annual Return/Form MGT-7-22022023_signed.pdf', date: '22.02.2023' },
-        { name: 'Form MGT-7 - 17.01.2024', file: 'investor/Disclosure - Annual Return/Form MGT-7-17012024_signed.pdf', date: '17.01.2024' },
-        { name: 'Form MGT-7 - 06.12.2024', file: 'investor/Disclosure - Annual Return/Form MGT-7-06122024_signed.pdf', date: '06.12.2024' },
-      ]
-    },
+    { title: 'Disclosure - Annual Return', docs: [], comingSoon: true },
   ],
   moa: [
     {
@@ -660,7 +640,7 @@ function financialSectionHTML() {
   `;
 }
 
-function announcementsSectionHTML() {
+function shareholdingSectionHTML() {
   const shareholdingDocs = [
     { name: 'Shareholders Pattern', file: 'pdf/6. Corporate Announcement/ShareHolding Pattern/Shareholders Pattern (4).pdf' },
   ];
@@ -683,6 +663,133 @@ function announcementsSectionHTML() {
       </header>
       <div class="ir-group-body">
         ${docList(shareholdingDocs)}
+      </div>
+    </article>
+  `;
+}
+
+function contactSectionHTML() {
+  return `
+    <!-- Contact Pattern Folder -->
+    <article class="ir-group-card" style="margin-top:1.5rem;">
+      <header class="ir-group-header" style="cursor:default;">
+        <div>
+          <h3>Contact for Investors</h3>
+        </div>
+      </header>
+      <div class="ir-group-body">
+        
+      </div>
+    </article>
+  `;
+}
+
+function moaSectionHTML() {
+  const moaDocs1 = [
+    {
+      name: 'Certificate of Incorporation - PLC',
+      file: 'pdf/5. Material Documents and Contracts/Material Documents/Certification Of Incorporation/Certificate of Incorporation - PLC.pdf'
+    },
+    {
+      name: 'Certificate of incorporation - Pvt Ltd',
+      file: 'pdf/5. Material Documents and Contracts/Material Documents/Certification Of Incorporation/Certificate of incorporation - Pvt Ltd.pdf'
+    },
+  ];
+  const moaDocs2 = [
+    {
+      name: 'Haribaskhar Independent Director Ceritificate',
+      file: 'pdf/5. Material Documents and Contracts/Material Documents/ID Certificate/Haribaskhar Independent Director Ceritificate.pdf'
+    },
+    {
+      name: 'JJ Innocent Independent Director Ceritificate',
+      file: 'pdf/5. Material Documents and Contracts/Material Documents/ID Certificate/JJ Innocent Independent Director Ceritificate.pdf'
+    },
+    {
+      name: 'Karthik Independent Director Ceritificate',
+      file: 'pdf/5. Material Documents and Contracts/Material Documents/ID Certificate/Karthik Independent Director Ceritificate.pdf'
+    },
+  ];
+  const moaDocs3 = [
+    {
+      name: 'AOA of PRL',
+      file: 'pdf/5. Material Documents and Contracts/Material Documents/MOA & AOA/AOA of PRL.pdf'
+    },
+    {
+      name: 'MOA OF PRL',
+      file: 'pdf/5. Material Documents and Contracts/Material Documents/MOA & AOA/MOA OF PRL.pdf'
+    },
+  ];
+
+  const docList = (docs) => docs.map(d => {
+    const file = d.file.toLowerCase();
+    let icon = ICONS.pdf;
+
+    if (file.endsWith('.xls') || file.endsWith('.xlsx')) {
+      icon = ICONS.excel;
+    }
+
+    return `
+      <a class="ir-doc-row" href="${esc(d.file)}" target="_blank" rel="noopener">
+        <span class="ir-doc-pdf">
+          ${icon}
+        </span>
+        <span class="ir-doc-name">
+          ${esc(d.name)}
+        </span>
+      </a>
+    `;
+  }).join('');
+
+  return `
+
+    <!-- Main Folder -->
+    <article class="ir-group-card" style="margin-top:1rem;">
+      <header class="ir-group-header" style="cursor:default;">
+        <div>
+          <h3>Material Documents</h3>
+          <p>3 Folders</p>
+        </div>
+      </header>
+
+      <div class="ir-group-body">
+        <!-- Folder 1 -->
+        <article class="ir-group-card" style="margin:1rem;">
+          <header class="ir-group-header" style="cursor:default;">
+            <div>
+              <h3>Certification Of Incorporation</h3>
+              <p>${moaDocs1.length} documents</p>
+            </div>
+          </header>
+          <div class="ir-group-body">
+            ${docList(moaDocs1)}
+          </div>
+        </article>
+
+        <!-- Folder 2 -->
+        <article class="ir-group-card" style="margin:1rem;">
+          <header class="ir-group-header" style="cursor:default;">
+            <div>
+              <h3>ID Certificate</h3>
+              <p>${moaDocs2.length} documents</p>
+            </div>
+          </header>
+          <div class="ir-group-body">
+            ${docList(moaDocs2)}
+          </div>
+        </article>
+
+        <!-- Folder 3 -->
+        <article class="ir-group-card" style="margin:1rem;">
+          <header class="ir-group-header" style="cursor:default;">
+            <div>
+              <h3>MOA & AOA</h3>
+              <p>${moaDocs3.length} documents</p>
+            </div>
+          </header>
+          <div class="ir-group-body">
+            ${docList(moaDocs3)}
+          </div>
+        </article>
       </div>
     </article>
   `;
@@ -810,12 +917,14 @@ function policiesSectionHTML() {
 function renderGroups() {
   const area = $('#groupsArea');
   const search = document.querySelector('.ir-search');
-  if (search) search.style.display = (activeId === 'board' || activeId === 'committees' || activeId === 'policies' || activeId === 'announcements' || activeId === 'financial') ? 'none' : '';
+  if (search) search.style.display = (activeId === 'board' || activeId === 'committees' || activeId === 'policies' || activeId === 'shareholding' || activeId === 'financial' || activeId === 'moa') ? 'none' : '';
   if (activeId === 'board') { area.innerHTML = boardSectionHTML(); return; }
   if (activeId === 'committees') { area.innerHTML = committeesSectionHTML(); return; }
   if (activeId === 'policies') { area.innerHTML = policiesSectionHTML(); return; }
-  if (activeId === 'announcements') { area.innerHTML = announcementsSectionHTML(); return; }
   if (activeId === 'financial') { area.innerHTML = financialSectionHTML(); return; }
+  if (activeId === 'shareholding') { area.innerHTML = shareholdingSectionHTML(); return; }
+  if (activeId === 'contact') { area.innerHTML = contactSectionHTML(); return; }
+  if (activeId === 'moa') { area.innerHTML = moaSectionHTML(); return; }
 
   const groups = DOCUMENT_GROUPS[activeId] || [];
   let filtered = groups;
