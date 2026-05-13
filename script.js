@@ -249,7 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             img: 'investorimages/BOD ENHANCED PHOTOS/4.png',
             name: 'Mrs. Veena Jose',
-            location: 'Whole Time Director',
+            location: 'CFO - Chief Financial Officer and Whole Time Director',
             din: 'DIN: 08017313',
             email: 'veena@progenrenewables.com',
             bio1: 'Veena drives day-to-day execution and corporate governance at ProGen, ensuring operational excellence across project delivery, finance, and stakeholder engagement.',
@@ -281,16 +281,16 @@ document.addEventListener('DOMContentLoaded', () => {
             email: 'ISOteam@progenrenewables.com',
             bio1: 'Hari brings extensive industry experience to ProGen\'s board, advising on project execution standards, operational risk, and strategic partnerships.',
             bio2: 'His independent counsel supports the company\'s commitment to sound governance and sustainable, high-quality solar deployment.'
+        },
+        {
+            img: 'investorimages/BOD ENHANCED PHOTOS/8.jpeg',
+            name: 'MR. Selvakumaran Chandrasekaran',
+            location: 'Director',
+            din: 'DIN: 08355365',
+            email: 'selvas.themechanicalengineer@gmail.com',
+            bio1: '',
+            bio2: ''
         }
-        // {
-        //     img: 'investorimages/BOD ENHANCED PHOTOS/2.png',
-        //     name: 'Mr. Shripathy',
-        //     location: 'Additional Director',
-        //     din: 'DIN: 01828942',
-        //     email: 'shripathy@progenrenewables.com',
-        //     bio1: 'Shripathy joins the ProGen board to strengthen oversight across emerging business areas, bringing deep functional expertise and strategic perspective.',
-        //     bio2: 'His addition to the board reinforces ProGen\'s leadership bench as the company expands its renewable energy footprint across India.'
-        // }
     ];
 
     let currentSlide = 0;

@@ -409,6 +409,7 @@ function committeesSectionHTML() {
       members: [
         { photo: Alfred, name: 'MR. ALFRED VINOD ANTONY', role: 'Managing Director - Chairman', din: '02776734' },
         { photo: Veena, name: 'MRS. VEENA JOSE', role: 'Whole-Time Director - Member', din: '08017313' },
+        { photo: Selvakumaran, name: 'MR. SELVAKUMARAN CHANDRASEKARAN', role: 'Director - Member', din: '08355365' },
       ]
     },
     {
@@ -424,6 +425,7 @@ function committeesSectionHTML() {
       members: [
         { photo: Hari, name: 'MR. RADHAKRISHNAN HARI BASKER', role: 'Non-Executive Independent Director - Chairman', din: '11281446' },
         { photo: Innocent, name: 'MR. INNOCENT JUDEJOSEPH ANTONYJOSEPH', role: 'Non-Executive Independent Director - Member', din: '10896507' },
+        { photo: Selvakumaran, name: 'MR. SELVAKUMARAN CHANDRASEKARAN', role: 'Director - Member', din: '08355365' },
       ]
     },
   ];
@@ -717,6 +719,7 @@ function policiesSectionHTML() {
             ${docList(mdDocs)}
           </div>
         </article>
+
         <!-- Sub-folder 2 -->
         <article class="ir-group-card" style="margin:1rem;">
           <header class="ir-group-header" style="cursor:default;">
@@ -729,6 +732,7 @@ function policiesSectionHTML() {
             ${docList(wtdDocs)}
           </div>
         </article>
+
         <!-- Sub-folder 3 -->
         <article class="ir-group-card" style="margin:1rem;">
           <header class="ir-group-header" style="cursor:default;">
@@ -741,6 +745,32 @@ function policiesSectionHTML() {
             ${docList(idDocs)}
           </div>
         </article>
+      </div>
+    </article>
+
+    <!-- Code Of Conduct for Directors -KMP -->
+    <article class="ir-group-card" style="margin-top:1.5rem;">
+      <header class="ir-group-header" style="cursor:default;">
+        <div>
+          <h3>Code Of Conduct for Directors - KMP</h3>
+          <!-- <p>${policiesDocs.length} documents</p> -->
+        </div>
+      </header>
+      <div class="ir-group-body">
+        <!-- ${docList(policiesDocs)} -->
+      </div>
+    </article>
+
+    <!-- SMP- Senior Management -->
+    <article class="ir-group-card" style="margin-top:1.5rem;">
+      <header class="ir-group-header" style="cursor:default;">
+        <div>
+          <h3>SMP - Senior Management</h3>
+          <!-- <p>${policiesDocs.length} documents</p> -->
+        </div>
+      </header>
+      <div class="ir-group-body">
+        <!-- ${docList(policiesDocs)} -->
       </div>
     </article>
   `;
