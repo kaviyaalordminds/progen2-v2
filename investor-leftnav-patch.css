@@ -158,6 +158,7 @@
     flex-direction: row !important;
     flex-wrap: wrap !important;
     gap: 6px !important;
+    margin-bottom: 10px;
   }
   .ir-iconnav-btn--list {
     flex-direction: column !important;

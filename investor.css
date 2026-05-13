@@ -898,7 +898,12 @@ nav {
     .ir-container { padding: 0 1.5rem; }
     .ir-hero-title { font-size: 2.25rem; }
     .ir-hero-inner { padding-top: 3rem; padding-bottom: 3rem; }
-    .ir-meta-card { padding: 1.5rem; flex-direction: row; align-items: center; justify-content: space-between; }
+    .ir-meta-card { 
+        padding: 1.5rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
     .ir-meta-title { font-size: 1.5rem; }
     .ir-search { width: 18rem; }
     .ir-doc-num { display: flex; }

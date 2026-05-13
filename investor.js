@@ -34,7 +34,7 @@ const ICONS = {
 const SIDEBAR_CATEGORIES = [
   { id: 'board', label: 'Board of Directors and Key Managerial Personnel', short: 'Board & KMP' },
   { id: 'committees', label: 'Board Committees', short: 'Committees' },
-  { id: 'policies', label: 'Policies and Code of Conduct', short: 'Policies' },
+  { id: 'policies', label: 'Policies', short: 'Policies' },
   { id: 'financial', label: 'Financial Information', short: 'Financials' },
   { id: 'ipo', label: 'Initial Public Offer', short: 'IPO' },
   { id: 'announcements', label: 'Corporate Announcement', short: 'Announcements' },
@@ -350,7 +350,7 @@ function boardSectionHTML() {
     <article class="ir-group-card" style="margin-top:1.5rem;">
       <header class="ir-group-header" style="cursor:default;">
         <div>
-          <h3>Director Profiles</h3>
+          <h3>KMP</h3>
           <p>${profiles.length} documents</p>
         </div>
       </header>
@@ -364,7 +364,7 @@ function boardSectionHTML() {
     <article class="ir-group-card" style="margin-top:1rem;">
       <header class="ir-group-header" style="cursor:default;">
         <div>
-          <h3>Appointment Letters</h3>
+          <h3>SMP</h3>
           <p>1 Folder</p>
         </div>
       </header>
@@ -430,11 +430,21 @@ function committeesSectionHTML() {
   const audit_committee_docs = [
     { name: 'Constitution of Audit Committee', file: 'pdf/2. Borad Committees/1.Audit Committee/1. Constitution of Audit Committee.pdf' },
   ];
+  const nomination_renumeration_committee_docs = [
+    { name: 'Nomination & Renumeration Committee', file: '' },
+  ];
   const stakeholder_committee_docs = [
     { name: 'Constitution of Stakeholders Relationship Committee', file: 'pdf/2. Borad Committees/3.StakeHolders Relationship Committee/1. Constitution of stakeholders Relationship Committee.pdf' },
   ];
 
   const audit_committee_docList = (audit_committee_docs) => audit_committee_docs.map(d => `
+    <a class="ir-doc-row" href="${esc(d.file)}" target="_blank" rel="noopener">
+      <span class="ir-doc-pdf">${ICONS.pdf}</span>
+      <span class="ir-doc-name">${esc(d.name)}</span>
+      <span class="ir-doc-download">${ICONS.download}</span>
+    </a>
+  `).join('');
+  const nomination_renumeration_committee_docList = (nomination_renumeration_committee_docs) => nomination_renumeration_committee_docs.map(d => `
     <a class="ir-doc-row" href="${esc(d.file)}" target="_blank" rel="noopener">
       <span class="ir-doc-pdf">${ICONS.pdf}</span>
       <span class="ir-doc-name">${esc(d.name)}</span>
@@ -492,6 +502,22 @@ function committeesSectionHTML() {
 
           <div class="ir-group-body">
             ${audit_committee_docList(audit_committee_docs)}
+          </div>
+        </article>
+      </div>
+
+      <div class="ir-group-body">
+        <!-- Inner Folder -->
+        <article class="ir-group-card" style="margin:1rem;">
+          <header class="ir-group-header" style="cursor:default;">
+            <div>
+              <h3>Nomination & Renumeration Committee</h3>
+              <!-- <p>${nomination_renumeration_committee_docs.length} documents</p> -->
+            </div>
+          </header>
+
+          <div class="ir-group-body">
+            <!-- ${nomination_renumeration_committee_docList(nomination_renumeration_committee_docs)} -->
           </div>
         </article>
       </div>

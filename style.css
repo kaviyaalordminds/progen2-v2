@@ -1228,7 +1228,9 @@ canvas{
     }
 
     .nav-cta {
-        display: none;
+        display: inline-flex;
+        padding: 0.45rem 0.75rem;
+        font-size: 0.7rem;
     }
 
     .header h1,
