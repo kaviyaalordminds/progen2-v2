@@ -945,7 +945,6 @@ nav {
     }
     .nav-logo img { width: 128px; height: 46px; }
     .nav-hamburger { display: flex; }
-    .nav-cta { display: none; }
     nav .nav-links {
         position: absolute;
         top: calc(100% + 0.5rem);

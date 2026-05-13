@@ -133,10 +133,6 @@ nav {
     color: #1a8fe3;
 }
 
-.nav-cta {
-    display: none;
-}
-
 .nav-hamburger {
     display: none;
     width: 44px;
@@ -4571,7 +4567,6 @@ nav .nav-link {
         order: 3 !important;
         margin-left: auto !important;
     }
-    nav .nav-cta { display: none !important; }
     nav .nav-links {
         position: absolute !important;
         top: calc(100% + 0.5rem) !important;

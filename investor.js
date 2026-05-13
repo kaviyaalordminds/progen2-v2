@@ -20,6 +20,7 @@ const ICON_PATHS = {
   moa: 'investorimages/icon16.png',
 };
 const PDF_ICON = 'investorimages/pdficon.png';
+const EXCEL_ICON = 'investorimages/excelicon.png';
 
 // Helper to render a category icon as <img>
 const catIcon = (id, cls = '') =>
@@ -27,6 +28,7 @@ const catIcon = (id, cls = '') =>
 
 const ICONS = {
   pdf: `<img src="${PDF_ICON}" alt="PDF">`,
+  excel: `<img src="${EXCEL_ICON}" alt="Excel">`,
   download: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3"/></svg>',
 };
 
@@ -37,7 +39,7 @@ const SIDEBAR_CATEGORIES = [
   { id: 'policies', label: 'Policies', short: 'Policies' },
   { id: 'financial', label: 'Financial Information', short: 'Financials' },
   { id: 'ipo', label: 'Initial Public Offer', short: 'IPO' },
-  { id: 'announcements', label: 'Corporate Announcement', short: 'Announcements' },
+  // { id: 'announcements', label: 'Corporate Announcement', short: 'Announcements' },
   { id: 'shareholding', label: 'Shareholding Pattern', short: 'Shareholding' },
   { id: 'press', label: 'Press Release', short: 'Press' },
   { id: 'meetings', label: 'Shareholders Meeting', short: 'Meetings' },
@@ -47,7 +49,7 @@ const SIDEBAR_CATEGORIES = [
   { id: 'investorcontact', label: 'Contact for Investors', short: 'Contact' },
   // { id: 'annual', label: 'Annual Report', short: 'Annual Report' },
   { id: 'disclosure', label: 'Disclosure - Annual Return', short: 'Disclosure' },
-  { id: 'moa', label: 'MoA - Memorandum of Association', short: 'MoA' },
+  { id: 'moa', label: 'Material Documents & Contracts', short: 'Material Documents & Contracts' },
 ];
 
 // Director portraits (from investorimages folder)
@@ -562,23 +564,50 @@ function financialSectionHTML() {
     { name: 'Significant Accounting Ratio', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Significant Accounting Ratio.pdf' },
     { name: 'Tax and Cash Flow Statement', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Tax and Cash flow Statement.pdf' },
     { name: 'Transaction with Relative Parties', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Transaction with Relative Parties.pdf' },
+    { name: 'Financial Statements', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Financial Statements.xlsx' },
   ];
   const audit2023Docs = [
-    { name: 'Progen R Pvt Ltd - Annual Report 2023', file: 'pdf/4. Financial Information/Financials Prior to Conversion/2022-2023 Audit Report/Progen R Pvt Ltd - Annual Report  2023.pdf' },
+    { 
+      name: 'Progen R Pvt Ltd - Annual Report 2023', 
+      file: 'pdf/4. Financial Information/Financials Prior to Conversion/2022-2023 Audit Report/Progen R Pvt Ltd - Annual Report 2023.pdf' 
+    },
+    { 
+      name: 'Progen R Pvt Ltd - Financial Statement 2023', 
+      file: 'pdf/4. Financial Information/Financials Prior to Conversion/2022-2023 Audit Report/Progen R Pvt Ltd - Financial Statement.xlsx' 
+    },
   ];
+
   const audit2024Docs = [
-    { name: 'Progen R Pvt Ltd - Annual Report 31-March-2024', file: 'pdf/4. Financial Information/Financials Prior to Conversion/2023-2024 Audit Report/Progen R Pvt Ltd - Annual Report 31-March-2024.pdf' },
+    { 
+      name: 'Progen R Pvt Ltd - Annual Report 31-March-2024', 
+      file: 'pdf/4. Financial Information/Financials Prior to Conversion/2023-2024 Audit Report/Progen R Pvt Ltd - Annual Report 31-March-2024.pdf' 
+    },
+    { 
+      name: 'Progen R Pvt Ltd - Financial Statement 31.03.2024', 
+      file: 'pdf/4. Financial Information/Financials Prior to Conversion/2023-2024 Audit Report/Progen R Pvt Ltd - Financial Statement 31.03.2024.xls' 
+    },
   ];
 
-  const docList = (docs) => docs.map(d => `
-    <a class="ir-doc-row" href="${esc(d.file)}" target="_blank" rel="noopener">
-      <span class="ir-doc-pdf">${ICONS.pdf}</span>
-      <span class="ir-doc-name">${esc(d.name)}</span>
-    </a>
-  `).join('');
-
+  const docList = (docs) => docs.map(d => {
+    const file = d.file.toLowerCase();
+    let icon = ICONS.pdf;
+    if (file.endsWith('.xls') || file.endsWith('.xlsx')) {
+      icon = ICONS.excel;
+    }
+    return `
+      <a class="ir-doc-row" href="${esc(d.file)}" target="_blank" rel="noopener">
+        <span class="ir-doc-pdf">
+          ${icon}
+        </span>
+        <span class="ir-doc-name">
+          ${esc(d.name)}
+        </span>
+      </a>
+    `;
+  }).join('');
   return `
-    <!-- Annual Report 2024-2025 Folder -->
+
+    <!-- Annual Report Folder -->
     <article class="ir-group-card" style="margin-top:1.5rem;">
       <header class="ir-group-header" style="cursor:default;">
         <div>
@@ -591,7 +620,7 @@ function financialSectionHTML() {
       </div>
     </article>
 
-    <!-- Financials Prior to Conversion Main Folder -->
+    <!-- Financial Prior Conversion -->
     <article class="ir-group-card" style="margin-top:1rem;">
       <header class="ir-group-header" style="cursor:default;">
         <div>
@@ -599,25 +628,27 @@ function financialSectionHTML() {
           <p>2 Folders</p>
         </div>
       </header>
+
       <div class="ir-group-body">
-        <!-- Sub-folder 1 -->
+        <!-- 2022-2023 -->
         <article class="ir-group-card" style="margin:1rem;">
           <header class="ir-group-header" style="cursor:default;">
             <div>
               <h3>2022-2023 Audit Report</h3>
-              <p>${audit2023Docs.length} document</p>
+              <p>${audit2023Docs.length} documents</p>
             </div>
           </header>
           <div class="ir-group-body">
             ${docList(audit2023Docs)}
           </div>
         </article>
-        <!-- Sub-folder 2 -->
+
+        <!-- 2023-2024 -->
         <article class="ir-group-card" style="margin:1rem;">
           <header class="ir-group-header" style="cursor:default;">
             <div>
               <h3>2023-2024 Audit Report</h3>
-              <p>${audit2024Docs.length} document</p>
+              <p>${audit2024Docs.length} documents</p>
             </div>
           </header>
           <div class="ir-group-body">
