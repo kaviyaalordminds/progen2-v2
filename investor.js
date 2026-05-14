@@ -43,8 +43,8 @@ const SIDEBAR_CATEGORIES = [
   { id: 'shareholding', label: 'Shareholding Pattern', short: 'Shareholding' },
   { id: 'press', label: 'Press Release', short: 'Press' },
   { id: 'meetings', label: 'Shareholders Meeting', short: 'Meetings' },
-  { id: 'esop', label: 'ESOP', short: 'ESOP' },
-  { id: 'credit', label: 'Credit Rating', short: 'Credit' },
+  // { id: 'esop', label: 'ESOP', short: 'ESOP' },
+  // { id: 'credit', label: 'Credit Rating', short: 'Credit' },
   { id: 'rta', label: 'Registrar and Share Transfer Agent', short: 'RTA' },
   { id: 'investorcontact', label: 'Contact for Investors', short: 'Contact' },
   // { id: 'annual', label: 'Annual Report', short: 'Annual Report' },
@@ -72,9 +72,9 @@ const Selvakumaran = 'investorimages/BOD ENHANCED PHOTOS/8.jpeg';
 
 const BOARD_DIRECTORS = [
   { photo: Alfred, name: 'MR. ALFRED VINOD ANTONY', role: 'MANAGING DIRECTOR', din: '02776734', email: 'alfred@progenrenewables.com' },
-  { photo: Veena, name: 'MRS. VEENA JOSE', role: 'WHOLE TIME DIRECTOR', din: '08017313', email: 'veena@progenrenewables.com' },
+  { photo: Veena, name: 'MRS. VEENA JOSE', role: 'CFO - CHIEF FINANCIAL OFFICER AND WHOLE TIME DIRECTOR', din: '08017313', email: 'veena@progenrenewables.com' },
   { photo: Innocent, name: 'MR. INNOCENT JUDEJOSEPH ANTONYJOSEPH', role: 'INDEPENDENT DIRECTOR', din: '10896507', email: 'jjinnocent78@gmail.com' },
-  { photo: Karthik, name: 'MR. KARTHIK VELUCHAMY KOTTUR', role: 'INDEPENDENT DIRECTOR', din: '01973367', email: '' },
+  { photo: Karthik, name: 'MR. KARTHIK VELUCHAMY KOTTUR', role: 'INDEPENDENT DIRECTOR', din: '01973367', email: 'karthik@deccanindustries.com' },
   { photo: Hari, name: 'MR. HARI BASKER', role: 'INDEPENDENT DIRECTOR', din: '11281446', email: 'ISOteam@progenrenewables.com' },
   { photo: Subhasree, name: 'MS. G. SUBHASREE', role: 'COMPANY SECRETARY', din: '', email: 'CS@progenrenewables.com' },
   { photo: Selvakumaran, name: 'MR. SELVAKUMARAN CHANDRASEKARAN', role: 'DIRECTOR', din: '08355365', email: 'selvas.themechanicalengineer@gmail.com' },
@@ -310,9 +310,8 @@ function boardSectionHTML() {
   const appointments = [
     { name: 'A. Karthi - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/SMP- Appointment -1/1. A Karthi - Appointment.pdf' },
     { name: 'A.K. Anand - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/SMP- Appointment -1/2. A K Anand - Appointment.pdf' },
-    { name: 'Balaji R - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/SMP- Appointment -1/3. Balaji - Appointment.pdf' },
     { name: 'Sundararajan A - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/SMP- Appointment -1/4. Sundararajan - Appointment.pdf' },
-    { name: 'R. Manju - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/SMP- Appointment -1/5. R Manju Appointment.pdf' },
+    { name: 'R. Manju - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/SMP- Appointment -1/5.Manju - Appointment.pdf' },
     { name: 'Justin A. Vadakkethala - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/SMP- Appointment -1/6. Mr. Justin - Appointment letter.pdf' },
   ];
 
@@ -343,28 +342,16 @@ function boardSectionHTML() {
     </article>
 
     <!-- Appointment Letters Main Folder -->
-    <article class="ir-group-card" style="margin-top:1rem;">
+    <article class="ir-group-card" style="margin-top:1.5rem;">
       <header class="ir-group-header" style="cursor:default;">
         <div>
           <h3>SMP</h3>
-          <p>1 Folder</p>
+          <p>${appointments.length} documents</p>
         </div>
-      </header>
+        </header>
 
-      <div class="ir-group-body">
-        <!-- Inner Folder -->
-        <article class="ir-group-card" style="margin:1rem;">
-          <header class="ir-group-header" style="cursor:default;">
-            <div>
-              <h3>SMP- Appointment -1</h3>
-              <p>${appointments.length} documents</p>
-            </div>
-          </header>
-
-          <div class="ir-group-body">
-            ${docList(appointments)}
-          </div>
-        </article>
+        <div class="ir-group-body">
+          ${docList(appointments)}
       </div>
     </article>
   `;
@@ -374,40 +361,40 @@ function committeesSectionHTML() {
   const members = [
     { photo: 'investorimages/BOD ENHANCED PHOTOS/6.png', name: 'MR. INNOCENT JUDEJOSEPH ANTONYJOSEPH', role: 'INDEPENDENT DIRECTOR', din: '10896507', email: 'jjinnocent78@gmail.com' },
     { photo: 'investorimages/BOD ENHANCED PHOTOS/3.png', name: 'MR. KARTHIK VELUCHAMY KOTTUR', role: 'INDEPENDENT DIRECTOR', din: '01973367', email: 'karthik@deccanindustries.com' },
-    { photo: 'investorimages/BOD ENHANCED PHOTOS/4.png', name: 'MRS. VEENA JOSE', role: 'WHOLE TIME DIRECTOR', din: '08017313', email: 'veena@progenrenewables.com' },
+    { photo: 'investorimages/BOD ENHANCED PHOTOS/4.png', name: 'MRS. VEENA JOSE', role: 'CFO - CHIEF FINANCIAL OFFICER AND WHOLE TIME DIRECTOR', din: '08017313', email: 'veena@progenrenewables.com' },
     { photo: 'investorimages/BOD ENHANCED PHOTOS/5.png', name: 'MR. HARI BASKER', role: 'INDEPENDENT DIRECTOR', din: '11281446', email: 'r.haribhaskaran@gmail.com' },
   ];
   const COMMITTEES = [
     {
       title: 'Stakeholder committee',
       members: [
-        { photo: Innocent, name: 'MR. INNOCENT JUDEJOSEPH ANTONYJOSEPH', role: 'Non-Executive Independent Director - Chairman', din: '10896507' },
-        { photo: Alfred, name: 'MR. ALFRED VINOD ANTONY', role: 'Managing Director - Member', din: '02776734' },
-        { photo: Veena, name: 'MRS. VEENA JOSE', role: 'Whole-Time Director - Member', din: '08017313' },
+        { photo: Innocent, name: 'MR. INNOCENT JUDEJOSEPH ANTONYJOSEPH', role: 'Non-Executive Independent Director - Chairman', din: '10896507', email: 'jjinnocent78@gmail.com' },
+        { photo: Alfred, name: 'MR. ALFRED VINOD ANTONY', role: 'Managing Director - Member', din: '02776734', email: 'alfred@progenrenewables.com' },
+        { photo: Veena, name: 'MRS. VEENA JOSE', role: 'CFO - Chief Financial Officer and Whole Time Director - Member', din: '08017313', email: 'veena@progenrenewables.com' },
       ]
     },
     {
       title: 'IPO Committee',
       members: [
-        { photo: Alfred, name: 'MR. ALFRED VINOD ANTONY', role: 'Managing Director - Chairman', din: '02776734' },
-        { photo: Veena, name: 'MRS. VEENA JOSE', role: 'Whole-Time Director - Member', din: '08017313' },
-        { photo: Selvakumaran, name: 'MR. SELVAKUMARAN CHANDRASEKARAN', role: 'Director - Member', din: '08355365' },
+        { photo: Alfred, name: 'MR. ALFRED VINOD ANTONY', role: 'Managing Director - Chairman', din: '02776734', email: 'alfred@progenrenewables.com' },
+        { photo: Veena, name: 'MRS. VEENA JOSE', role: 'CFO - Chief Financial Officer and Whole Time Director - Member', din: '08017313', email: 'veena@progenrenewables.com' },
+        { photo: Selvakumaran, name: 'MR. SELVAKUMARAN CHANDRASEKARAN', role: 'Director - Member', din: '08355365', email: 'selvas.themechanicalengineer@gmail.com' },
       ]
     },
     {
       title: 'Audit Committee',
       members: [
-        { photo: Innocent, name: 'MR. INNOCENT JUDEJOSEPH ANTONYJOSEPH', role: 'Non-Executive Independent Director - Chairman', din: '10896507' },
-        { photo: Karthik, name: 'MR. KARTHIK VELUCHAMY KOTTUR', role: 'Non-Executive Independent Director - Member', din: '01973367' },
-        { photo: Veena, name: 'MRS. VEENA JOSE', role: 'Whole-Time Director - Member', din: '08017313' },
+        { photo: Innocent, name: 'MR. INNOCENT JUDEJOSEPH ANTONYJOSEPH', role: 'Non-Executive Independent Director - Chairman', din: '10896507', email: 'jjinnocent78@gmail.com' },
+        { photo: Karthik, name: 'MR. KARTHIK VELUCHAMY KOTTUR', role: 'Non-Executive Independent Director - Member', din: '01973367', email: 'karthik@deccanindustries.com' },
+        { photo: Veena, name: 'MRS. VEENA JOSE', role: 'CFO - Chief Financial Officer and Whole Time Director - Member', din: '08017313', email: 'veena@progenrenewables.com' },
       ]
     },
     {
       title: 'Nomination & Remuneration Committee',
       members: [
-        { photo: Hari, name: 'MR. RADHAKRISHNAN HARI BASKER', role: 'Non-Executive Independent Director - Chairman', din: '11281446' },
-        { photo: Innocent, name: 'MR. INNOCENT JUDEJOSEPH ANTONYJOSEPH', role: 'Non-Executive Independent Director - Member', din: '10896507' },
-        { photo: Selvakumaran, name: 'MR. SELVAKUMARAN CHANDRASEKARAN', role: 'Director - Member', din: '08355365' },
+        { photo: Hari, name: 'MR. RADHAKRISHNAN HARI BASKER', role: 'Non-Executive Independent Director - Chairman', din: '11281446', email: 'ISOteam@progenrenewables.com' },
+        { photo: Innocent, name: 'MR. INNOCENT JUDEJOSEPH ANTONYJOSEPH', role: 'Non-Executive Independent Director - Member', din: '10896507', email: 'jjinnocent78@gmail.com' },
+        { photo: Selvakumaran, name: 'MR. SELVAKUMARAN CHANDRASEKARAN', role: 'Director - Member', din: '08355365', email: 'selvas.themechanicalengineer@gmail.com' },
       ]
     },
   ];
@@ -553,24 +540,27 @@ function committeesSectionHTML() {
 
 function financialSectionHTML() {
   const annualDocs = [
-    { name: 'Accounting Policies', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Accounting Policies.pdf' },
-    { name: 'Addendum to the Notice - 8th AGM', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Addendum to the Notice - 8th AGM.pdf' },
-    { name: 'Assets and Liabilities', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Assets and liablaities.pdf' },
-    { name: 'Benefit, Plan, Cost', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Benefit , Plan, Cost.pdf' },
-    { name: 'Contingent Liabilities and Commitment', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/contingent liabilities and commitement.pdf' },
-    { name: 'Corporate Information', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Corporate Information.pdf' },
-    { name: 'Disclosure Requirement', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Disclosure requirement.pdf' },
-    { name: 'Foreign Exchange Transaction', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/foreign Exchange Transaction.pdf' },
-    { name: 'Goods and Services Tax', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Goods and Services Tax.pdf' },
-    { name: 'Impairment Assets', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Impairment Assets.pdf' },
-    { name: 'Other Disclosure', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Other Disclosure.pdf' },
-    { name: 'Prior Period Comparatives', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Prior Period Comparatives.pdf' },
-    { name: 'Raw Materials - Total Consumption', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Raw Materials - Total consumption.pdf' },
-    { name: 'Segment Reporting', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Segment Reporting.pdf' },
-    { name: 'Significant Accounting Ratio', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Significant Accounting Ratio.pdf' },
-    { name: 'Tax and Cash Flow Statement', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Tax and Cash flow Statement.pdf' },
-    { name: 'Transaction with Relative Parties', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Transaction with Relative Parties.pdf' },
+    { name: 'Accounting Policies', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Annual Report 2024-25.pdf' },
     { name: 'Financial Statements', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Financial Statements.xlsx' },
+  ];
+  const otherDocs = [
+    { name: 'Accounting Policies', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Other Document Information/Accounting Policies.pdf' },
+    { name: 'Addendum to the Notice - 8th AGM', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Other Document Information/Addendum to the Notice - 8th AGM.pdf' },
+    { name: 'Assets and Liabilities', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Other Document Information/Assets and liablaities.pdf' },
+    { name: 'Benefit, Plan, Cost', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Other Document Information/Benefit , Plan, Cost.pdf' },
+    { name: 'Contingent Liabilities and Commitment', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Other Document Information/contingent liabilities and commitement.pdf' },
+    { name: 'Corporate Information', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Other Document Information/Corporate Information.pdf' },
+    { name: 'Disclosure Requirement', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Other Document Information/Disclosure requirement.pdf' },
+    { name: 'Foreign Exchange Transaction', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Other Document Information/foreign Exchange Transaction.pdf' },
+    { name: 'Goods and Services Tax', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Other Document Information/Goods and Services Tax.pdf' },
+    { name: 'Impairment Assets', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Other Document Information/Impairment Assets.pdf' },
+    { name: 'Other Disclosure', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Other Document Information/Other Disclosure.pdf' },
+    { name: 'Prior Period Comparatives', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Other Document Information/Prior Period Comparatives.pdf' },
+    { name: 'Raw Materials - Total Consumption', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Other Document Information/Raw Materials - Total consumption.pdf' },
+    { name: 'Segment Reporting', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Other Document Information/Segment Reporting.pdf' },
+    { name: 'Significant Accounting Ratio', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Significant Accounting Ratio.pdf' },
+    { name: 'Tax and Cash Flow Statement', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Other Document Information/Tax and Cash flow Statement.pdf' },
+    { name: 'Transaction with Relative Parties', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Other Document Information/Transaction with Relative Parties.pdf' },
   ];
   const audit2023Docs = [
     { 
@@ -623,6 +613,21 @@ function financialSectionHTML() {
       </header>
       <div class="ir-group-body">
         ${docList(annualDocs)}
+      </div>
+
+      <div class="ir-group-body">
+        <!-- Other Document Information -->
+        <article class="ir-group-card" style="margin:1rem;">
+          <header class="ir-group-header" style="cursor:default;">
+            <div>
+              <h3>Other Document Information</h3>
+              <p>${otherDocs.length} documents</p>
+            </div>
+          </header>
+          <div class="ir-group-body">
+            ${docList(otherDocs)}
+          </div>
+        </article>
       </div>
     </article>
 

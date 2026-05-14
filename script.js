@@ -269,7 +269,7 @@ document.addEventListener('DOMContentLoaded', () => {
             name: 'Mr. Karthik Veluchamy Kottur',
             location: 'Independent Director',
             din: 'DIN: 01973367',
-            email: '',
+            email: 'karthik@deccanindustries.com',
             bio1: 'Karthik contributes broad commercial and advisory expertise, helping ProGen evaluate opportunities in solar EPC, project finance, and capital markets.',
             bio2: 'As an independent director, he reinforces the board\'s focus on transparency, accountability, and disciplined value creation.'
         },
