@@ -415,10 +415,13 @@ function committeesSectionHTML() {
     { name: 'Constitution of Audit Committee', file: 'pdf/2. Borad Committees/1.Audit Committee/1. Constitution of Audit Committee.pdf' },
   ];
   const nomination_renumeration_committee_docs = [
-    { name: 'Nomination & Renumeration Committee', file: '' },
+    { name: 'Nomination & Renumeration Committee', file: 'pdf/2. Borad Committees/2.Nomination & Remuneration Committee/Nomination and Remuneration Committee.pdf' },
   ];
   const stakeholder_committee_docs = [
     { name: 'Constitution of Stakeholders Relationship Committee', file: 'pdf/2. Borad Committees/3.StakeHolders Relationship Committee/1. Constitution of stakeholders Relationship Committee.pdf' },
+  ];
+  const ipo_committee_docs = [
+    { name: 'IPO Committee', file: 'pdf/2. Borad Committees/4.IPO-Committe/IPO - Committee.pdf' },
   ];
 
   const audit_committee_docList = (audit_committee_docs) => audit_committee_docs.map(d => `
@@ -436,6 +439,13 @@ function committeesSectionHTML() {
     </a>
   `).join('');
   const stakeholder_committee_docList = (stakeholder_committee_docs) => stakeholder_committee_docs.map(d => `
+    <a class="ir-doc-row" href="${esc(d.file)}" target="_blank" rel="noopener">
+      <span class="ir-doc-pdf">${ICONS.pdf}</span>
+      <span class="ir-doc-name">${esc(d.name)}</span>
+      <span class="ir-doc-download">${ICONS.download}</span>
+    </a>
+  `).join('');
+  const ipo_committee_docList = (ipo_committee_docs) => ipo_committee_docs.map(d => `
     <a class="ir-doc-row" href="${esc(d.file)}" target="_blank" rel="noopener">
       <span class="ir-doc-pdf">${ICONS.pdf}</span>
       <span class="ir-doc-name">${esc(d.name)}</span>
@@ -496,12 +506,12 @@ function committeesSectionHTML() {
           <header class="ir-group-header" style="cursor:default;">
             <div>
               <h3>Nomination & Renumeration Committee</h3>
-              <!-- <p>${nomination_renumeration_committee_docs.length} documents</p> -->
+              <p>${nomination_renumeration_committee_docs.length} documents</p>
             </div>
           </header>
 
           <div class="ir-group-body">
-            <!-- ${nomination_renumeration_committee_docList(nomination_renumeration_committee_docs)} -->
+            ${nomination_renumeration_committee_docList(nomination_renumeration_committee_docs)}
           </div>
         </article>
       </div>
@@ -518,6 +528,22 @@ function committeesSectionHTML() {
 
           <div class="ir-group-body">
             ${stakeholder_committee_docList(stakeholder_committee_docs)}
+          </div>
+        </article>
+      </div>
+
+      <div class="ir-group-body">
+        <!-- Inner Folder -->
+        <article class="ir-group-card" style="margin:1rem;">
+          <header class="ir-group-header" style="cursor:default;">
+            <div>
+              <h3>IPO Committee</h3>
+              <p>${ipo_committee_docs.length} documents</p>
+            </div>
+          </header>
+
+          <div class="ir-group-body">
+            ${ipo_committee_docList(ipo_committee_docs)}
           </div>
         </article>
       </div>
@@ -614,7 +640,7 @@ function financialSectionHTML() {
         <article class="ir-group-card" style="margin:1rem;">
           <header class="ir-group-header" style="cursor:default;">
             <div>
-              <h3>2022-2023 Audit Report</h3>
+              <h3>2022-2023 Annual Report</h3>
               <p>${audit2023Docs.length} documents</p>
             </div>
           </header>
@@ -627,7 +653,7 @@ function financialSectionHTML() {
         <article class="ir-group-card" style="margin:1rem;">
           <header class="ir-group-header" style="cursor:default;">
             <div>
-              <h3>2023-2024 Audit Report</h3>
+              <h3>2023-2024 Annual Report</h3>
               <p>${audit2024Docs.length} documents</p>
             </div>
           </header>
