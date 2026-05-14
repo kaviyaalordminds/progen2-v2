@@ -540,7 +540,7 @@ function committeesSectionHTML() {
 
 function financialSectionHTML() {
   const annualDocs = [
-    { name: 'Accounting Policies', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Annual Report 2024-25.pdf' },
+    { name: 'Annual Report - 2024-2025', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Annual Report 2024-25.pdf' },
     { name: 'Financial Statements', file: 'pdf/4. Financial Information/Annual Report - 2024-2025/Financial Statements.xlsx' },
   ];
   const otherDocs = [
@@ -673,7 +673,7 @@ function financialSectionHTML() {
 
 function shareholdingSectionHTML() {
   const shareholdingDocs = [
-    { name: 'Shareholders Pattern', file: 'pdf/6. Corporate Announcement/ShareHolding Pattern/Shareholders Pattern (4).pdf' },
+    { name: 'Shareholders Pattern', file: 'pdf/6. ShareHolding Pattern/ShareHolding Pattern/Shareholders Pattern (4).pdf' },
   ];
 
   const docList = (docs) => docs.map(d => `
