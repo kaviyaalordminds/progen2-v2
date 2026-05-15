@@ -46,7 +46,7 @@ const SIDEBAR_CATEGORIES = [
   // { id: 'esop', label: 'ESOP', short: 'ESOP' },
   // { id: 'credit', label: 'Credit Rating', short: 'Credit' },
   { id: 'rta', label: 'Registrar and Share Transfer Agent', short: 'RTA' },
-  { id: 'investorcontact', label: 'Contact for Investors', short: 'Contact' },
+  { id: 'investorcontact', label: 'Investor complaints Redressal', short: 'Contact' },
   // { id: 'annual', label: 'Annual Report', short: 'Annual Report' },
   { id: 'disclosure', label: 'Disclosure - Annual Return', short: 'Disclosure' },
   { id: 'moa', label: 'Material Documents & Contracts', short: 'Material Documents & Contracts' },
@@ -157,7 +157,7 @@ const DOCUMENT_GROUPS = {
     },
   ],
   investorcontact: [
-    { title: 'Contact for Investors', docs: []},
+    { title: 'Investor complaints Redressal', docs: []},
   ],
   annual: [
     {
@@ -705,11 +705,14 @@ function contactSectionHTML() {
     <article class="ir-group-card" style="margin-top:1.5rem;">
       <header class="ir-group-header" style="cursor:default;">
         <div>
-          <h3>Contact for Investors</h3>
+          <h3>Investor complaints Redressal</h3>
         </div>
       </header>
       <div class="ir-group-body">
-        
+        <span style="padding:1rem;padding-top:1rem;"><strong>NAME:</strong> MR. ALFRED VINOD ANTONY</span><br/><br/>
+        <span style="padding:1rem;"><strong>ADDRESS:</strong> 54/A, ParkTown, Ramanathapuram Coimbatore - 641045</span><br/><br/>
+        <span style="padding:1rem;"><strong>Phone No:</strong> 94878 55286</span><br/><br/>
+        <span style="padding:1rem;padding-bottom:1rem;"><strong>Mail ID:</strong> alfred@progenrenewables.com, info@progenrenewables.com</span>
       </div>
     </article>
   `;
@@ -980,7 +983,7 @@ function renderGroups() {
   if (activeId === 'policies') { area.innerHTML = policiesSectionHTML(); return; }
   if (activeId === 'financial') { area.innerHTML = financialSectionHTML(); return; }
   if (activeId === 'shareholding') { area.innerHTML = shareholdingSectionHTML(); return; }
-  if (activeId === 'contact') { area.innerHTML = contactSectionHTML(); return; }
+  if (activeId === 'investorcontact') { area.innerHTML = contactSectionHTML(); return; }
   if (activeId === 'moa') { area.innerHTML = moaSectionHTML(); return; }
 
   const groups = DOCUMENT_GROUPS[activeId] || [];
