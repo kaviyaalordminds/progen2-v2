@@ -43,7 +43,7 @@ const SIDEBAR_CATEGORIES = [
   { id: 'shareholding', label: 'Shareholding Pattern', short: 'Shareholding' },
   { id: 'press', label: 'Press Release', short: 'Press' },
   { id: 'meetings', label: 'Shareholders Meeting', short: 'Meetings' },
-  // { id: 'esop', label: 'ESOP', short: 'ESOP' },
+  { id: 'esop', label: 'ESOP', short: 'ESOP' },
   // { id: 'credit', label: 'Credit Rating', short: 'Credit' },
   { id: 'rta', label: 'Registrar and Share Transfer Agent', short: 'RTA' },
   { id: 'investorcontact', label: 'Investor complaints Redressal', short: 'Contact' },
@@ -75,7 +75,7 @@ const BOARD_DIRECTORS = [
   { photo: Veena, name: 'MRS. VEENA JOSE', role: 'CFO - CHIEF FINANCIAL OFFICER AND WHOLE TIME DIRECTOR', din: '08017313', email: 'veena@progenrenewables.com' },
   { photo: Innocent, name: 'MR. INNOCENT JUDEJOSEPH ANTONYJOSEPH', role: 'INDEPENDENT DIRECTOR', din: '10896507', email: 'jjinnocent78@gmail.com' },
   { photo: Karthik, name: 'MR. KARTHIK VELUCHAMY KOTTUR', role: 'INDEPENDENT DIRECTOR', din: '01973367', email: 'karthik@deccanindustries.com' },
-  { photo: Hari, name: 'MR. HARI BASKER', role: 'INDEPENDENT DIRECTOR', din: '11281446', email: 'ISOteam@progenrenewables.com' },
+  { photo: Hari, name: 'MR. HARI BASKER', role: 'INDEPENDENT DIRECTOR', din: '11281446', email: 'r.haribhaskaran@gmail.com' },
   { photo: Subhasree, name: 'MS. G. SUBHASREE', role: 'COMPANY SECRETARY', din: '', email: 'CS@progenrenewables.com' },
   { photo: Selvakumaran, name: 'MR. SELVAKUMARAN CHANDRASEKARAN', role: 'DIRECTOR', din: '08355365', email: 'selvas.themechanicalengineer@gmail.com' },
 ];
@@ -392,7 +392,7 @@ function committeesSectionHTML() {
     {
       title: 'Nomination & Remuneration Committee',
       members: [
-        { photo: Hari, name: 'MR. RADHAKRISHNAN HARI BASKER', role: 'Non-Executive Independent Director - Chairman', din: '11281446', email: 'ISOteam@progenrenewables.com' },
+        { photo: Hari, name: 'MR. RADHAKRISHNAN HARI BASKER', role: 'Non-Executive Independent Director - Chairman', din: '11281446', email: 'r.haribhaskaran@gmail.com' },
         { photo: Innocent, name: 'MR. INNOCENT JUDEJOSEPH ANTONYJOSEPH', role: 'Non-Executive Independent Director - Member', din: '10896507', email: 'jjinnocent78@gmail.com' },
         { photo: Selvakumaran, name: 'MR. SELVAKUMARAN CHANDRASEKARAN', role: 'Director - Member', din: '08355365', email: 'selvas.themechanicalengineer@gmail.com' },
       ]
@@ -711,16 +711,16 @@ function contactSectionHTML() {
 
       <div class="ir-group-body" style="padding:1.5rem 1rem; line-height:1.9;">
         <div style="margin-bottom:1rem;">
-          <strong>NAME:</strong> MR. ALFRED VINOD ANTONY
+          <strong>NAME:</strong> MR. Hari Basker
         </div>
         <div style="margin-bottom:1rem;">
-          <strong>ADDRESS:</strong> 54/A, ParkTown, Ramanathapuram Coimbatore - 641045
+          <strong>ADDRESS:</strong> Radhakrishnan No 57-59 Durgalal Street Fort Coimbatore - 641001
         </div>
         <div style="margin-bottom:1rem;">
-          <strong>Phone No:</strong> 94878 55286
+          <strong>Phone No:</strong>  90476 39395
         </div>
         <div>
-          <strong>Mail ID:</strong> alfred@progenrenewables.com, info@progenrenewables.com
+          <strong>Mail ID:</strong>  r.haribhaskaran@gmail.com
         </div>
       </div>
     </article>
@@ -1120,6 +1120,11 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   const burger = document.querySelector('.nav-hamburger');
   const navEl  = document.querySelector('nav');
+  const navGroup = document.querySelector('.nav-group');
+  if (navGroup) {
+    navGroup.addEventListener('mouseenter', () => navGroup.classList.add('is-hovering'));
+    navGroup.addEventListener('mouseleave', () => navGroup.classList.remove('is-hovering'));
+  }
   if (burger && navEl) {
     burger.addEventListener('click', () => {
       burger.classList.toggle('open');

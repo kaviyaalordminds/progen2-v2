@@ -2,6 +2,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // Hamburger menu toggle
     const hamburger = document.querySelector('.nav-hamburger');
     const navLinks = document.querySelector('.nav-links');
+    const navGroup = document.querySelector('.nav-group');
+
+    if (navGroup) {
+        navGroup.addEventListener('mouseenter', () => {
+            navGroup.classList.add('is-hovering');
+        });
+        navGroup.addEventListener('mouseleave', () => {
+            navGroup.classList.remove('is-hovering');
+        });
+    }
 
     if (hamburger && navLinks) {
         hamburger.addEventListener('click', () => {
@@ -278,7 +288,7 @@ document.addEventListener('DOMContentLoaded', () => {
             name: 'Mr. Hari Basker',
             location: 'Independent Director',
             din: 'DIN: 11281446',
-            email: 'ISOteam@progenrenewables.com',
+            email: 'r.haribhaskaran@gmail.com',
             bio1: 'Hari brings extensive industry experience to ProGen\'s board, advising on project execution standards, operational risk, and strategic partnerships.',
             bio2: 'His independent counsel supports the company\'s commitment to sound governance and sustainable, high-quality solar deployment.'
         },

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -35,6 +35,7 @@
                     <a href="shareholding.html">Shareholding</a>
                     <a href="press.html">Press</a>
                     <a href="meetings.html">Meetings</a>
+                    <a href="esop.html">ESOP</a>
                     <a href="rta.html">RTA</a>
                     <a href="disclosure.html">Disclosure</a>
                     <a href="moa.html">Material Documents & Contracts</a>
@@ -205,7 +206,7 @@
                 <!-- Our story -->
                 <div class="about-journey-story">
                     <h3>Our story</h3>
-                    <p>Since its inception in 2008, Progen Renewables has been redefining Indiaâ€™s renewable energy
+                    <p>Since its inception in 2008, Progen Renewables has been redefining India's renewable energy
                         landscape. What started as a pioneering vision soon took corporate shape when the company became
                         a Private Limited entity in 2017, and by January 2025, Progen proudly evolved into a Public
                         Limited company a testament to its credibility, scale, and unstoppable growth.
@@ -561,7 +562,7 @@
                                 <p>Director, LumaCore Hospitality</p>
                             </div>
                         </div>
-                        <blockquote>"We chose Progen for our chain of resorts and the result has been outstanding â€”
+                        <blockquote>"We chose Progen for our chain of resorts and the result has been outstanding
                             clean energy, reliable storage, and a partner that genuinely cares."</blockquote>
                         <div class="testimonial-foot">
                             <div class="testimonial-tags">
@@ -587,7 +588,7 @@
                             </div>
                         </div>
                         <blockquote>"From audit to commissioning, Progen handled everything seamlessly. Our warehouses
-                            now run on 90% solar â€” a milestone we didn't think possible."</blockquote>
+                            now run on 90% solar a milestone we didn't think possible."</blockquote>
                         <div class="testimonial-foot">
                             <div class="testimonial-tags">
                                 <span class="testimonial-tag featured">Logistics</span>
@@ -615,7 +616,7 @@
                     <div class="footer-logo">
                         <img src="images/logo.svg" alt="Progen Logo" class="footer-logo-img">
                     </div>
-                    <p class="footer-brand-desc">Progen Solar delivers cutting-edge solar energy solutions â€” powering
+                    <p class="footer-brand-desc">Progen Solar delivers cutting-edge solar energy solutions powering
                         homes, businesses, and industries with clean, sustainable energy.</p>
                 </div>
 
@@ -774,6 +775,12 @@
         const hamburger = document.querySelector('.nav-hamburger');
         const navEl = document.querySelector('nav');
         const navLinks = document.querySelector('.nav-links');
+        const navGroup = document.querySelector('.nav-group');
+
+        if (navGroup) {
+            navGroup.addEventListener('mouseenter', () => navGroup.classList.add('is-hovering'));
+            navGroup.addEventListener('mouseleave', () => navGroup.classList.remove('is-hovering'));
+        }
 
         if (hamburger && navEl) {
             hamburger.addEventListener('click', () => {

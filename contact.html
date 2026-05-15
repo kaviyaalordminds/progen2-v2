@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -33,6 +33,7 @@
                     <a href="shareholding.html">Shareholding</a>
                     <a href="press.html">Press</a>
                     <a href="meetings.html">Meetings</a>
+                    <a href="esop.html">ESOP</a>
                     <a href="rta.html">RTA</a>
                     <a href="disclosure.html">Disclosure</a>
                     <a href="moa.html">Material Documents & Contracts</a>
@@ -285,7 +286,7 @@
                     <div class="footer-logo">
                         <img src="images/logo.svg" alt="Progen Logo" class="footer-logo-img">
                     </div>
-                    <p class="footer-brand-desc">Progen Solar delivers cutting-edge solar energy solutions â€” powering homes, businesses, and industries with clean, sustainable energy.</p>
+                    <p class="footer-brand-desc">Progen Solar delivers cutting-edge solar energy solutions powering homes, businesses, and industries with clean, sustainable energy.</p>
                 </div>
 
                 <div class="footer-links-col">
@@ -414,6 +415,11 @@
     <script>
         const hamburger = document.querySelector('.nav-hamburger');
         const navEl = document.querySelector('nav');
+        const navGroup = document.querySelector('.nav-group');
+        if (navGroup) {
+            navGroup.addEventListener('mouseenter', () => navGroup.classList.add('is-hovering'));
+            navGroup.addEventListener('mouseleave', () => navGroup.classList.remove('is-hovering'));
+        }
         if (hamburger && navEl) {
             hamburger.addEventListener('click', () => {
                 hamburger.classList.toggle('open');
