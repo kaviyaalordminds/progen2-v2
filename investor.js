@@ -833,6 +833,8 @@ function policiesSectionHTML() {
     { name: 'Policy on Related Party Transactions', file: 'pdf/3. Policies/Policies/Policy On Related Party Transactions  .pdf' },
     { name: 'Risk Management Policy', file: 'pdf/3. Policies/Policies/Risk Management Policy.pdf' },
     { name: 'Sexual Harassment Policy', file: 'pdf/3. Policies/Policies/Sexual Harassment Policy.pdf' },
+    { name: 'Policy on Identification of Material Creditors and Material Litigations', file: 'pdf/3. Policies/Policies/Policy on Identification of Material Creditors and Material Litigations .pdf' },
+    { name: 'Vigil Mechanism Whistle Blower Policy', file: 'pdf/3. Policies/Policies/Vigil Mechanism Whistle Blower Policy.pdf' },
   ];
   const mdDocs = [
     { name: 'Alfred - Appointment', file: 'pdf/3. Policies/Terms of Conditions for appointment of independent directors/1. Appointment of Mananging Director/Alfred -  Appointment.pdf' },
@@ -845,6 +847,16 @@ function policiesSectionHTML() {
     { name: 'Innocent - Appointment', file: 'pdf/3. Policies/Terms of Conditions for appointment of independent directors/3. Appointment of Independent Directors/Innocent -  Appointment.pdf' },
     { name: 'Karthik - Appointment', file: 'pdf/3. Policies/Terms of Conditions for appointment of independent directors/3. Appointment of Independent Directors/Karthik - Appointment.pdf' },
   ];
+  const directorDocs = [
+    { name: 'Mr. Selvakumaran Appointment Letter', file: 'pdf/3. Policies/Terms of Conditions for appointment of independent directors/Appointment of director/Mr. Selvakumaran Appointment Letter.pdf' },
+  ];
+  const kmpDocs = [
+    { name: 'Code of Conduct  For Directors', file: 'pdf/3. Policies/Code of Conduct for Kmp/Code of Conduct  For Directors.pdf' },
+  ];
+  const smpDocs = [
+    { name: 'Code of Conduct For Senior Management', file: 'pdf/3. Policies/SMP-Senior Management/Code of Conduct For Senior Management.pdf' },
+  ];
+
 
   const docList = (docs) => docs.map(d => `
     <a class="ir-doc-row" href="${esc(d.file)}" target="_blank" rel="noopener">
@@ -914,6 +926,19 @@ function policiesSectionHTML() {
             ${docList(idDocs)}
           </div>
         </article>
+
+        <!-- Sub-folder 4 -->
+        <article class="ir-group-card" style="margin:1rem;">
+          <header class="ir-group-header" style="cursor:default;">
+            <div>
+              <h3>Appointment of Director</h3>
+              <p>${directorDocs.length} document</p>
+            </div>
+          </header>
+          <div class="ir-group-body">
+            ${docList(directorDocs)}
+          </div>
+        </article>
       </div>
     </article>
 
@@ -922,11 +947,11 @@ function policiesSectionHTML() {
       <header class="ir-group-header" style="cursor:default;">
         <div>
           <h3>Code Of Conduct for Directors - KMP</h3>
-          <!-- <p>${policiesDocs.length} documents</p> -->
+          <p>${kmpDocs.length} documents</p>
         </div>
       </header>
       <div class="ir-group-body">
-        <!-- ${docList(policiesDocs)} -->
+        ${docList(kmpDocs)}
       </div>
     </article>
 
@@ -935,11 +960,11 @@ function policiesSectionHTML() {
       <header class="ir-group-header" style="cursor:default;">
         <div>
           <h3>SMP - Senior Management</h3>
-          <!-- <p>${policiesDocs.length} documents</p> -->
+          <p>${smpDocs.length} documents</p>
         </div>
       </header>
       <div class="ir-group-body">
-        <!-- ${docList(policiesDocs)} -->
+        ${docList(smpDocs)}
       </div>
     </article>
   `;
