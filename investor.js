@@ -708,11 +708,20 @@ function contactSectionHTML() {
           <h3>Investor complaints Redressal</h3>
         </div>
       </header>
-      <div class="ir-group-body">
-        <span style="padding:1rem;padding-top:1rem;"><strong>NAME:</strong> MR. ALFRED VINOD ANTONY</span><br/><br/>
-        <span style="padding:1rem;"><strong>ADDRESS:</strong> 54/A, ParkTown, Ramanathapuram Coimbatore - 641045</span><br/><br/>
-        <span style="padding:1rem;"><strong>Phone No:</strong> 94878 55286</span><br/><br/>
-        <span style="padding:1rem;padding-bottom:1rem;"><strong>Mail ID:</strong> alfred@progenrenewables.com, info@progenrenewables.com</span>
+
+      <div class="ir-group-body" style="padding:1.5rem 1rem; line-height:1.9;">
+        <div style="margin-bottom:1rem;">
+          <strong>NAME:</strong> MR. ALFRED VINOD ANTONY
+        </div>
+        <div style="margin-bottom:1rem;">
+          <strong>ADDRESS:</strong> 54/A, ParkTown, Ramanathapuram Coimbatore - 641045
+        </div>
+        <div style="margin-bottom:1rem;">
+          <strong>Phone No:</strong> 94878 55286
+        </div>
+        <div>
+          <strong>Mail ID:</strong> alfred@progenrenewables.com, info@progenrenewables.com
+        </div>
       </div>
     </article>
   `;
