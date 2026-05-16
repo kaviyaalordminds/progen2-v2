@@ -123,6 +123,7 @@ a {
     font-weight: 500;
     text-decoration: none;
     white-space: nowrap;
+    text-transform: none;
 }
 
 .topbar-item:hover { opacity: 0.9; }

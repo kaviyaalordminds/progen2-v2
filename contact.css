@@ -117,6 +117,13 @@ body {
     text-transform: none;
     letter-spacing: normal;
 }
+.contact-info-grid .contact-card a[href^="mailto:"] {
+    color: #1d4ed8;
+}
+.contact-info-grid .contact-card a[href^="mailto:"]:hover {
+    color: #1e40af;
+    text-decoration: underline;
+}
 .contact-info-grid .contact-card p a { display: inline; }
 .contact-info-grid .contact-card a:hover {
     color: var(--contact-accent);

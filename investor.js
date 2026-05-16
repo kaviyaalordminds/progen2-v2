@@ -67,8 +67,8 @@ const Veena = 'investorimages/BOD ENHANCED PHOTOS/4.png';
 const Innocent = 'investorimages/BOD ENHANCED PHOTOS/6.png';
 const Karthik = 'investorimages/BOD ENHANCED PHOTOS/3.png';
 const Hari = 'investorimages/BOD ENHANCED PHOTOS/5.png';
-const Subhasree = 'investorimages/BOD ENHANCED PHOTOS/7.jpg';
-const Selvakumaran = 'investorimages/BOD ENHANCED PHOTOS/8.jpeg';
+const Subhasree = 'investorimages/BOD ENHANCED PHOTOS/7.png';
+const Selvakumaran = 'investorimages/BOD ENHANCED PHOTOS/8.png';
 
 const BOARD_DIRECTORS = [
   { photo: Alfred, name: 'MR. ALFRED VINOD ANTONY', role: 'MANAGING DIRECTOR', din: '02776734', email: 'alfred@progenrenewables.com' },
