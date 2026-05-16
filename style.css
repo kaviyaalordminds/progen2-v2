@@ -6236,3 +6236,170 @@ nav .nav-link {
         transform: translateX(-50%) translateY(0) !important;
     }
 }
+
+/* === Team slider — tablet & mobile responsive fix === */
+@media (max-width: 1000px) and (min-width: 641px) {
+    /* Keep laptop-style 3-column layout on tablets */
+    .team-slider {
+        grid-template-columns: 1.1fr 1fr 1fr !important;
+        grid-template-rows: auto !important;
+    }
+    .team-image {
+        grid-column: auto !important;
+        grid-row: auto !important;
+        height: 420px !important;
+        border-radius: 12px 0 0 12px !important;
+    }
+    .team-info {
+        grid-column: auto !important;
+        grid-row: auto !important;
+        height: 420px !important;
+        min-height: 0 !important;
+        border-radius: 0 !important;
+        padding: 1.75rem 1.25rem !important;
+    }
+    .team-bio {
+        grid-column: auto !important;
+        grid-row: auto !important;
+        height: 420px !important;
+        border-left: 1px solid rgba(255, 255, 255, 0.1) !important;
+        border-top: none !important;
+        border-radius: 0 12px 12px 0 !important;
+        padding: 1.75rem 1.25rem !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    .team-slider-section {
+        padding: 2.5rem 1rem !important;
+    }
+    .team-image {
+        border-radius: 12px 0 0 12px !important;
+    }
+    .team-image img {
+        object-position: center 15% !important;
+    }
+    .team-info {
+        padding: 1.5rem 1.25rem !important;
+        min-height: auto !important;
+    }
+    .team-bio {
+        padding: 1.5rem 1.25rem !important;
+    }
+    .team-bio p {
+        font-size: 0.9rem !important;
+        line-height: 1.6 !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .team-slider-section {
+        padding: 2rem 0.75rem !important;
+    }
+    .team-image {
+        height: 440px !important;
+        border-radius: 12px !important;
+        background: #0d1220 !important;
+    }
+    /* Fill the frame with the photo */
+    .team-image img {
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 !important;
+        display: block !important;
+        object-fit: cover !important;
+        object-position: center 20% !important;
+    }
+    .team-name {
+        font-size: clamp(1.35rem, 6vw, 1.75rem) !important;
+        margin-bottom: 1rem !important;
+    }
+    .team-info,
+    .team-bio {
+        padding: 1.25rem 1rem !important;
+    }
+    .team-bio {
+        gap: 0.9rem !important;
+    }
+    .team-bio p {
+        font-size: 0.875rem !important;
+    }
+    /* Vertical laptop-style nav buttons on phones too */
+    .team-nav {
+        writing-mode: vertical-lr !important;
+        left: 0 !important;
+        right: auto !important;
+        bottom: auto !important;
+        padding: 1rem 0.6rem !important;
+        font-size: 0.6rem !important;
+        letter-spacing: 0.2em !important;
+        background: rgba(0, 0, 0, 0.6) !important;
+        border: none !important;
+        border-radius: 0 !important;
+        backdrop-filter: none;
+    }
+    .team-next {
+        top: 0 !important;
+        height: 50% !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
+    }
+    .team-prev {
+        top: auto !important;
+        bottom: 0 !important;
+        height: 50% !important;
+    }
+    .team-email {
+        font-size: 0.7rem !important;
+    }
+}
+
+@media (max-width: 380px) {
+    .team-image {
+        height: 400px !important;
+    }
+}
+
+/* === Investors nav dropdown — span full nav width (desktop) === */
+@media (min-width: 901px) {
+    nav .nav-dropdown {
+        position: static !important;
+    }
+    nav .nav-dropdown-menu,
+    nav .nav-dropdown:hover .nav-dropdown-menu {
+        left: 3rem !important;
+        right: 3rem !important;
+        width: auto !important;
+        min-width: 0 !important;
+        max-width: none !important;
+        transform: none !important;
+        margin-top: 0.5rem !important;
+        padding: 1rem 1.25rem !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+        column-gap: 1rem !important;
+        row-gap: 0.25rem !important;
+    }
+    /* Invisible hover bridge so cursor can travel from trigger to menu
+       without losing :hover on .nav-dropdown. Anchored to the trigger
+       link (not the full-width menu) so it doesn't cover sibling nav
+       links like Home/About and block their clicks. */
+    nav .nav-dropdown-menu::before {
+        display: none !important;
+    }
+    nav .nav-dropdown > .nav-link {
+        position: relative !important;
+    }
+    nav .nav-dropdown > .nav-link::after {
+        content: "" !important;
+        position: absolute !important;
+        left: -1.5rem !important;
+        right: -1.5rem !important;
+        top: 100% !important;
+        height: 3rem !important;
+        background: transparent !important;
+        pointer-events: auto !important;
+    }
+    nav .nav-dropdown-menu a {
+        padding: 10px 14px !important;
+        font-size: 0.85rem !important;
+    }
+}
