@@ -293,7 +293,7 @@ document.addEventListener('DOMContentLoaded', () => {
             bio2: 'His independent counsel supports the company\'s commitment to sound governance and sustainable, high-quality solar deployment.'
         },
         {
-            img: 'investorimages/BOD ENHANCED PHOTOS/8.jpeg',
+            img: 'investorimages/BOD ENHANCED PHOTOS/8.png',
             name: 'MR. Selvakumaran Chandrasekaran',
             location: 'Director',
             din: 'DIN: 08355365',
