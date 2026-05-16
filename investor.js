@@ -44,9 +44,9 @@ const SIDEBAR_CATEGORIES = [
   { id: 'press', label: 'Press Release', short: 'Press' },
   { id: 'meetings', label: 'Shareholders Meeting', short: 'Meetings' },
   { id: 'esop', label: 'ESOP', short: 'ESOP' },
-  // { id: 'credit', label: 'Credit Rating', short: 'Credit' },
+  { id: 'credit', label: 'Credit Rating', short: 'Credit' },
   { id: 'rta', label: 'Registrar and Share Transfer Agent', short: 'RTA' },
-  { id: 'investorcontact', label: 'Investor Complaint Redressal System', short: 'Investor Complaint Redressal System' },
+  { id: 'investorcontact', label: 'Investor Compliant Redressal', short: 'Investor Compliant Redressal' },
   // { id: 'annual', label: 'Annual Report', short: 'Annual Report' },
   { id: 'disclosure', label: 'Disclosure - Annual Return', short: 'Disclosure' },
   { id: 'moa', label: 'Material Documents & Contracts', short: 'Material Documents & Contracts' },
@@ -168,6 +168,9 @@ const DOCUMENT_GROUPS = {
   ],
   disclosure: [
     { title: 'Disclosure - Annual Return', docs: [], comingSoon: true },
+  ],
+  credit: [
+    { title: 'Credit Rating', docs: [], comingSoon: true },
   ],
   moa: [
     {
@@ -392,7 +395,7 @@ function committeesSectionHTML() {
     {
       title: 'Nomination & Remuneration Committee',
       members: [
-        { photo: Hari, name: 'MR. RADHAKRISHNAN HARI BASKER', role: 'Non-Executive Independent Director - Chairman', din: '11281446', email: 'r.haribhaskaran@gmail.com' },
+        { photo: Hari, name: 'MR. HARI BASKER', role: 'Non-Executive Independent Director - Chairman', din: '11281446', email: 'r.haribhaskaran@gmail.com' },
         { photo: Innocent, name: 'MR. INNOCENT JUDEJOSEPH ANTONYJOSEPH', role: 'Non-Executive Independent Director - Member', din: '10896507', email: 'jjinnocent78@gmail.com' },
         { photo: Selvakumaran, name: 'MR. SELVAKUMARAN CHANDRASEKARAN', role: 'Director - Member', din: '08355365', email: 'selvas.themechanicalengineer@gmail.com' },
       ]
@@ -714,7 +717,7 @@ function contactSectionHTML() {
           <strong>NAME:</strong> MR. Hari Basker
         </div>
         <div style="margin-bottom:1rem;">
-          <strong>ADDRESS:</strong> Radhakrishnan No 57-59 Durgalal Street Fort Coimbatore - 641001
+          <strong>ADDRESS:</strong> No 57-59 Durgalal Street Fort Coimbatore - 641001
         </div>
         <div style="margin-bottom:1rem;">
           <strong>Phone No:</strong>  90476 39395
@@ -736,6 +739,10 @@ function moaSectionHTML() {
     {
       name: 'Certificate of incorporation - Pvt Ltd',
       file: 'pdf/5. Material Documents and Contracts/Material Documents/Certification Of Incorporation/Certificate of incorporation - Pvt Ltd.pdf'
+    },
+    {
+      name: 'Form -Z Registration certificate',
+      file: 'pdf/5. Material Documents and Contracts/Material Documents/Certification Of Incorporation/Form -Z Registration certificate.pdf'
     },
   ];
   const moaDocs2 = [
