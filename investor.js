@@ -705,7 +705,7 @@ function contactSectionHTML() {
     <article class="ir-group-card" style="margin-top:1.5rem;">
       <header class="ir-group-header" style="cursor:default;">
         <div>
-          <h3>Investor complaints Redressal</h3>
+          <h3>Grievances Redressal Officer</h3>
         </div>
       </header>
 
