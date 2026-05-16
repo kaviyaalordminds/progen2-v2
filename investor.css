@@ -926,7 +926,6 @@ nav {
 }
 
 @media (min-width: 1024px) {
-    .ir-grid { grid-template-columns: 2fr 1fr; }
     .ir-people-grid { grid-template-columns: repeat(3, 1fr); }
     .ir-container { padding: 0 2rem; }
     .ir-hero-title { font-size: 3rem; }

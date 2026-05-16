@@ -141,8 +141,8 @@
 /* ── Remove old iconnav-section top padding if it existed ── */
 .ir-iconnav-section { display: none !important; }
 
-/* ── Responsive: collapse left nav on small screens ── */
-@media (max-width: 900px) {
+/* ── Responsive: collapse left nav on small screens & tablets ── */
+@media (max-width: 1024px) {
   .ir-page-body {
     flex-direction: column;
   }

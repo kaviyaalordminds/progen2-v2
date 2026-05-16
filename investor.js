@@ -46,7 +46,7 @@ const SIDEBAR_CATEGORIES = [
   { id: 'esop', label: 'ESOP', short: 'ESOP' },
   // { id: 'credit', label: 'Credit Rating', short: 'Credit' },
   { id: 'rta', label: 'Registrar and Share Transfer Agent', short: 'RTA' },
-  { id: 'investorcontact', label: 'Investor Complants Redressal', short: 'Investor Complants Redressal' },
+  { id: 'investorcontact', label: 'Investor Complaint Redressal System', short: 'Investor Complaint Redressal System' },
   // { id: 'annual', label: 'Annual Report', short: 'Annual Report' },
   { id: 'disclosure', label: 'Disclosure - Annual Return', short: 'Disclosure' },
   { id: 'moa', label: 'Material Documents & Contracts', short: 'Material Documents & Contracts' },
