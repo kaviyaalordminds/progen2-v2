@@ -213,13 +213,6 @@ nav {
     overflow: visible;
 }
 
-/* .nav-logo {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-} */
-
 .nav-logo {
     display: flex;
     align-items: center;

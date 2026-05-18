@@ -46,7 +46,7 @@ const SIDEBAR_CATEGORIES = [
   { id: 'esop', label: 'ESOP', short: 'ESOP' },
   { id: 'credit', label: 'Credit Rating', short: 'Credit' },
   { id: 'rta', label: 'Registrar and Share Transfer Agent', short: 'RTA' },
-  { id: 'investorcontact', label: 'Investor Compliant Redressal', short: 'Investor Compliant Redressal' },
+  { id: 'investorcontact', label: 'Investor Complaints Redressal', short: 'Investor Complaints Redressal' },
   // { id: 'annual', label: 'Annual Report', short: 'Annual Report' },
   { id: 'disclosure', label: 'Disclosure - Annual Return', short: 'Disclosure' },
   { id: 'moa', label: 'Material Documents & Contracts', short: 'Material Documents & Contracts' },
@@ -101,7 +101,7 @@ const COMMITTEES = [
     ]
   },
   {
-    title: 'Stakeholders Relationship Committee', members: [
+    title: 'Stakeholder\'s Relationship Committee', members: [
       { photo: director4, name: 'Mr. Harshil Vadodariya', role: 'Non-Executive Independent Director - Chairperson', din: '07827003' },
       { photo: director5, name: 'Mr. Vivek Nathwani', role: 'Non-Executive Independent Director - Member', din: '09791653' },
       { photo: director3, name: 'Ms. Priya Bansal', role: 'Non-Executive Non-Independent Director - Member', din: '07788611' },
@@ -305,17 +305,17 @@ function personCardHTML(p) {
 function boardSectionHTML() {
   const profiles = [
     { name: 'Profile - MR. Alfred Vinod Antony', file: 'pdf/1- Board Of Directors Key Personn/KMP/Profile - MR.Alfred Vinod Antony.pdf' },
-    { name: 'Profile - Mrs. Veena Jose', file: 'pdf/1- Board Of Directors Key Personn/KMP/Profile - Mrs.Veena Jose.pdf' },
+    { name: 'Profile - MRS. Veena Jose', file: 'pdf/1- Board Of Directors Key Personn/KMP/Profile - Mrs.Veena Jose.pdf' },
     { name: 'Profile - MR. J J Innocent', file: 'pdf/1- Board Of Directors Key Personn/KMP/Profile - MR.J J Innocent.pdf' },
     { name: 'Profile - MR. Karthik', file: 'pdf/1- Board Of Directors Key Personn/KMP/Profile - MR. Karthik.pdf' },
     { name: 'Profile - MR. Hari Basker R', file: 'pdf/1- Board Of Directors Key Personn/KMP/Profile - MR.Hari Basker R.pdf' },
   ];
   const appointments = [
-    { name: 'A. Karthi - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/SMP- Appointment -1/1. A Karthi - Appointment.pdf' },
-    { name: 'A.K. Anand - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/SMP- Appointment -1/2. A K Anand - Appointment.pdf' },
-    { name: 'Sundararajan A - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/SMP- Appointment -1/4. Sundararajan - Appointment.pdf' },
-    { name: 'R. Manju - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/SMP- Appointment -1/5.Manju - Appointment.pdf' },
-    { name: 'Justin A. Vadakkethala - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/SMP- Appointment -1/6. Mr. Justin - Appointment letter.pdf' },
+    { name: 'MR. A. Karthi - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/SMP- Appointment -1/1. A Karthi - Appointment.pdf' },
+    { name: 'MR. A.K. Anand - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/SMP- Appointment -1/2. A K Anand - Appointment.pdf' },
+    { name: 'MR. Sundararajan A - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/SMP- Appointment -1/4. Sundararajan - Appointment.pdf' },
+    { name: 'MRS. R. Manju - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/SMP- Appointment -1/5.Manju - Appointment.pdf' },
+    { name: 'MR. Justin A. Vadakkethala - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/SMP- Appointment -1/6. MR. Justin - Appointment letter.pdf' },
   ];
 
   const docList = (docs) => docs.map(d => `
@@ -369,7 +369,7 @@ function committeesSectionHTML() {
   ];
   const COMMITTEES = [
     {
-      title: 'Stakeholder committee',
+      title: 'Stakeholder\'s Committees',
       members: [
         { photo: Innocent, name: 'MR. INNOCENT JUDEJOSEPH ANTONYJOSEPH', role: 'Non-Executive Independent Director - Chairman', din: '10896507', email: 'jjinnocent78@gmail.com' },
         { photo: Alfred, name: 'MR. ALFRED VINOD ANTONY', role: 'Managing Director - Member', din: '02776734', email: 'alfred@progenrenewables.com' },
@@ -377,7 +377,7 @@ function committeesSectionHTML() {
       ]
     },
     {
-      title: 'IPO Committee',
+      title: 'IPO Committees',
       members: [
         { photo: Alfred, name: 'MR. ALFRED VINOD ANTONY', role: 'Managing Director - Chairman', din: '02776734', email: 'alfred@progenrenewables.com' },
         { photo: Veena, name: 'MRS. VEENA JOSE', role: 'CFO - Chief Financial Officer and Whole Time Director - Member', din: '08017313', email: 'veena@progenrenewables.com' },
@@ -385,7 +385,7 @@ function committeesSectionHTML() {
       ]
     },
     {
-      title: 'Audit Committee',
+      title: 'Audit Committees',
       members: [
         { photo: Innocent, name: 'MR. INNOCENT JUDEJOSEPH ANTONYJOSEPH', role: 'Non-Executive Independent Director - Chairman', din: '10896507', email: 'jjinnocent78@gmail.com' },
         { photo: Karthik, name: 'MR. KARTHIK VELUCHAMY KOTTUR', role: 'Non-Executive Independent Director - Member', din: '01973367', email: 'karthik@deccanindustries.com' },
@@ -393,7 +393,7 @@ function committeesSectionHTML() {
       ]
     },
     {
-      title: 'Nomination & Remuneration Committee',
+      title: 'Nomination & Remuneration Committees',
       members: [
         { photo: Hari, name: 'MR. HARI BASKER', role: 'Non-Executive Independent Director - Chairman', din: '11281446', email: 'r.haribhaskaran@gmail.com' },
         { photo: Innocent, name: 'MR. INNOCENT JUDEJOSEPH ANTONYJOSEPH', role: 'Non-Executive Independent Director - Member', din: '10896507', email: 'jjinnocent78@gmail.com' },
@@ -404,11 +404,11 @@ function committeesSectionHTML() {
   const audit_committee_docs = [
     { name: 'Constitution of Audit Committee', file: 'pdf/2. Borad Committees/1.Audit Committee/1. Constitution of Audit Committee.pdf' },
   ];
-  const nomination_renumeration_committee_docs = [
-    { name: 'Nomination & Renumeration Committee', file: 'pdf/2. Borad Committees/2.Nomination & Remuneration Committee/Nomination and Remuneration Committee.pdf' },
+  const nomination_remuneration_committee_docs = [
+    { name: 'Nomination & Remuneration Committee', file: 'pdf/2. Borad Committees/2.Nomination & Remuneration Committee/Nomination and Remuneration Committee.pdf' },
   ];
   const stakeholder_committee_docs = [
-    { name: 'Constitution of Stakeholders Relationship Committee', file: 'pdf/2. Borad Committees/3.StakeHolders Relationship Committee/1. Constitution of stakeholders Relationship Committee.pdf' },
+    { name: 'Constitution of Stakeholder\'s Relationship Committee', file: 'pdf/2. Borad Committees/3.StakeHolders Relationship Committee/1. Constitution of stakeholders Relationship Committee.pdf' },
   ];
   const ipo_committee_docs = [
     { name: 'IPO Committee', file: 'pdf/2. Borad Committees/4.IPO-Committe/IPO - Committee.pdf' },
@@ -421,7 +421,7 @@ function committeesSectionHTML() {
       <span class="ir-doc-download">${ICONS.download}</span>
     </a>
   `).join('');
-  const nomination_renumeration_committee_docList = (nomination_renumeration_committee_docs) => nomination_renumeration_committee_docs.map(d => `
+  const nomination_remuneration_committee_docList = (nomination_remuneration_committee_docs) => nomination_remuneration_committee_docs.map(d => `
     <a class="ir-doc-row" href="${esc(d.file)}" target="_blank" rel="noopener">
       <span class="ir-doc-pdf">${ICONS.pdf}</span>
       <span class="ir-doc-name">${esc(d.name)}</span>
@@ -445,23 +445,23 @@ function committeesSectionHTML() {
 
   return `
     <div class="ir-people-block">
-      <p class="ir-section-label">Board Committees</p>
+      <p class="ir-section-label">Board Committee</p>
       <div class="ir-people-grid">${members.map(personCardHTML).join('')}</div>
     </div>
     <div class="ir-people-block">
-      <p class="ir-section-label">StakeHolder Committees</p>
+      <p class="ir-section-label">Stakeholder's Committee</p>
       <div class="ir-people-grid">${COMMITTEES[0].members.map(personCardHTML).join('')}</div>
     </div>
     <div class="ir-people-block">
-      <p class="ir-section-label">IPO Committees</p>
+      <p class="ir-section-label">IPO Committee</p>
       <div class="ir-people-grid">${COMMITTEES[1].members.map(personCardHTML).join('')}</div>
     </div>
     <div class="ir-people-block">
-      <p class="ir-section-label">Audit Committees</p>
+      <p class="ir-section-label">Audit Committee</p>
       <div class="ir-people-grid">${COMMITTEES[2].members.map(personCardHTML).join('')}</div>
     </div>
     <div class="ir-people-block">
-      <p class="ir-section-label">Nomination & Renumeration Committees</p>
+      <p class="ir-section-label">Nomination & Remuneration Committee</p>
       <div class="ir-people-grid">${COMMITTEES[3].members.map(personCardHTML).join('')}</div>
     </div>
 
@@ -495,13 +495,13 @@ function committeesSectionHTML() {
         <article class="ir-group-card" style="margin:1rem;">
           <header class="ir-group-header" style="cursor:default;">
             <div>
-              <h3>Nomination & Renumeration Committee</h3>
-              <p>${nomination_renumeration_committee_docs.length} documents</p>
+              <h3>Nomination & Remuneration Committee</h3>
+              <p>${nomination_remuneration_committee_docs.length} documents</p>
             </div>
           </header>
 
           <div class="ir-group-body">
-            ${nomination_renumeration_committee_docList(nomination_renumeration_committee_docs)}
+            ${nomination_remuneration_committee_docList(nomination_remuneration_committee_docs)}
           </div>
         </article>
       </div>
@@ -511,7 +511,7 @@ function committeesSectionHTML() {
         <article class="ir-group-card" style="margin:1rem;">
           <header class="ir-group-header" style="cursor:default;">
             <div>
-              <h3>StakeHolders Relationship Committee</h3>
+              <h3>Stakeholder\'s Relationship Committee</h3>
               <p>${stakeholder_committee_docs.length} documents</p>
             </div>
           </header>
@@ -644,19 +644,6 @@ function financialSectionHTML() {
       </header>
 
       <div class="ir-group-body">
-        <!-- 2022-2023 -->
-        <article class="ir-group-card" style="margin:1rem;">
-          <header class="ir-group-header" style="cursor:default;">
-            <div>
-              <h3>2022-2023 Annual Report</h3>
-              <p>${audit2023Docs.length} documents</p>
-            </div>
-          </header>
-          <div class="ir-group-body">
-            ${docList(audit2023Docs)}
-          </div>
-        </article>
-
         <!-- 2023-2024 -->
         <article class="ir-group-card" style="margin:1rem;">
           <header class="ir-group-header" style="cursor:default;">
@@ -667,6 +654,19 @@ function financialSectionHTML() {
           </header>
           <div class="ir-group-body">
             ${docList(audit2024Docs)}
+          </div>
+        </article>
+
+        <!-- 2022-2023 -->
+        <article class="ir-group-card" style="margin:1rem;">
+          <header class="ir-group-header" style="cursor:default;">
+            <div>
+              <h3>2022-2023 Annual Report</h3>
+              <p>${audit2023Docs.length} documents</p>
+            </div>
+          </header>
+          <div class="ir-group-body">
+            ${docList(audit2023Docs)}
           </div>
         </article>
       </div>
@@ -720,10 +720,10 @@ function contactSectionHTML() {
           <strong>ADDRESS:</strong> No 57-59 Durgalal Street Fort Coimbatore - 641001
         </div>
         <div style="margin-bottom:1rem;">
-          <strong>Phone No:</strong>  90476 39395
+          <strong>PHONE NO:</strong>  90476 39395
         </div>
         <div>
-          <strong>Mail ID:</strong>  r.haribhaskaran@gmail.com
+          <strong>MAIL ID:</strong>  r.haribhaskaran@gmail.com
         </div>
       </div>
     </article>
@@ -747,15 +747,15 @@ function moaSectionHTML() {
   ];
   const moaDocs2 = [
     {
-      name: 'Haribaskhar Independent Director Ceritificate',
+      name: 'MR. Hari Basker Independent Director Ceritificate',
       file: 'pdf/5. Material Documents and Contracts/Material Documents/ID Certificate/Haribaskhar Independent Director Ceritificate.pdf'
     },
     {
-      name: 'JJ Innocent Independent Director Ceritificate',
+      name: 'MR. Innocent Independent Director Ceritificate',
       file: 'pdf/5. Material Documents and Contracts/Material Documents/ID Certificate/JJ Innocent Independent Director Ceritificate.pdf'
     },
     {
-      name: 'Karthik Independent Director Ceritificate',
+      name: 'MR. Karthik Independent Director Ceritificate',
       file: 'pdf/5. Material Documents and Contracts/Material Documents/ID Certificate/Karthik Independent Director Ceritificate.pdf'
     },
   ];
@@ -857,18 +857,18 @@ function policiesSectionHTML() {
     { name: 'Nomination-and-Remuneration-Policy', file: 'pdf/3. Policies/Policies/Nomination-and-Remuneration-Policy.pdf' },
   ];
   const mdDocs = [
-    { name: 'Alfred - Appointment', file: 'pdf/3. Policies/Terms of Conditions for appointment of independent directors/1. Appointment of Mananging Director/Alfred -  Appointment.pdf' },
+    { name: 'MR. Alfred Vinod Antony - Appointment', file: 'pdf/3. Policies/Terms of Conditions for appointment of independent directors/1. Appointment of Mananging Director/Alfred -  Appointment.pdf' },
   ];
   const wtdDocs = [
-    { name: 'Veena Jose - Appointment', file: 'pdf/3. Policies/Terms of Conditions for appointment of independent directors/2. Appointment of Whole Time Director/Veena Jose - Appointment  .pdf' },
+    { name: 'MRS. Veena Jose - Appointment', file: 'pdf/3. Policies/Terms of Conditions for appointment of independent directors/2. Appointment of Whole Time Director/Veena Jose - Appointment  .pdf' },
   ];
   const idDocs = [
-    { name: 'Hari Basker - Appointment', file: 'pdf/3. Policies/Terms of Conditions for appointment of independent directors/3. Appointment of Independent Directors/Hari Basker -  Appointment (1).pdf' },
-    { name: 'Innocent - Appointment', file: 'pdf/3. Policies/Terms of Conditions for appointment of independent directors/3. Appointment of Independent Directors/Innocent -  Appointment.pdf' },
-    { name: 'Karthik - Appointment', file: 'pdf/3. Policies/Terms of Conditions for appointment of independent directors/3. Appointment of Independent Directors/Karthik - Appointment.pdf' },
+    { name: 'MR. Hari Basker - Appointment', file: 'pdf/3. Policies/Terms of Conditions for appointment of independent directors/3. Appointment of Independent Directors/Hari Basker -  Appointment (1).pdf' },
+    { name: 'MR. Innocent - Appointment', file: 'pdf/3. Policies/Terms of Conditions for appointment of independent directors/3. Appointment of Independent Directors/Innocent -  Appointment.pdf' },
+    { name: 'MR. Karthik - Appointment', file: 'pdf/3. Policies/Terms of Conditions for appointment of independent directors/3. Appointment of Independent Directors/Karthik - Appointment.pdf' },
   ];
   const directorDocs = [
-    { name: 'Mr. Selvakumaran Appointment Letter', file: 'pdf/3. Policies/Terms of Conditions for appointment of independent directors/Appointment of director/Mr. Selvakumaran Appointment Letter.pdf' },
+    { name: 'MR. Selvakumaran Appointment Letter', file: 'pdf/3. Policies/Terms of Conditions for appointment of independent directors/Appointment of director/MR. Selvakumaran Appointment Letter.pdf' },
   ];
   const kmpDocs = [
     { name: 'Code of Conduct  For Directors', file: 'pdf/3. Policies/Code of Conduct for Kmp/Code of Conduct  For Directors.pdf' },
