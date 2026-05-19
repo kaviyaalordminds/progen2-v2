@@ -104,7 +104,7 @@
         <div class="product-banner-content">
             <div class="product-banner-tag">
                 <span class="product-banner-dot"></span>
-                <span><strong>Our Products</strong></span>
+                <span>Our Products</span>
             </div>
             <h1 class="product-banner-title">Solar Modules</h1>
         </div>
@@ -122,7 +122,7 @@
                             <p>Progen renewables solar modules are made for high efficiency and durability. These modules perform reliably for diverse energy needs. We use top-quality silicon and advanced techniques to create modules. They are monocrystalline, polycrystalline, bifacial, thin-film, and PERC. They suit residential, commercial, industrial, and utility-scale uses.</p>
                         </div>
                            
-                        <div class="labd-solar-abls">
+                        <div class="g">
                            <img src="images/product/solar-panel-module-product.webp" alt="Top Solar Energy Modules at Best Price in Coimbatore" title="Top Solar Energy Modules at Best Price in Coimbatore" width="736" height="520" loading="lazy">
                         </div>
                     <div> 
@@ -234,6 +234,84 @@
         </div>
     </section>
 
+    <section class="cnt-form-call">
+        <div class="container">
+            <div class="cnatct-us-box">
+                <div class="conatct-titlre-us">
+                    <div class="section-title">
+                        <div class="title-highit">
+                            <span class="sec-small-title"> contact us</span>
+                            <span class="hig-light"></span>
+                        </div>
+                        <h3 class="sec-big-title">Contact Us for Solar Panel and Energy Solutions</h3>
+                    </div> 
+                </div>
+
+                <form class="contact-home-page" action="progen-mail-facrtionbw.php" method="post" id="contact-form" autocomplete="off">
+                    <input name="firstname" type="text" id="firstname" class="hide-robot">
+                    <input type="hidden" name="form_time" value="<?= time(); ?>">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-box">
+                                <input type="text" name="namea" placeholder="Name" class="form-control" required="">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-box">
+                                <input type="text" name="hmail" placeholder="Email" class="form-control" required="">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-box">
+                                <input type="text" name="mytbile" placeholder="Phone Number" class="form-control" required="">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-box">
+                                <input type="text" name="locao" placeholder="Location" required="">
+                            </div>
+                        </div>
+                        
+                         <div class="col-md-6">
+                            <div class="form-box">
+                                <select title="Our Services" name="swerviceus" required="">
+                                    <option value="" selected="" disabled="">Our Services</option>
+                                    <option value="Solar EPC service providers on turnkey basis">Solar EPC service providers on turnkey basis </option>
+                                    <option value="Rooftop solar power plants">Rooftop solar power plants </option>
+                                    <option value="Utility scale solar power plants">Utility scale solar power plants </option>
+                                    <option value="Commercial and Industrial solar power plants"> Commercial and Industrial solar power plants</option>
+                                    <option value="Off Grid and Hybrid solar power plants">Off Grid and Hybrid</option>
+                                    <option value="Others">Others</option>    
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="form-box">
+                                <select value="" title="Product" name="prdutsoar" required="">
+                                    <option value="" selected="" disabled="">Products</option>
+                                    <option value="Solar Modules">Solar Modules</option>
+                                    <option value="Solar Inverter">Solar Inverter</option>
+                                    <option value="Energy storage systems">Energy storage systems</option>
+                                    <option value="Solar pumps">Solar pumps</option>
+                                    <option value="Solar streetlights">Solar streetlights</option>
+                                    <option value="Others">Others</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <textarea type="text" rows="5" name="messagevw" placeholder="Message" required=""></textarea>
+                        </div>
+                        <div>
+                            <button class="form-buttton" name="service-button">Send Message<i class="flaticon-down-right"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <section class="faq-section-page">
         <div class="container">
             <div class="soloe-sun-light">
@@ -339,6 +417,30 @@
                 if (window.innerWidth <= 900) {
                     e.preventDefault();
                     link.closest('.nav-dropdown').classList.toggle('active');
+                }
+            });
+        });
+
+        document.querySelectorAll('.accordion-button').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const targetId = btn.getAttribute('data-bs-target');
+                const target = document.querySelector(targetId);
+                const isOpen = !target.classList.contains('collapse') || target.classList.contains('show');
+
+                // Close all
+                document.querySelectorAll('.accordion-collapse').forEach(el => {
+                    el.classList.remove('show');
+                    el.classList.add('collapse');
+                });
+                document.querySelectorAll('.accordion-button').forEach(b => {
+                    b.classList.add('collapsed');
+                    b.setAttribute('aria-expanded', 'false');
+                });
+                if (!isOpen) {
+                    target.classList.add('show');
+                    target.classList.remove('collapse');
+                    btn.classList.remove('collapsed');
+                    btn.setAttribute('aria-expanded', 'true');
                 }
             });
         });

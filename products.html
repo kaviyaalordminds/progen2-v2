@@ -103,7 +103,7 @@
         <div class="product-banner-content">
             <div class="product-banner-tag">
                 <span class="product-banner-dot"></span>
-                <span><strong>Best Solar Products Supplier And Dealers In Coimbatore</strong></span>
+                <span>Best Solar Products Supplier And Dealers In Coimbatore</span>
             </div>
             <h1 class="product-banner-title">Products</h1>
         </div>
@@ -115,7 +115,7 @@
             <div class="product-info-right-inner">
                 <h3>Buy High-Quality Solar Products in Coimbatore</h3>
                 <p class="product-info-desc">
-                    Progen Renewables offers high-efficiency solar panels and energy storage systems that maximize solar power capture and improve performance. Our advanced solar panels are designed to capture more sunlight and generate electricity even in low-light conditions, making them perfect for residential rooftops and large-scale commercial installations. Paired with our energy storage systems, these products provide a reliable power supply during cloudy days or at night by storing excess energy generated during the day. This ensures an uninterrupted and consistent flow of electricity, helping reduce grid dependency and boosting your energy system's overall sustainability.
+                    Progen Renewables offers high-efficiency solar panels and energy storage systems that maximize solar power capture and improve performance. Our advanced solar panels are designed to capture more sunlight and generate electricity even in low-light conditions, making them perfect for residential rooftops and large-scale commercial installations. Paired with our energy storage systems, these products provide a reliable power supply during cloudy days or at night by storing excess energy generated during the day. This ensures an uninterrupted and consistent flow of electricity, helping reduce grid dependency and boosting your energy system's overall sustainability.</br></br>
                     
                     In addition to solar panels and storage solutions, Progen Renewables provides smart inverters, solar pumps, and solar streetlights. Our smart inverters convert the DC electricity produced by solar panels into AC power, which most household appliances require. Equipped with advanced monitoring and diagnostic features, our inverters allow users to track system performance in real time, helping them optimize energy consumption. We also offer off-grid solutions, such as solar pumps for irrigation and solar-powered streetlights, which help reduce energy costs while promoting eco-friendly infrastructure development. Progen Renewables supports the global transition to clean energy by providing these sustainable solutions, offering products that empower users and contribute to a greener future.
                 </p>
@@ -138,6 +138,8 @@
 
         <div class="products-grid-row1">
             <div class="product-card">
+                <div class="card-accent-left"></div>
+                <div class="card-accent-bottom"></div>
                 <div class="product-card-img">
                     <img src="images/product/solar-module-listing.webp" alt="Solar Modules">
                     <div class="product-card-icon">
@@ -158,6 +160,8 @@
             </div>
 
             <div class="product-card">
+                <div class="card-accent-left"></div>
+                <div class="card-accent-bottom"></div>
                 <div class="product-card-img">
                     <img src="images/product/solar-inverter-listing.webp" alt="Solar Inverters">
                     <div class="product-card-icon">
@@ -175,6 +179,8 @@
             </div>
 
             <div class="product-card">
+                <div class="card-accent-left"></div>
+                <div class="card-accent-bottom"></div>
                 <div class="product-card-img">
                     <img src="images/product/solar-power-storage-listing.webp" alt="Energy Storage Systems">
                     <div class="product-card-icon">
@@ -198,6 +204,8 @@
         <!-- Last 2 cards centered separately -->
         <div class="products-grid-row2">
             <div class="product-card">
+                <div class="card-accent-left"></div>
+                <div class="card-accent-bottom"></div>
                 <div class="product-card-img">
                     <img src="images/product/solar-water-pumb-listing.webp" alt="Solar Pumps">
                     <div class="product-card-icon">
@@ -216,6 +224,8 @@
             </div>
 
             <div class="product-card">
+                <div class="card-accent-left"></div>
+                <div class="card-accent-bottom"></div>
                 <div class="product-card-img">
                     <img src="images/product/solar-street-light-listing.webp" alt="Solar Streetlights">
                     <div class="product-card-icon">
@@ -480,9 +490,7 @@
                 }
             });
         });
-    </script>
-
-    <script>
+        
         const faqItems = document.querySelectorAll('.faq-item');
 
         faqItems.forEach(item => {
@@ -495,6 +503,22 @@
                 question.setAttribute('aria-expanded', !expanded);
             });
         });
+
+
+        const reveals = document.querySelectorAll(
+            '.product-info-right-inner, .product-card, .faq-item, .products-grid-header'
+        );
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+
+        reveals.forEach(el => observer.observe(el));
     </script>
 </body>
 </html>

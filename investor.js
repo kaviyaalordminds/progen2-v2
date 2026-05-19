@@ -311,11 +311,11 @@ function boardSectionHTML() {
     { name: 'Profile - MR. Hari Basker R', file: 'pdf/1- Board Of Directors Key Personn/KMP/Profile - MR.Hari Basker R.pdf' },
   ];
   const appointments = [
-    { name: 'MR. A. Karthi - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/SMP- Appointment -1/1. A Karthi - Appointment.pdf' },
-    { name: 'MR. A.K. Anand - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/SMP- Appointment -1/2. A K Anand - Appointment.pdf' },
-    { name: 'MR. Sundararajan A - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/SMP- Appointment -1/4. Sundararajan - Appointment.pdf' },
-    { name: 'MRS. R. Manju - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/SMP- Appointment -1/5.Manju - Appointment.pdf' },
-    { name: 'MR. Justin A. Vadakkethala - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/SMP- Appointment -1/6. MR. Justin - Appointment letter.pdf' },
+    { name: 'MR. A. Karthi - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/Profile - Mr. A. Karthi.pdf' },
+    { name: 'MR. A.K. Anand - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/Profile - Mr. A.K. Anand.pdf' },
+    { name: 'MR. Sundararajan A - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/Profile - Mr. Sundararajan.pdf' },
+    { name: 'MRS. R. Manju - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/Profile - Mrs. Manju.pdf' },
+    { name: 'MR. Justin A. Vadakkethala - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/Profile- Mr. Justin Augustine Vdakkethala.pdf' },
   ];
 
   const docList = (docs) => docs.map(d => `
@@ -855,6 +855,7 @@ function policiesSectionHTML() {
     { name: 'Policy on Identification of Material Creditors and Material Litigations', file: 'pdf/3. Policies/Policies/Policy on Identification of Material Creditors and Material Litigations .pdf' },
     { name: 'Vigil Mechanism Whistle Blower Policy', file: 'pdf/3. Policies/Policies/Vigil Mechanism Whistle Blower Policy.pdf' },
     { name: 'Nomination-and-Remuneration-Policy', file: 'pdf/3. Policies/Policies/Nomination-and-Remuneration-Policy.pdf' },
+    { name: 'Familiarisation Programme for Independent Directors', file: 'pdf/3. Policies/Policies/FAMILIARISATION PROGRAMME FOR INDEPENDENT DIRECTORS_ (1).pdf' },
   ];
   const mdDocs = [
     { name: 'MR. Alfred Vinod Antony - Appointment', file: 'pdf/3. Policies/Terms of Conditions for appointment of independent directors/1. Appointment of Mananging Director/Alfred -  Appointment.pdf' },
@@ -903,7 +904,7 @@ function policiesSectionHTML() {
     <article class="ir-group-card" style="margin-top:1rem;">
       <header class="ir-group-header" style="cursor:default;">
         <div>
-          <h3>Terms of Conditions for Appointment of Independent Directors</h3>
+          <h3>Terms and Conditions of Appointment of Independent Directors</h3>
           <p>3 Folders</p>
         </div>
       </header>
