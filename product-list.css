@@ -1,0 +1,200 @@
+/* =========================
+   GLOBAL
+========================= */
+body{
+    font-family: "Host Grotesk", sans-serif;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container,
+.ir-container{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding:0 20px;
+}
+
+/* =========================
+   ROW & COLUMN
+========================= */
+.row{
+    display:flex;
+    flex-wrap:wrap;
+    margin-left:-15px;
+    margin-right:-15px;
+}
+
+.col-md-6,
+.col-md-8{
+    padding:15px;
+}
+
+.col-md-6{
+    width:50%;
+}
+
+.col-md-8{
+    width:66.666%;
+}
+
+/* =========================
+   SECTION
+========================= */
+section{
+    padding:80px 0;
+}
+
+.section-title{
+    margin-bottom:25px;
+}
+
+/* =========================
+   TITLES
+========================= */
+.sec-big-title{
+    font-size:42px;
+    line-height:1.3;
+    margin-bottom:20px;
+    font-weight:700;
+    color:#111827;
+}
+
+/* =========================
+   TEXT
+========================= */
+.service-pahh-detil p,
+.text-box li,
+.accordion-body{
+    font-size:17px;
+    color:#555;
+    line-height:1.8;
+}
+
+/* =========================
+   IMAGES
+========================= */
+.labd-solar-abls img,
+.img-box img{
+    width:100%;
+    border-radius:20px;
+}
+
+/* =========================
+   CARDS
+========================= */
+.card-solor-panel{
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    height:100%;
+    box-shadow:0 10px 30px rgba(0,0,0,0.06);
+    transition:0.3s;
+}
+
+.card-solor-panel:hover{
+    transform:translateY(-5px);
+}
+
+.snal-cole-tile{
+    font-size:24px;
+    margin-bottom:15px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.snal-cole-tile span{
+    width:45px;
+    height:45px;
+    background:#0ea44b;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    font-size:16px;
+}
+
+/* =========================
+   CHECK LIST
+========================= */
+.check-list{
+    list-style:none;
+    margin-top:20px;
+}
+
+.check-list li{
+    margin-bottom:15px;
+    padding-left:30px;
+    position:relative;
+}
+
+.check-list li::before{
+    content:"✓";
+    position:absolute;
+    left:0;
+    top:0;
+    color:#0ea44b;
+    font-weight:bold;
+}
+
+/* =========================
+   ACCORDION
+========================= */
+.accordion-item{
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+    margin-bottom:20px;
+    overflow:hidden;
+}
+
+.accordion-button{
+    width:100%;
+    background:#fff;
+    border:none;
+    padding:22px;
+    text-align:left;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.accordion-body{
+    padding:0 22px 22px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media(max-width:991px){
+
+    .col-md-6,
+    .col-md-8{
+        width:100%;
+    }
+
+    .sec-big-title{
+        font-size:32px;
+    }
+}
+
+@media(max-width:576px){
+
+    section{
+        padding:60px 0;
+    }
+
+    .sec-big-title{
+        font-size:26px;
+    }
+
+    .card-solor-panel{
+        padding:20px;
+    }
+
+    .accordion-button{
+        font-size:16px;
+    }
+}
