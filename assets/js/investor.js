@@ -2,25 +2,25 @@
 
 // Category icons (PNGs from investorimages folder)
 const ICON_PATHS = {
-  board: 'investorimages/icon1.png',
-  committees: 'investorimages/icon2.png',
-  policies: 'investorimages/icon3.png',
-  financial: 'investorimages/icon4.png',
-  ipo: 'investorimages/icon5.png',
-  announcements: 'investorimages/icon6.png',
-  shareholding: 'investorimages/icon7.png',
-  press: 'investorimages/icon8.png',
-  meetings: 'investorimages/icon9.png',
-  esop: 'investorimages/icon10.png',
-  credit: 'investorimages/icon11.png',
-  rta: 'investorimages/icon12.png',
-  investorcontact: 'investorimages/icon13.png',
-  annual: 'investorimages/icon14.png',
-  disclosure: 'investorimages/icon15.png',
-  moa: 'investorimages/icon16.png',
+  board: 'assets/investorimages/icon1.png',
+  committees: 'assets/investorimages/icon2.png',
+  policies: 'assets/investorimages/icon3.png',
+  financial: 'assets/investorimages/icon4.png',
+  ipo: 'assets/investorimages/icon5.png',
+  announcements: 'assets/investorimages/icon6.png',
+  shareholding: 'assets/investorimages/icon7.png',
+  press: 'assets/investorimages/icon8.png',
+  meetings: 'assets/investorimages/icon9.png',
+  esop: 'assets/investorimages/icon10.png',
+  credit: 'assets/investorimages/icon11.png',
+  rta: 'assets/investorimages/icon12.png',
+  investorcontact: 'assets/investorimages/icon13.png',
+  annual: 'assets/investorimages/icon14.png',
+  disclosure: 'assets/investorimages/icon15.png',
+  moa: 'assets/investorimages/icon16.png',
 };
-const PDF_ICON = 'investorimages/pdficon.png';
-const EXCEL_ICON = 'investorimages/excelicon.png';
+const PDF_ICON = 'assets/investorimages/pdficon.png';
+const EXCEL_ICON = 'assets/investorimages/excelicon.png';
 
 // Helper to render a category icon as <img>
 const catIcon = (id, cls = '') =>
@@ -53,22 +53,22 @@ const SIDEBAR_CATEGORIES = [
 ];
 
 // Director portraits (from investorimages folder)
-const director1 = 'investorimages/Director1.png';
-const director2 = 'investorimages/Director2.png';
-const director3 = 'investorimages/Director3.png';
-const director4 = 'investorimages/Director4.png';
-const director5 = 'investorimages/Directo5.png';
-const director6 = 'investorimages/Director6.png';
-const director7 = 'investorimages/Director7.png';
+const director1 = 'assets/investorimages/Director1.png';
+const director2 = 'assets/investorimages/Director2.png';
+const director3 = 'assets/investorimages/Director3.png';
+const director4 = 'assets/investorimages/Director4.png';
+const director5 = 'assets/investorimages/Directo5.png';
+const director6 = 'assets/investorimages/Director6.png';
+const director7 = 'assets/investorimages/Director7.png';
 
 // Board of Directors and Key Managerial Personnel
-const Alfred = 'investorimages/BOD ENHANCED PHOTOS/1.png';
-const Veena = 'investorimages/BOD ENHANCED PHOTOS/4.png';
-const Innocent = 'investorimages/BOD ENHANCED PHOTOS/6.png';
-const Karthik = 'investorimages/BOD ENHANCED PHOTOS/3.png';
-const Hari = 'investorimages/BOD ENHANCED PHOTOS/5.png';
-const Subhasree = 'investorimages/BOD ENHANCED PHOTOS/7.png';
-const Selvakumaran = 'investorimages/BOD ENHANCED PHOTOS/8.png';
+const Alfred = 'assets/investorimages/BOD ENHANCED PHOTOS/1.png';
+const Veena = 'assets/investorimages/BOD ENHANCED PHOTOS/4.png';
+const Innocent = 'assets/investorimages/BOD ENHANCED PHOTOS/6.png';
+const Karthik = 'assets/investorimages/BOD ENHANCED PHOTOS/3.png';
+const Hari = 'assets/investorimages/BOD ENHANCED PHOTOS/5.png';
+const Subhasree = 'assets/investorimages/BOD ENHANCED PHOTOS/7.png';
+const Selvakumaran = 'assets/investorimages/BOD ENHANCED PHOTOS/8.png';
 
 const BOARD_DIRECTORS = [
   { photo: Alfred, name: 'MR. ALFRED VINOD ANTONY', role: 'MANAGING DIRECTOR', din: '02776734', email: 'alfred@progenrenewables.com' },
@@ -362,10 +362,10 @@ function boardSectionHTML() {
 
 function committeesSectionHTML() {
   const members = [
-    { photo: 'investorimages/BOD ENHANCED PHOTOS/6.png', name: 'MR. INNOCENT JUDEJOSEPH ANTONYJOSEPH', role: 'INDEPENDENT DIRECTOR', din: '10896507', email: 'jjinnocent78@gmail.com' },
-    { photo: 'investorimages/BOD ENHANCED PHOTOS/3.png', name: 'MR. KARTHIK VELUCHAMY KOTTUR', role: 'INDEPENDENT DIRECTOR', din: '01973367', email: 'karthik@deccanindustries.com' },
-    { photo: 'investorimages/BOD ENHANCED PHOTOS/4.png', name: 'MRS. VEENA JOSE', role: 'CFO - CHIEF FINANCIAL OFFICER AND WHOLE TIME DIRECTOR', din: '08017313', email: 'veena@progenrenewables.com' },
-    { photo: 'investorimages/BOD ENHANCED PHOTOS/5.png', name: 'MR. HARI BASKER', role: 'INDEPENDENT DIRECTOR', din: '11281446', email: 'r.haribhaskaran@gmail.com' },
+    { photo: 'assets/investorimages/BOD ENHANCED PHOTOS/6.png', name: 'MR. INNOCENT JUDEJOSEPH ANTONYJOSEPH', role: 'INDEPENDENT DIRECTOR', din: '10896507', email: 'jjinnocent78@gmail.com' },
+    { photo: 'assets/investorimages/BOD ENHANCED PHOTOS/3.png', name: 'MR. KARTHIK VELUCHAMY KOTTUR', role: 'INDEPENDENT DIRECTOR', din: '01973367', email: 'karthik@deccanindustries.com' },
+    { photo: 'assets/investorimages/BOD ENHANCED PHOTOS/4.png', name: 'MRS. VEENA JOSE', role: 'CFO - CHIEF FINANCIAL OFFICER AND WHOLE TIME DIRECTOR', din: '08017313', email: 'veena@progenrenewables.com' },
+    { photo: 'assets/investorimages/BOD ENHANCED PHOTOS/5.png', name: 'MR. HARI BASKER', role: 'INDEPENDENT DIRECTOR', din: '11281446', email: 'r.haribhaskaran@gmail.com' },
   ];
   const COMMITTEES = [
     {
