@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Team Slider
     const teamData = [
         {
-            img: 'investorimages/BOD ENHANCED PHOTOS/1.png',
+            img: 'assets/investorimages/BOD ENHANCED PHOTOS/1.png',
             name: 'Mr. Alfred Vinod Antony',
             location: 'Managing Director',
             din: 'DIN: 02776734',
@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
             bio2: 'His leadership combines deep industry insight with a commitment to delivering high-performance, sustainable solar solutions for clients across India.'
         },
         {
-            img: 'investorimages/BOD ENHANCED PHOTOS/4.png',
+            img: 'assets/investorimages/BOD ENHANCED PHOTOS/4.png',
             name: 'Mrs. Veena Jose',
             location: 'CFO - Chief Financial Officer and Whole Time Director',
             din: 'DIN: 08017313',
@@ -266,7 +266,7 @@ document.addEventListener('DOMContentLoaded', () => {
             bio2: 'Her hands-on approach and disciplined oversight have been instrumental in scaling the organisation while maintaining strong compliance and quality standards.'
         },
         {
-            img: 'investorimages/BOD ENHANCED PHOTOS/6.png',
+            img: 'assets/investorimages/BOD ENHANCED PHOTOS/6.png',
             name: 'Mr. Innocent Judejoseph Antonyjoseph',
             location: 'Independent Director',
             din: 'DIN: 10896507',
@@ -275,7 +275,7 @@ document.addEventListener('DOMContentLoaded', () => {
             bio2: 'His experience across enterprise and infrastructure sectors strengthens the board\'s oversight of growth initiatives and shareholder interests.'
         },
         {
-            img: 'investorimages/BOD ENHANCED PHOTOS/3.png',
+            img: 'assets/investorimages/BOD ENHANCED PHOTOS/3.png',
             name: 'Mr. Karthik Veluchamy Kottur',
             location: 'Independent Director',
             din: 'DIN: 01973367',
@@ -284,7 +284,7 @@ document.addEventListener('DOMContentLoaded', () => {
             bio2: 'As an independent director, he reinforces the board\'s focus on transparency, accountability, and disciplined value creation.'
         },
         {
-            img: 'investorimages/BOD ENHANCED PHOTOS/5.png',
+            img: 'assets/investorimages/BOD ENHANCED PHOTOS/5.png',
             name: 'Mr. Hari Basker',
             location: 'Independent Director',
             din: 'DIN: 11281446',
@@ -293,7 +293,7 @@ document.addEventListener('DOMContentLoaded', () => {
             bio2: 'His independent counsel supports the company\'s commitment to sound governance and sustainable, high-quality solar deployment.'
         },
         {
-            img: 'investorimages/BOD ENHANCED PHOTOS/8.png',
+            img: 'assets/investorimages/BOD ENHANCED PHOTOS/8.png',
             name: 'MR. Selvakumaran Chandrasekaran',
             location: 'Director',
             din: 'DIN: 08355365',
