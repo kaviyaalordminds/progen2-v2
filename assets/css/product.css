@@ -1,3 +1,19 @@
+:root {
+    /* Warm theme — matches about page palette */
+    --emerald-50:#fff4ec;  --emerald-100:#ffe4d1; --emerald-200:#ffc8a3;
+    --emerald-300:#ffa674; --emerald-400:#f47a3c; --emerald-500:#e8511a;
+    --emerald-600:#d44a15; --emerald-700:#b03a0e; --emerald-800:#8a2c08;
+    --emerald-900:#5a1d05;
+    --teal-500:#c0392b;    --teal-600:#a82e22;  --teal-800:#7a1d15;
+    --slate-50:#fefbf4;    --slate-100:#fefbf4; --slate-200:#ece2d4;
+    --slate-300:#d4c4ad;   --slate-400:#a89878; --slate-500:#7a6a55;
+    --slate-600:#5a4a3a;   --slate-700:#3d2f23; --slate-800:#2a1f15;
+    --slate-900:#241910;
+    --rose-50:#fff4ec;     --rose-200:#ffd6b8; --rose-300:#f4a574; --rose-500:#e8511a;
+    --fg: #241910;
+    --bg: #fefbf4;
+}
+
 .product-banner {
     position: relative;
     width: 100%;
@@ -461,7 +477,7 @@
     padding: 1.5px;
     background: linear-gradient(135deg, #e8511a 0%, #f7a07a 40%, #e8511a 100%);
     background-size: 300% 300%;
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    /* -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); */
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     opacity: 0;
@@ -593,7 +609,7 @@
     padding: 1.5px;
     background: linear-gradient(135deg, #99e81a 0%, #dcf77a 40%, #c2e81a 100%);
     background-size: 300% 300%;
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    /* -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); */
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     opacity: 0;
@@ -626,6 +642,7 @@
     color: #fff;
     margin-bottom: 3rem;
     line-height: 1.35;
+    text-align: center;
 }
 
 .products-faq-list {
@@ -769,6 +786,9 @@
     margin-top: 2.5rem;
     background: #fff;
     border-top: 1px solid var(--slate-200);
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.5;
+    color: var(--slate-700);
 }
 .ir-footer-row {
     display: flex;
@@ -785,11 +805,13 @@
 
 @media (min-width: 640px) {
     .ir-footer-row { flex-direction: row; justify-content: space-between; }
+    .ir-container {
+        padding: 0 1.5rem;
+    }
 }
 
 section{
     position:relative;
-    padding:4rem 0;
 }
 .btn-style-one{
     position:relative;
