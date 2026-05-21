@@ -34,12 +34,6 @@
     padding:0;
 }
 
-body{
-    font-family:"Host Grotesk",sans-serif;
-    background:#f4f4f2;
-    padding:1.5rem;
-}
-
 /* =========================
    ANIMATIONS
 ========================= */
@@ -104,7 +98,7 @@ body{
 /* ========================= MAIN SECTION ========================= */
 .peogen-sole-detil{
     background:#fff;
-    border-radius:16px;
+    font-family:"Host Grotesk",sans-serif;
     padding:2rem;
 }
 .layout{
