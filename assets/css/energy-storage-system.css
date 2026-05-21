@@ -277,12 +277,12 @@
 .curent-bar:hover::after{
     transform:translateX(0);
 }
-.side-bar-ultag li:nth-child(2) .curent-bar{
+.side-bar-ultag li:nth-child(3) .curent-bar{
     color:#e8511a;
     background:rgba(232,81,26,0.04);
 }
 
-.side-bar-ultag li:nth-child(2) .curent-bar::before{
+.side-bar-ultag li:nth-child(3) .curent-bar::before{
     transform:scaleY(1);
 }
 
@@ -317,7 +317,7 @@
 .curent-bar:hover .nav-arrow svg{
     transform:translateX(2px);
 }
-.side-bar-ultag li:nth-child(2) .nav-arrow{
+.side-bar-ultag li:nth-child(3) .nav-arrow{
     background:rgba(232,81,26,0.15);
 }
 .nav-label{
@@ -331,7 +331,7 @@
     position:relative;
     overflow:hidden;
 }
-.side-bar-ultag li:nth-child(2) .nav-bar-track::after{
+.side-bar-ultag li:nth-child(3) .nav-bar-track::after{
     content:'';
     position:absolute;
     top:0;
@@ -764,7 +764,7 @@
 }
 .solar-section{
     padding:4rem 1.5rem;
-    background:linear-gradient(160deg, #141448 0%, #0b1e30 55%, #3f6b9f 100%);
+    background:linear-gradient(160deg, #063a37 0%, #06393b 55%, #2a4059 100%);
     font-family:"Host Grotesk",sans-serif;
     position:relative;
     overflow:hidden;
@@ -1414,7 +1414,7 @@
 /* ---------------- FAQ Section (faq-wrap) ---------------- */
 .faq-wrap{
     padding:3rem 1.5rem 4rem;
-    background:linear-gradient(160deg, #116a4e 0%, #182333 55%, #111a24 100%);
+    background:linear-gradient(160deg, #0d4258 0%, #17263f 55%, #2b3847 100%);
     position:relative;
     overflow:hidden;
     font-family:"Host Grotesk", sans-serif;
