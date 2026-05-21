@@ -311,11 +311,11 @@ function boardSectionHTML() {
     { name: 'Profile - MR. Hari Basker R', file: 'pdf/1- Board Of Directors Key Personn/KMP/Profile - MR.Hari Basker R.pdf' },
   ];
   const appointments = [
-    { name: 'MR. A. Karthi - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/Profile - Mr. A. Karthi.pdf' },
-    { name: 'MR. A.K. Anand - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/Profile - Mr. A.K. Anand.pdf' },
-    { name: 'MR. Sundararajan A - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/Profile - Mr. Sundararajan.pdf' },
-    { name: 'MRS. R. Manju - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/Profile - Mrs. Manju.pdf' },
-    { name: 'MR. Justin A. Vadakkethala - Appointment Letter', file: 'pdf/1- Board Of Directors Key Personn/SMP/Profile- Mr. Justin Augustine Vdakkethala.pdf' },
+    { name: 'Profile - Mr. A. Karthi', file: 'pdf/1- Board Of Directors Key Personn/SMP/Profile - Mr. A. Karthi.pdf' },
+    { name: 'Profile - MR. A.K. Anand', file: 'pdf/1- Board Of Directors Key Personn/SMP/Profile - Mr. A.K. Anand.pdf' },
+    { name: 'Profile - MR. Sundararajan A', file: 'pdf/1- Board Of Directors Key Personn/SMP/Profile - Mr. Sundararajan.pdf' },
+    { name: 'Profile - MRS. R. Manju', file: 'pdf/1- Board Of Directors Key Personn/SMP/Profile - Mrs. Manju.pdf' },
+    { name: 'Profile - MR. Justin A. Vadakkethala', file: 'pdf/1- Board Of Directors Key Personn/SMP/Profile- Mr. Justin Augustine Vdakkethala.pdf' },
   ];
 
   const docList = (docs) => docs.map(d => `
