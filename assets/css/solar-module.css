@@ -101,32 +101,24 @@ body{
     }
 }
 
-/* =========================
-   MAIN SECTION
-========================= */
+/* ========================= MAIN SECTION ========================= */
 .peogen-sole-detil{
     background:#fff;
     border-radius:16px;
     padding:2rem;
 }
-
 .layout{
     display:grid;
     grid-template-columns:1fr 290px;
     gap:2rem;
     align-items:start;
 }
-
-/* =========================
-   LEFT CONTENT
-========================= */
 .im-dec-tion-solar{
     display:flex;
     flex-direction:column;
     gap:1.2rem;
     animation:fadeUp 0.6s cubic-bezier(.22,.61,.36,1) both;
 }
-
 .sec-big-title{
     font-size:clamp(1.2rem,2.5vw,1.7rem);
     font-weight:700;
@@ -134,23 +126,17 @@ body{
     line-height:1.35;
     margin-bottom:0.6rem;
 }
-
 .service-pahh-detil p{
     font-size:0.9rem;
     line-height:1.8;
     color:#666;
 }
-
-/* =========================
-   IMAGE
-========================= */
 .g{
     border-radius:14px;
     overflow:hidden;
     position:relative;
     box-shadow:0 6px 24px rgba(0,0,0,0.08);
 }
-
 .g img{
     width:100%;
     height:260px;
@@ -159,11 +145,9 @@ body{
     border-radius:14px;
     transition:transform 0.5s cubic-bezier(.22,.61,.36,1);
 }
-
 .g:hover img{
     transform:scale(1.04);
 }
-
 .img-overlay{
     position:absolute;
     inset:0;
@@ -175,7 +159,6 @@ body{
     border-radius:14px;
     pointer-events:none;
 }
-
 .img-tag{
     position:absolute;
     bottom:0.9rem;
@@ -192,7 +175,6 @@ body{
     color:#fff;
     letter-spacing:0.04em;
 }
-
 .img-tag svg{
     width:12px;
     height:12px;
@@ -201,10 +183,6 @@ body{
     stroke-width:2.5;
     stroke-linecap:round;
 }
-
-/* =========================
-   SIDEBAR
-========================= */
 .side-bar-detail{
     position:sticky;
     top:20px;
@@ -212,10 +190,6 @@ body{
     flex-direction:column;
     gap:1rem;
 }
-
-/* =========================
-   NAVIGATION LIST
-========================= */
 .side-bar-ultag{
     list-style:none;
     border-radius:14px;
@@ -225,40 +199,29 @@ body{
     box-shadow:0 4px 20px rgba(0,0,0,0.05);
     counter-reset:nav-count;
 }
-
 .side-bar-ultag li{
     position:relative;
     counter-increment:nav-count;
     animation:slideRight 0.5s cubic-bezier(.22,.61,.36,1) both;
 }
-
 .side-bar-ultag li:nth-child(1){
     animation-delay:0.05s;
 }
-
 .side-bar-ultag li:nth-child(2){
     animation-delay:0.12s;
 }
-
 .side-bar-ultag li:nth-child(3){
     animation-delay:0.18s;
 }
-
 .side-bar-ultag li:nth-child(4){
     animation-delay:0.24s;
 }
-
 .side-bar-ultag li:nth-child(5){
     animation-delay:0.30s;
 }
-
 .side-bar-ultag li + li{
     border-top:1px solid rgba(0,0,0,0.06);
 }
-
-/* =========================
-   NAV NUMBER
-========================= */
 .side-bar-ultag li::before{
     content:counter(nav-count,decimal-leading-zero);
     position:absolute;
@@ -274,15 +237,10 @@ body{
     z-index:2;
     transition:opacity 0.25s;
 }
-
 .side-bar-ultag li:hover::before,
 .side-bar-ultag li:first-child::before{
     opacity:1;
 }
-
-/* =========================
-   NAV LINK
-========================= */
 .curent-bar{
     display:flex;
     align-items:center;
@@ -296,7 +254,6 @@ body{
     transition:color 0.25s,background 0.25s;
     overflow:hidden;
 }
-
 .curent-bar::before{
     content:'';
     position:absolute;
@@ -309,7 +266,6 @@ body{
     transform-origin:center;
     transition:transform 0.3s cubic-bezier(.22,.61,.36,1);
 }
-
 .curent-bar::after{
     content:'';
     position:absolute;
@@ -318,19 +274,15 @@ body{
     transform:translateX(-100%);
     transition:transform 0.3s cubic-bezier(.22,.61,.36,1);
 }
-
 .curent-bar:hover{
     color:#e8511a;
 }
-
 .curent-bar:hover::before{
     transform:scaleY(1);
 }
-
 .curent-bar:hover::after{
     transform:translateX(0);
 }
-
 .side-bar-ultag li:first-child .curent-bar{
     color:#e8511a;
     background:rgba(232,81,26,0.04);
@@ -340,9 +292,7 @@ body{
     transform:scaleY(1);
 }
 
-/* =========================
-   ARROW ICON
-========================= */
+/* ========================= ARROW ICON ========================= */
 .nav-arrow{
     width:18px;
     height:18px;
@@ -356,7 +306,6 @@ body{
     position:relative;
     z-index:1;
 }
-
 .nav-arrow svg{
     width:9px;
     height:9px;
@@ -367,36 +316,27 @@ body{
     stroke-linejoin:round;
     transition:transform 0.25s;
 }
-
 .curent-bar:hover .nav-arrow{
     background:rgba(232,81,26,0.15);
     transform:scale(1.1);
 }
-
 .curent-bar:hover .nav-arrow svg{
     transform:translateX(2px);
 }
-
 .side-bar-ultag li:first-child .nav-arrow{
     background:rgba(232,81,26,0.15);
 }
-
 .nav-label{
     position:relative;
     z-index:1;
     flex:1;
 }
-
-/* =========================
-   ACTIVE BAR
-========================= */
 .nav-bar-track{
     height:2px;
     background:#f0f0ee;
     position:relative;
     overflow:hidden;
 }
-
 .side-bar-ultag li:first-child .nav-bar-track::after{
     content:'';
     position:absolute;
@@ -407,9 +347,7 @@ body{
     animation:barGrow 0.8s 0.4s cubic-bezier(.22,.61,.36,1) both;
 }
 
-/* =========================
-   CTA BOX
-========================= */
+/* ========================= CTA BOX ========================= */
 .side-bar-cta-tact{
     position:relative;
     background:linear-gradient(135deg,#182333 0%,#1e2f42 100%);
@@ -419,14 +357,12 @@ body{
     text-align:center;
     animation:fadeUp 0.6s 0.2s cubic-bezier(.22,.61,.36,1) both;
 }
-
 .shape-one,
 .shape-two{
     position:absolute;
     border-radius:50%;
     pointer-events:none;
 }
-
 .shape-one{
     width:90px;
     height:90px;
@@ -434,7 +370,6 @@ body{
     top:-25px;
     right:-20px;
 }
-
 .shape-two{
     width:65px;
     height:65px;
@@ -442,7 +377,6 @@ body{
     bottom:-15px;
     left:-12px;
 }
-
 .cta-contat-tit{
     font-size:0.92rem;
     font-weight:700;
@@ -452,7 +386,6 @@ body{
     position:relative;
     z-index:1;
 }
-
 .conatct-icn{
     position:relative;
     z-index:1;
@@ -460,7 +393,6 @@ body{
     display:flex;
     justify-content:center;
 }
-
 .call-icn{
     display:flex;
     align-items:center;
@@ -472,7 +404,6 @@ body{
     border:1px solid rgba(232,81,26,0.4);
     animation:ring-pulse 2.5s ease-in-out infinite;
 }
-
 .call-icn svg{
     width:18px;
     height:18px;
@@ -482,18 +413,15 @@ body{
     stroke-linecap:round;
     stroke-linejoin:round;
 }
-
 .cont-for-hrlp{
     position:relative;
     z-index:1;
 }
-
 .cont-for-hrlp p{
     font-size:0.76rem;
     color:rgba(255,255,255,0.5);
     margin-bottom:0.25rem;
 }
-
 .cont-for-hrlp a{
     font-size:0.95rem;
     font-weight:700;
@@ -501,18 +429,14 @@ body{
     text-decoration:none;
     transition:color 0.2s;
 }
-
 .cont-for-hrlp a:hover{
     color:#f7a07a;
 }
 
-/* =========================
-   PDF BUTTON
-========================= */
+/* ========================= PDF BUTTON ========================= */
 .browher-dowload{
     animation:fadeUp 0.6s 0.3s cubic-bezier(.22,.61,.36,1) both;
 }
-
 .btn-style-one{
     display:flex;
     align-items:center;
@@ -526,7 +450,6 @@ body{
     position:relative;
     transition:border-color 0.3s,box-shadow 0.3s,transform 0.2s;
 }
-
 .btn-style-one::before{
     content:'';
     position:absolute;
@@ -542,21 +465,19 @@ body{
     transition:opacity 0.3s;
     animation:shimmer 2.5s linear infinite paused;
 }
-
 .btn-style-one:hover{
     border-color:#e8511a;
     box-shadow:0 4px 18px rgba(232,81,26,0.18);
     transform:translateY(-2px);
 }
-
 .btn-style-one:hover::before{
     opacity:1;
     animation-play-state:running;
 }
-
 .btn-pro-cloick{
     display:flex;
     align-items:center;
+    text-align:center;
     gap:0.5rem;
     padding:0.6rem 1rem;
     font-size:0.76rem;
@@ -567,7 +488,6 @@ body{
     position:relative;
     z-index:1;
 }
-
 .pdf-icon{
     width:26px;
     height:26px;
@@ -580,12 +500,10 @@ body{
     transition:background 0.25s,transform 0.25s;
     animation:float 2.5s ease-in-out infinite;
 }
-
 .btn-style-one:hover .pdf-icon{
     background:rgba(232,81,26,0.2);
     transform:scale(1.08) rotate(-4deg);
 }
-
 .pdf-icon svg{
     width:13px;
     height:13px;
@@ -595,7 +513,6 @@ body{
     stroke-linecap:round;
     stroke-linejoin:round;
 }
-
 .dl-arrow{
     width:18px;
     height:18px;
@@ -607,7 +524,6 @@ body{
     margin-left:auto;
     transition:background 0.25s,transform 0.3s;
 }
-
 .dl-arrow svg{
     width:9px;
     height:9px;
@@ -617,42 +533,30 @@ body{
     stroke-linecap:round;
     stroke-linejoin:round;
 }
-
 .btn-style-one:hover .dl-arrow{
     background:rgba(232,81,26,0.2);
     transform:translateY(2px);
 }
-
-/* =========================
-   RESPONSIVE
-========================= */
 @media(max-width:991px){
-
     .layout{
         grid-template-columns:1fr;
     }
-
     .side-bar-detail{
         position:relative;
         top:0;
     }
 }
-
 @media(max-width:576px){
-
     body{
         padding:1rem;
     }
-
     .peogen-sole-detil{
         padding:1.2rem;
     }
-
     .curent-bar{
         padding:0.8rem 0.8rem 0.8rem 2.4rem;
         font-size:0.82rem;
     }
-
     .btn-pro-cloick{
         font-size:0.7rem;
     }
