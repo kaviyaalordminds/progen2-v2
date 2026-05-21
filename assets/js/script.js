@@ -298,8 +298,8 @@ document.addEventListener('DOMContentLoaded', () => {
             location: 'Director',
             din: 'DIN: 08355365',
             email: 'selvas.themechanicalengineer@gmail.com',
-            bio1: '',
-            bio2: ''
+            bio1: 'Selvakumaran Chandrasekaran is a construction and infrastructure professional with 12+ years of experience in project execution, quality management, and renewable energy projects.',
+            bio2: 'With a strong engineering background and hands-on site expertise, he contributes operational and strategic value to infrastructure and sustainable energy initiatives.'
         }
     ];
 

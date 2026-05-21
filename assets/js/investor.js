@@ -314,9 +314,9 @@ function boardSectionHTML() {
   const appointments = [
     { name: 'Profile - Mr. A. Karthi', file: 'pdf/1- Board Of Directors Key Personn/SMP/Profile - Mr. A. Karthi.pdf' },
     { name: 'Profile - MR. A.K. Anand', file: 'pdf/1- Board Of Directors Key Personn/SMP/Profile - Mr. A.K. Anand.pdf' },
-    { name: 'Profile - MR. Sundararajan A', file: 'pdf/1- Board Of Directors Key Personn/SMP/Profile - Mr. Sundararajan.pdf' },
+    { name: 'Profile - MR. A. Sundararajan', file: 'pdf/1- Board Of Directors Key Personn/SMP/Profile - Mr. Sundararajan.pdf' },
     { name: 'Profile - MRS. R. Manju', file: 'pdf/1- Board Of Directors Key Personn/SMP/Profile - Mrs. Manju.pdf' },
-    { name: 'Profile - MR. Justin A. Vadakkethala', file: 'pdf/1- Board Of Directors Key Personn/SMP/Profile- Mr. Justin Augustine Vdakkethala.pdf' },
+    { name: 'Profile - Mr. Justin Augustine Vdakkethala', file: 'pdf/1- Board Of Directors Key Personn/SMP/Profile- Mr. Justin Augustine Vdakkethala.pdf' },
   ];
 
   const docList = (docs) => docs.map(d => `
