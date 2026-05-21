@@ -67,7 +67,7 @@ const Veena = 'assets/investorimages/BOD ENHANCED PHOTOS/4.png';
 const Innocent = 'assets/investorimages/BOD ENHANCED PHOTOS/6.png';
 const Karthik = 'assets/investorimages/BOD ENHANCED PHOTOS/3.png';
 const Hari = 'assets/investorimages/BOD ENHANCED PHOTOS/5.png';
-const Subhasree = 'assets/investorimages/BOD ENHANCED PHOTOS/7.png';
+const Subhasree = 'assets/investorimages/BOD ENHANCED PHOTOS/7.jpeg';
 const Selvakumaran = 'assets/investorimages/BOD ENHANCED PHOTOS/8.png';
 
 const BOARD_DIRECTORS = [
@@ -309,6 +309,7 @@ function boardSectionHTML() {
     { name: 'Profile - MR. J J Innocent', file: 'pdf/1- Board Of Directors Key Personn/KMP/Profile - MR.J J Innocent.pdf' },
     { name: 'Profile - MR. Karthik', file: 'pdf/1- Board Of Directors Key Personn/KMP/Profile - MR. Karthik.pdf' },
     { name: 'Profile - MR. Hari Basker R', file: 'pdf/1- Board Of Directors Key Personn/KMP/Profile - MR.Hari Basker R.pdf' },
+    { name: 'Profile - Mr. Selvakumaran Chandrasekaran', file: 'pdf/1- Board Of Directors Key Personn/KMP/Profile - Mr. Selvakumaran Chandrasekaran.pdf' },
   ];
   const appointments = [
     { name: 'Profile - Mr. A. Karthi', file: 'pdf/1- Board Of Directors Key Personn/SMP/Profile - Mr. A. Karthi.pdf' },
