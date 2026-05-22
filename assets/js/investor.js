@@ -194,6 +194,7 @@ let query = '';
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const pad2 = (n) => String(n).padStart(2, '0');
+const toTitleCase = (str) => str.replace(/\b\w/g, c => c.toUpperCase());
 
 /* ===== Renderers ===== */
 function renderIconNav() {
@@ -243,7 +244,7 @@ function docRowHTML(doc, i) {
       <span class="ir-doc-num">${pad2(i + 1)}</span>
       <span class="ir-doc-pdf">${ICONS.pdf}</span>
       <div class="ir-doc-info">
-        <p class="ir-doc-name">${esc(doc.name)}</p>
+        <p class="ir-doc-name">${esc(toTitleCase(doc.name))}</p>
         <p class="ir-doc-meta">PDF · ${esc(doc.date || 'Available')}</p>
       </div>
       <span class="ir-doc-dl">${ICONS.download}<span>Download</span></span>
@@ -322,7 +323,7 @@ function boardSectionHTML() {
   const docList = (docs) => docs.map(d => `
     <a class="ir-doc-row" href="${esc(d.file)}" target="_blank" rel="noopener">
       <span class="ir-doc-pdf">${ICONS.pdf}</span>
-      <span class="ir-doc-name">${esc(d.name)}</span>
+      <span class="ir-doc-name">${esc(toTitleCase(d.name))}</span>
       <span class="ir-doc-download">${ICONS.download}</span>
     </a>
   `).join('');
@@ -418,28 +419,28 @@ function committeesSectionHTML() {
   const audit_committee_docList = (audit_committee_docs) => audit_committee_docs.map(d => `
     <a class="ir-doc-row" href="${esc(d.file)}" target="_blank" rel="noopener">
       <span class="ir-doc-pdf">${ICONS.pdf}</span>
-      <span class="ir-doc-name">${esc(d.name)}</span>
+      <span class="ir-doc-name">${esc(toTitleCase(d.name))}</span>
       <span class="ir-doc-download">${ICONS.download}</span>
     </a>
   `).join('');
   const nomination_remuneration_committee_docList = (nomination_remuneration_committee_docs) => nomination_remuneration_committee_docs.map(d => `
     <a class="ir-doc-row" href="${esc(d.file)}" target="_blank" rel="noopener">
       <span class="ir-doc-pdf">${ICONS.pdf}</span>
-      <span class="ir-doc-name">${esc(d.name)}</span>
+      <span class="ir-doc-name">${esc(toTitleCase(d.name))}</span>
       <span class="ir-doc-download">${ICONS.download}</span>
     </a>
   `).join('');
   const stakeholder_committee_docList = (stakeholder_committee_docs) => stakeholder_committee_docs.map(d => `
     <a class="ir-doc-row" href="${esc(d.file)}" target="_blank" rel="noopener">
       <span class="ir-doc-pdf">${ICONS.pdf}</span>
-      <span class="ir-doc-name">${esc(d.name)}</span>
+      <span class="ir-doc-name">${esc(toTitleCase(d.name))}</span>
       <span class="ir-doc-download">${ICONS.download}</span>
     </a>
   `).join('');
   const ipo_committee_docList = (ipo_committee_docs) => ipo_committee_docs.map(d => `
     <a class="ir-doc-row" href="${esc(d.file)}" target="_blank" rel="noopener">
       <span class="ir-doc-pdf">${ICONS.pdf}</span>
-      <span class="ir-doc-name">${esc(d.name)}</span>
+      <span class="ir-doc-name">${esc(toTitleCase(d.name))}</span>
       <span class="ir-doc-download">${ICONS.download}</span>
     </a>
   `).join('');
@@ -600,7 +601,7 @@ function financialSectionHTML() {
           ${icon}
         </span>
         <span class="ir-doc-name">
-          ${esc(d.name)}
+          ${esc(toTitleCase(d.name))}
         </span>
       </a>
     `;
@@ -683,7 +684,7 @@ function shareholdingSectionHTML() {
   const docList = (docs) => docs.map(d => `
     <a class="ir-doc-row" href="${esc(d.file)}" target="_blank" rel="noopener">
       <span class="ir-doc-pdf">${ICONS.pdf}</span>
-      <span class="ir-doc-name">${esc(d.name)}</span>
+      <span class="ir-doc-name">${esc(toTitleCase(d.name))}</span>
     </a>
   `).join('');
 
@@ -785,7 +786,7 @@ function moaSectionHTML() {
           ${icon}
         </span>
         <span class="ir-doc-name">
-          ${esc(d.name)}
+          ${esc(toTitleCase(d.name))}
         </span>
       </a>
     `;
@@ -849,14 +850,14 @@ function moaSectionHTML() {
 function policiesSectionHTML() {
   const policiesDocs = [
     { name: 'CSR Policy', file: 'pdf/3. Policies/Policies/CSR Policy.pdf' },
-    { name: 'Policy on Determination of Materiality of Event', file: 'pdf/3. Policies/Policies/Policy for Determination of Materiality of Event - Print.pdf' },
-    { name: 'Policy on Related Party Transactions', file: 'pdf/3. Policies/Policies/Policy On Related Party Transactions  .pdf' },
+    { name: 'Policy On Determination Of Materiality Of Event', file: 'pdf/3. Policies/Policies/Policy for Determination of Materiality of Event - Print.pdf' },
+    { name: 'Policy On Related Party Transactions', file: 'pdf/3. Policies/Policies/Policy On Related Party Transactions  .pdf' },
     { name: 'Risk Management Policy', file: 'pdf/3. Policies/Policies/Risk Management Policy.pdf' },
     { name: 'Anti-Sexual Harassment Policy', file: 'pdf/3. Policies/Policies/Sexual Harassment Policy.pdf' },
-    { name: 'Policy on Identification of Material Creditors and Material Litigations', file: 'pdf/3. Policies/Policies/Policy on Identification of Material Creditors and Material Litigations .pdf' },
+    { name: 'Policy On Identification Of Material Creditors And Material Litigations', file: 'pdf/3. Policies/Policies/Policy on Identification of Material Creditors and Material Litigations .pdf' },
     { name: 'Vigil Mechanism Whistle Blower Policy', file: 'pdf/3. Policies/Policies/Vigil Mechanism Whistle Blower Policy.pdf' },
-    { name: 'Nomination and Remuneration Policy', file: 'pdf/3. Policies/Policies/Nomination-and-Remuneration-Policy.pdf' },
-    { name: 'Familiarisation Programme for Independent Directors', file: 'pdf/3. Policies/Policies/FAMILIARISATION PROGRAMME FOR INDEPENDENT DIRECTORS_ (1).pdf' },
+    { name: 'Nomination And Remuneration Policy', file: 'pdf/3. Policies/Policies/Nomination-and-Remuneration-Policy.pdf' },
+    { name: 'Familiarisation Programme For Independent Directors', file: 'pdf/3. Policies/Policies/FAMILIARISATION PROGRAMME FOR INDEPENDENT DIRECTORS_ (1).pdf' },
   ];
   const mdDocs = [
     { name: 'MR. Alfred Vinod Antony - Appointment', file: 'pdf/3. Policies/Terms of Conditions for appointment of independent directors/1. Appointment of Mananging Director/Alfred -  Appointment.pdf' },
@@ -883,7 +884,7 @@ function policiesSectionHTML() {
   const docList = (docs) => docs.map(d => `
     <a class="ir-doc-row" href="${esc(d.file)}" target="_blank" rel="noopener">
       <span class="ir-doc-pdf">${ICONS.pdf}</span>
-      <span class="ir-doc-name">${esc(d.name)}</span>
+      <span class="ir-doc-name">${esc(toTitleCase(d.name))}</span>
     </a>
   `).join('');
 
