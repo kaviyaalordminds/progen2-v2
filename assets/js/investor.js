@@ -850,12 +850,12 @@ function policiesSectionHTML() {
   const policiesDocs = [
     { name: 'CSR Policy', file: 'pdf/3. Policies/Policies/CSR Policy.pdf' },
     { name: 'Policy On Determination Of Materiality Of Event', file: 'pdf/3. Policies/Policies/Policy for Determination of Materiality of Event - Print.pdf' },
-    { name: 'Policy on Related Party Transactions', file: 'pdf/3. Policies/Policies/Policy On Related Party Transactions  .pdf' },
+    { name: 'Policy On Related Party Transactions', file: 'pdf/3. Policies/Policies/Policy On Related Party Transactions  .pdf' },
     { name: 'Risk Management Policy', file: 'pdf/3. Policies/Policies/Risk Management Policy.pdf' },
     { name: 'Anti-Sexual Harassment Policy', file: 'pdf/3. Policies/Policies/Sexual Harassment Policy.pdf' },
-    { name: 'Policy on Identification of Material Creditors and Material Litigations', file: 'pdf/3. Policies/Policies/Policy on Identification of Material Creditors and Material Litigations .pdf' },
+    { name: 'Policy On Identification Of Material Creditors And Material Litigations', file: 'pdf/3. Policies/Policies/Policy on Identification of Material Creditors and Material Litigations .pdf' },
     { name: 'Vigil Mechanism Whistle Blower Policy', file: 'pdf/3. Policies/Policies/Vigil Mechanism Whistle Blower Policy.pdf' },
-    { name: 'Nomination and Remuneration Policy', file: 'pdf/3. Policies/Policies/Nomination-and-Remuneration-Policy.pdf' },
+    { name: 'Nomination And Remuneration Policy', file: 'pdf/3. Policies/Policies/Nomination-and-Remuneration-Policy.pdf' },
     { name: 'Familiarisation Programme for Independent Directors', file: 'pdf/3. Policies/Policies/FAMILIARISATION PROGRAMME FOR INDEPENDENT DIRECTORS_ (1).pdf' },
   ];
   const mdDocs = [
