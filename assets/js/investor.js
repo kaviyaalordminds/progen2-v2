@@ -194,6 +194,7 @@ let query = '';
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const pad2 = (n) => String(n).padStart(2, '0');
+const toTitleCase = (str) => str.replace(/\b\w/g, c => c.toUpperCase());
 
 /* ===== Renderers ===== */
 function renderIconNav() {
@@ -243,7 +244,7 @@ function docRowHTML(doc, i) {
       <span class="ir-doc-num">${pad2(i + 1)}</span>
       <span class="ir-doc-pdf">${ICONS.pdf}</span>
       <div class="ir-doc-info">
-        <p class="ir-doc-name">${esc(doc.name)}</p>
+        <p class="ir-doc-name">${esc(toTitleCase(doc.name))}</p>
         <p class="ir-doc-meta">PDF · ${esc(doc.date || 'Available')}</p>
       </div>
       <span class="ir-doc-dl">${ICONS.download}<span>Download</span></span>
@@ -322,7 +323,7 @@ function boardSectionHTML() {
   const docList = (docs) => docs.map(d => `
     <a class="ir-doc-row" href="${esc(d.file)}" target="_blank" rel="noopener">
       <span class="ir-doc-pdf">${ICONS.pdf}</span>
-      <span class="ir-doc-name">${esc(d.name)}</span>
+      <span class="ir-doc-name">${esc(toTitleCase(d.name))}</span>
       <span class="ir-doc-download">${ICONS.download}</span>
     </a>
   `).join('');
@@ -418,28 +419,28 @@ function committeesSectionHTML() {
   const audit_committee_docList = (audit_committee_docs) => audit_committee_docs.map(d => `
     <a class="ir-doc-row" href="${esc(d.file)}" target="_blank" rel="noopener">
       <span class="ir-doc-pdf">${ICONS.pdf}</span>
-      <span class="ir-doc-name">${esc(d.name)}</span>
+      <span class="ir-doc-name">${esc(toTitleCase(d.name))}</span>
       <span class="ir-doc-download">${ICONS.download}</span>
     </a>
   `).join('');
   const nomination_remuneration_committee_docList = (nomination_remuneration_committee_docs) => nomination_remuneration_committee_docs.map(d => `
     <a class="ir-doc-row" href="${esc(d.file)}" target="_blank" rel="noopener">
       <span class="ir-doc-pdf">${ICONS.pdf}</span>
-      <span class="ir-doc-name">${esc(d.name)}</span>
+      <span class="ir-doc-name">${esc(toTitleCase(d.name))}</span>
       <span class="ir-doc-download">${ICONS.download}</span>
     </a>
   `).join('');
   const stakeholder_committee_docList = (stakeholder_committee_docs) => stakeholder_committee_docs.map(d => `
     <a class="ir-doc-row" href="${esc(d.file)}" target="_blank" rel="noopener">
       <span class="ir-doc-pdf">${ICONS.pdf}</span>
-      <span class="ir-doc-name">${esc(d.name)}</span>
+      <span class="ir-doc-name">${esc(toTitleCase(d.name))}</span>
       <span class="ir-doc-download">${ICONS.download}</span>
     </a>
   `).join('');
   const ipo_committee_docList = (ipo_committee_docs) => ipo_committee_docs.map(d => `
     <a class="ir-doc-row" href="${esc(d.file)}" target="_blank" rel="noopener">
       <span class="ir-doc-pdf">${ICONS.pdf}</span>
-      <span class="ir-doc-name">${esc(d.name)}</span>
+      <span class="ir-doc-name">${esc(toTitleCase(d.name))}</span>
       <span class="ir-doc-download">${ICONS.download}</span>
     </a>
   `).join('');
@@ -600,7 +601,7 @@ function financialSectionHTML() {
           ${icon}
         </span>
         <span class="ir-doc-name">
-          ${esc(d.name)}
+          ${esc(toTitleCase(d.name))}
         </span>
       </a>
     `;
@@ -683,7 +684,7 @@ function shareholdingSectionHTML() {
   const docList = (docs) => docs.map(d => `
     <a class="ir-doc-row" href="${esc(d.file)}" target="_blank" rel="noopener">
       <span class="ir-doc-pdf">${ICONS.pdf}</span>
-      <span class="ir-doc-name">${esc(d.name)}</span>
+      <span class="ir-doc-name">${esc(toTitleCase(d.name))}</span>
     </a>
   `).join('');
 
@@ -785,7 +786,7 @@ function moaSectionHTML() {
           ${icon}
         </span>
         <span class="ir-doc-name">
-          ${esc(d.name)}
+          ${esc(toTitleCase(d.name))}
         </span>
       </a>
     `;
@@ -883,7 +884,7 @@ function policiesSectionHTML() {
   const docList = (docs) => docs.map(d => `
     <a class="ir-doc-row" href="${esc(d.file)}" target="_blank" rel="noopener">
       <span class="ir-doc-pdf">${ICONS.pdf}</span>
-      <span class="ir-doc-name">${esc(d.name)}</span>
+      <span class="ir-doc-name">${esc(toTitleCase(d.name))}</span>
     </a>
   `).join('');
 
