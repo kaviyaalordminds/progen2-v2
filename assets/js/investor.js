@@ -856,7 +856,7 @@ function policiesSectionHTML() {
     { name: 'Policy On Identification Of Material Creditors And Material Litigations', file: 'pdf/3. Policies/Policies/Policy on Identification of Material Creditors and Material Litigations .pdf' },
     { name: 'Vigil Mechanism Whistle Blower Policy', file: 'pdf/3. Policies/Policies/Vigil Mechanism Whistle Blower Policy.pdf' },
     { name: 'Nomination And Remuneration Policy', file: 'pdf/3. Policies/Policies/Nomination-and-Remuneration-Policy.pdf' },
-    { name: 'Familiarisation Programme for Independent Directors', file: 'pdf/3. Policies/Policies/FAMILIARISATION PROGRAMME FOR INDEPENDENT DIRECTORS_ (1).pdf' },
+    { name: 'Familiarisation Programme For Independent Directors', file: 'pdf/3. Policies/Policies/FAMILIARISATION PROGRAMME FOR INDEPENDENT DIRECTORS_ (1).pdf' },
   ];
   const mdDocs = [
     { name: 'MR. Alfred Vinod Antony - Appointment', file: 'pdf/3. Policies/Terms of Conditions for appointment of independent directors/1. Appointment of Mananging Director/Alfred -  Appointment.pdf' },
