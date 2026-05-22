@@ -148,7 +148,7 @@ const DOCUMENT_GROUPS = {
         { name: 'Code of Conduct', file: 'pdf/Polices and Code of Conduct/Code of Conduct..pdf', date: '—' },
         { name: 'CSR Policy', file: 'pdf/Polices and Code of Conduct/CSR Policy.pdf', date: '—' },
         { name: 'Policy for Determining Material Subsidiaries', file: 'pdf/Polices and Code of Conduct/Policy for Determining Material Subsidiaries..pdf', date: '—' },
-        { name: 'Policy for Determination of Materiality of Event', file: 'pdf/Polices and Code of Conduct/Policy for Determination of materiality of event..pdf', date: '—' },
+        { name: 'Policy on Determination of Materiality of Event', file: 'pdf/Polices and Code of Conduct/Policy for Determination of materiality of event..pdf', date: '—' },
         { name: 'Familiarization Programmes', file: 'pdf/Polices and Code of Conduct/Familiarization Programmes..pdf', date: '—' },
         { name: 'Risk Management Policy', file: 'pdf/Polices and Code of Conduct/Risk Management Policy..pdf', date: '—' },
         { name: 'Vigil Mechanism / Whistle Blower Policy', file: 'pdf/Polices and Code of Conduct/Vigil Machanism - whistle blower policy..pdf', date: '—' },
@@ -315,7 +315,7 @@ function boardSectionHTML() {
     { name: 'Profile - Mr. A. Karthi', file: 'pdf/1- Board Of Directors Key Personn/SMP/Profile - Mr. A. Karthi.pdf' },
     { name: 'Profile - MR. A.K. Anand', file: 'pdf/1- Board Of Directors Key Personn/SMP/Profile - Mr. A.K. Anand.pdf' },
     { name: 'Profile - MR. A. Sundararajan', file: 'pdf/1- Board Of Directors Key Personn/SMP/Profile - Mr. Sundararajan.pdf' },
-    { name: 'Profile - MRS. R. Manju', file: 'pdf/1- Board Of Directors Key Personn/SMP/Profile - Mrs. Manju.pdf' },
+    // { name: 'Profile - MRS. R. Manju', file: 'pdf/1- Board Of Directors Key Personn/SMP/Profile - Mrs. Manju.pdf' },
     { name: 'Profile - Mr. Justin Augustine Vdakkethala', file: 'pdf/1- Board Of Directors Key Personn/SMP/Profile- Mr. Justin Augustine Vdakkethala.pdf' },
   ];
 
@@ -849,13 +849,13 @@ function moaSectionHTML() {
 function policiesSectionHTML() {
   const policiesDocs = [
     { name: 'CSR Policy', file: 'pdf/3. Policies/Policies/CSR Policy.pdf' },
-    { name: 'Policy for Determination of Materiality of Event', file: 'pdf/3. Policies/Policies/Policy for Determination of Materiality of Event - Print.pdf' },
+    { name: 'Policy on Determination of Materiality of Event', file: 'pdf/3. Policies/Policies/Policy for Determination of Materiality of Event - Print.pdf' },
     { name: 'Policy on Related Party Transactions', file: 'pdf/3. Policies/Policies/Policy On Related Party Transactions  .pdf' },
     { name: 'Risk Management Policy', file: 'pdf/3. Policies/Policies/Risk Management Policy.pdf' },
-    { name: 'Sexual Harassment Policy', file: 'pdf/3. Policies/Policies/Sexual Harassment Policy.pdf' },
+    { name: 'Anti-Sexual Harassment Policy', file: 'pdf/3. Policies/Policies/Sexual Harassment Policy.pdf' },
     { name: 'Policy on Identification of Material Creditors and Material Litigations', file: 'pdf/3. Policies/Policies/Policy on Identification of Material Creditors and Material Litigations .pdf' },
     { name: 'Vigil Mechanism Whistle Blower Policy', file: 'pdf/3. Policies/Policies/Vigil Mechanism Whistle Blower Policy.pdf' },
-    { name: 'Nomination-and-Remuneration-Policy', file: 'pdf/3. Policies/Policies/Nomination-and-Remuneration-Policy.pdf' },
+    { name: 'Nomination and Remuneration Policy', file: 'pdf/3. Policies/Policies/Nomination-and-Remuneration-Policy.pdf' },
     { name: 'Familiarisation Programme for Independent Directors', file: 'pdf/3. Policies/Policies/FAMILIARISATION PROGRAMME FOR INDEPENDENT DIRECTORS_ (1).pdf' },
   ];
   const mdDocs = [
