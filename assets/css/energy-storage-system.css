@@ -565,57 +565,57 @@
     margin:0;
     padding:0;
 }
+
 .our-details-solar{
-    background:#fefbf4;
-}
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
+    background-color: #fefbf4;
+    font-family:"Host Grotesk",sans-serif;
 }
 
 .sw{
-    padding:2.5rem 1rem;
+    padding:2rem 1rem;
     font-family:"Host Grotesk",sans-serif;
 }
 
 .sh{
     text-align:center;
-    margin-bottom:2.5rem;
+    margin-bottom:2.2rem;
 }
 
 .st{
-    font-size:clamp(1.4rem,2.8vw,2rem);
+    font-size:clamp(1.3rem,2.5vw,1.8rem);
     font-weight:800;
     color:var(--color-text-primary);
-    margin-bottom:.7rem;
+    margin-bottom:.6rem;
     line-height:1.25;
 }
 
 .sd{
-    font-size:.95rem;
+    font-size:.92rem;
     color:var(--color-text-secondary);
     line-height:1.75;
-    max-width:580px;
+    max-width:560px;
     margin:0 auto;
 }
 
 .wcs-grid{
     display:grid;
     grid-template-columns:repeat(2,minmax(0,1fr));
-    gap:1.4rem;
+    gap:1.2rem;
+    align-items:stretch;
 }
 
 .wcs-card{
     position:relative;
-    background:#fff;
+    background:var(--color-background-primary);
     border-radius:20px;
     border:.5px solid var(--color-border-tertiary);
     overflow:hidden;
     transition:
         transform .35s cubic-bezier(.22,.61,.36,1),
         box-shadow .35s ease;
-    padding:0;
+    height:100%;
+    display:flex;
+    flex-direction:column;
 }
 
 .wcs-card:hover{
@@ -623,63 +623,56 @@
     box-shadow:0 16px 40px rgba(0,0,0,.10);
 }
 
-/* Curved Top Left Flap */
-.wcs-flap{
-    position:absolute;
-    top:0;
-    left:0;
-    width:110px;
-    height:80px;
-    border-radius:0 0 100% 0;
-    z-index:2;
+.wcs-body{
+    padding:1.2rem;
     display:flex;
-    align-items:flex-start;
-    justify-content:flex-start;
-    padding:14px 0 0 16px;
+    flex-direction:column;
+    background-color: #fff;
+    flex:1;
 }
 
-.c1 .wcs-flap{
-    background:#64266a;
-}
-
-.c2 .wcs-flap{
-    background:#24634a;
-}
-
-.c3 .wcs-flap{
-    background:#113768;
-}
-
-.c4 .wcs-flap{
-    background:#342460;
+.wcs-top-row{
+    display:flex;
+    align-items:center;
+    gap:.7rem;
+    margin-bottom:.8rem;
 }
 
 .wcs-num{
-    font-size:2rem;
+    font-size:1.5rem;
     font-weight:900;
-    color:rgba(255,255,255,.9);
     line-height:1;
     letter-spacing:-.04em;
+    flex-shrink:0;
+    color: white;
 }
 
-.wcs-body{
-    padding:1.5rem 1.4rem 1.3rem;
-    padding-top:5.5rem;
-    display:flex;
-    flex-direction:column;
-    gap:.55rem;
+.wcs-num-badge {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
 }
 
-.wcs-icon-row{
-    display:flex;
-    align-items:center;
-    gap:.6rem;
-    margin-bottom:.1rem;
+.c1 .wcs-num-badge { background: linear-gradient(135deg, #a044aa, #5a1a60); }
+.c2 .wcs-num-badge { background: linear-gradient(135deg, #2ecc85, #155c38); }
+.c3 .wcs-num-badge { background: linear-gradient(135deg, #3a8ee6, #0d2f6e); }
+.c4 .wcs-num-badge { background: linear-gradient(135deg, #7c5ce8, #2a1a55); }
+
+.wcs-num {
+    font-size: .78rem;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1;
+    letter-spacing: .02em;
 }
 
 .wcs-icon-wrap{
-    width:40px;
-    height:40px;
+    width:38px;
+    height:38px;
     border-radius:10px;
     display:flex;
     align-items:center;
@@ -687,115 +680,101 @@
     flex-shrink:0;
 }
 
-.c1 .wcs-icon-wrap{
-    background:rgba(100,38,106,.12);
-}
-
-.c2 .wcs-icon-wrap{
-    background:rgba(36,99,74,.12);
-}
-
-.c3 .wcs-icon-wrap{
-    background:rgba(17,55,104,.12);
-}
-
-.c4 .wcs-icon-wrap{
-    background:rgba(52,36,96,.12);
-}
+.c1 .wcs-icon-wrap{background:rgba(100,38,106,.12);}
+.c2 .wcs-icon-wrap{background:rgba(36,99,74,.12);}
+.c3 .wcs-icon-wrap{background:rgba(17,55,104,.12);}
+.c4 .wcs-icon-wrap{background:rgba(52,36,96,.12);}
 
 .wcs-icon-wrap svg{
-    width:20px;
-    height:20px;
+    width:18px;
+    height:18px;
     fill:none;
     stroke-width:1.8;
     stroke-linecap:round;
     stroke-linejoin:round;
 }
 
-.c1 .wcs-icon-wrap svg{
-    stroke:#64266a;
-}
-
-.c2 .wcs-icon-wrap svg{
-    stroke:#24634a;
-}
-
-.c3 .wcs-icon-wrap svg{
-    stroke:#113768;
-}
-
-.c4 .wcs-icon-wrap svg{
-    stroke:#342460;
-}
+.c1 .wcs-icon-wrap svg{stroke:#64266a;}
+.c2 .wcs-icon-wrap svg{stroke:#24634a;}
+.c3 .wcs-icon-wrap svg{stroke:#113768;}
+.c4 .wcs-icon-wrap svg{stroke:#342460;}
 
 .wcs-tag{
-    font-size:9.5px;
+    font-size:10px;
     font-weight:700;
     letter-spacing:.09em;
     text-transform:uppercase;
+    margin-bottom:.5rem;
 }
 
-.c1 .wcs-tag{
-    color:#64266a;
-}
-
-.c2 .wcs-tag{
-    color:#24634a;
-}
-
-.c3 .wcs-tag{
-    color:#113768;
-}
-
-.c4 .wcs-tag{
-    color:#342460;
-}
+.c1 .wcs-tag{color:#64266a;}
+.c2 .wcs-tag{color:#24634a;}
+.c3 .wcs-tag{color:#113768;}
+.c4 .wcs-tag{color:#342460;}
 
 .wcs-card-title{
-    font-size:.97rem;
+    font-size:1rem;
     font-weight:700;
     color:var(--color-text-primary);
-    line-height:1.3;
+    line-height:1.4;
+    margin-bottom:.55rem;
 }
 
 .wcs-card-text{
-    font-size:.82rem;
+    font-size:.84rem;
     color:var(--color-text-secondary);
     line-height:1.75;
+    flex:1;
 }
 
 .wcs-bar{
     height:3px;
     width:0;
     border-radius:99px;
-    margin-top:.8rem;
+    margin-top:1rem;
     transition:width .45s cubic-bezier(.22,.61,.36,1);
 }
 
-.c1 .wcs-bar{
-    background:#64266a;
-}
-
-.c2 .wcs-bar{
-    background:#24634a;
-}
-
-.c3 .wcs-bar{
-    background:#113768;
-}
-
-.c4 .wcs-bar{
-    background:#342460;
-}
+.c1 .wcs-bar{background:#64266a;}
+.c2 .wcs-bar{background:#24634a;}
+.c3 .wcs-bar{background:#113768;}
+.c4 .wcs-bar{background:#342460;}
 
 .wcs-card:hover .wcs-bar{
     width:100%;
 }
 
-@media(max-width:560px){
-
+@media(max-width:768px){
     .wcs-grid{
         grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:560px){
+
+    .sw{
+        padding:1.5rem 1rem;
+    }
+
+    .wcs-body{
+        padding:1rem;
+    }
+
+    .wcs-top-row{
+        gap:.6rem;
+    }
+
+    .wcs-num{
+        font-size:1.3rem;
+    }
+
+    .wcs-card-title{
+        font-size:.92rem;
+    }
+
+    .wcs-card-text{
+        font-size:.8rem;
+        line-height:1.65;
     }
 }
 
