@@ -1,0 +1,434 @@
+/* ============================================================
+   PROGEN SOLAR — ROOFTOP SOLAR PAGE CSS
+   Font: Host Grotesk (already loaded via Google Fonts)
+   Theme: Light — section bg #fefbf4, cards white
+   ============================================================ */
+
+/* ── Shared base ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Host Grotesk', sans-serif;
+  background: #fefbf4;
+  color: #1a1a2e;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -0.75rem;
+}
+
+.col-md-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 0.75rem;
+}
+
+.col-md-8 {
+  flex: 0 0 66.666%;
+  max-width: 66.666%;
+  padding: 0 0.75rem;
+}
+
+/* shared heading */
+.sec-big-title {
+  font-size: clamp(1.35rem, 2.8vw, 2rem);
+  font-weight: 800;
+  color: #1a1a2e;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  margin-bottom: 1.25rem;
+}
+
+
+/* ============================================================
+   1. INTRO SECTION — .peogen-sole-detil
+   ============================================================ */
+.peogen-sole-detil {
+  background: #fefbf4;
+  padding: 5rem 0 3rem;
+}
+
+.service-pahh-detil {
+  margin-bottom: 1.75rem;
+}
+
+.service-pahh-detil p {
+  font-size: 0.97rem;
+  color: #555;
+  line-height: 1.85;
+}
+
+/* image block */
+.labd-solar-abls {
+  border-radius: 18px;
+  overflow: hidden;
+  margin: 2rem 0;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08);
+}
+
+.labd-solar-abls img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 18px;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.labd-solar-abls:hover img {
+  transform: scale(1.02);
+}
+
+
+/* ============================================================
+   2. ADVANTAGES SECTION — .our-details-solar
+   ============================================================ */
+.our-details-solar {
+  background: #fefbf4;
+  padding: 4rem 0;
+}
+
+.soloe-sun-light {
+  margin-bottom: 2.5rem;
+}
+
+.soloe-sun-light .sec-big-title {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 0.75rem;
+}
+
+/* advantage card */
+.card-solor-panel {
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.25rem;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s cubic-bezier(0.22, 0.61, 0.36, 1),
+              box-shadow 0.3s ease;
+}
+
+.card-solor-panel:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.1);
+}
+
+/* top accent bar — cycles through 4 accent colours */
+.card-solor-panel::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  border-radius: 18px 18px 0 0;
+}
+
+.col-md-6:nth-child(1) .card-solor-panel::before { background: linear-gradient(90deg, #e8511a, #f0a060); }
+.col-md-6:nth-child(2) .card-solor-panel::before { background: linear-gradient(90deg, #1d9e75, #3dcc99); }
+.col-md-6:nth-child(3) .card-solor-panel::before { background: linear-gradient(90deg, #378add, #6bb0f0); }
+.col-md-6:nth-child(4) .card-solor-panel::before { background: linear-gradient(90deg, #7c3aed, #c4b5fd); }
+
+.card-body-panel {
+  padding: 1.5rem 1.6rem;
+}
+
+.text-left-tile {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.card-spn-tit {
+  flex: 1;
+}
+
+/* numbered heading */
+.snal-cole-tile {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  line-height: 1.35;
+  margin-bottom: 0.55rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+
+.snal-cole-tile span {
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  opacity: 0.12;
+  color: #1a1a2e;
+  flex-shrink: 0;
+}
+
+.col-md-6:nth-child(1) .snal-cole-tile span { color: #e8511a; opacity: 0.35; }
+.col-md-6:nth-child(2) .snal-cole-tile span { color: #1d9e75; opacity: 0.35; }
+.col-md-6:nth-child(3) .snal-cole-tile span { color: #378add; opacity: 0.35; }
+.col-md-6:nth-child(4) .snal-cole-tile span { color: #7c3aed; opacity: 0.35; }
+
+.card-spn-tit p {
+  font-size: 0.87rem;
+  color: #666;
+  line-height: 1.75;
+  margin: 0;
+}
+
+
+/* ============================================================
+   3. IMAGE + TEXT SECTION — .imgbox-txtbox-solar
+   ============================================================ */
+.imgbox-txtbox-solar {
+  background: #fefbf4;
+  padding: 4rem 0;
+}
+
+.flex-solar-panel .row {
+  align-items: center;
+}
+
+/* image box */
+.imgbox-txtbox-solar .img-box {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.imgbox-txtbox-solar .img-box::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(232,81,26,0.08) 0%, transparent 60%);
+  border-radius: 20px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.imgbox-txtbox-solar .img-box:hover::before {
+  opacity: 1;
+}
+
+.imgbox-txtbox-solar .img-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+  transition: transform 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.imgbox-txtbox-solar .img-box:hover img {
+  transform: scale(1.04);
+}
+
+/* text side */
+.sedtion-conatimer {
+  margin-bottom: 1.5rem;
+}
+
+.sedtion-conatimer p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.85;
+}
+
+/* checklist */
+.text-box {
+  margin-top: 1.25rem;
+}
+
+.check-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.check-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.92rem;
+  color: #333;
+  font-weight: 500;
+  padding: 0.65rem 1rem;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.check-list li:hover {
+  background: #fff8f4;
+  transform: translateX(4px);
+}
+
+.check-list li .my-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(232, 81, 26, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #e8511a;
+  font-size: 13px;
+}
+
+
+/* ============================================================
+   4. FAQ SECTION — .faq-section-page
+   ============================================================ */
+.faq-section-page {
+  background: #fefbf4;
+  padding: 4rem 0 5rem;
+}
+
+.faq-section-page .soloe-sun-light {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.faq-section-page .sec-big-title {
+  text-align: center;
+}
+
+/* accordion wrapper */
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+/* each item */
+.accordion-item {
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  transition: box-shadow 0.25s ease;
+}
+
+.accordion-item:has(.accordion-button:not(.collapsed)) {
+  border-color: rgba(232, 81, 26, 0.25);
+  box-shadow: 0 4px 24px rgba(232, 81, 26, 0.08);
+}
+
+/* button */
+.accordion-header {
+  margin: 0;
+}
+
+.accordion-button {
+  width: 100%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 1.15rem 1.4rem;
+  text-align: left;
+  font-family: 'Host Grotesk', sans-serif;
+  font-size: 0.97rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  line-height: 1.45;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  transition: color 0.2s, background 0.2s;
+}
+
+.accordion-button:hover {
+  background: #fdf5f0;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #e8511a;
+  background: #fdf5f0;
+}
+
+/* chevron icon — pure CSS */
+.accordion-button::after {
+  content: '';
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: transform 0.3s ease;
+}
+
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(180deg);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%23e8511a' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+}
+
+/* panel body */
+.accordion-collapse {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.accordion-collapse.show {
+  max-height: 400px;
+}
+
+.accordion-body {
+  padding: 0 1.4rem 1.25rem;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.8;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  padding-top: 1rem;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 768px) {
+  .col-md-6,
+  .col-md-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .peogen-sole-detil,
+  .our-details-solar,
+  .imgbox-txtbox-solar,
+  .faq-section-page {
+    padding: 3rem 0;
+  }
+
+  .imgbox-txtbox-solar .img-box {
+    margin-bottom: 2rem;
+  }
+}
