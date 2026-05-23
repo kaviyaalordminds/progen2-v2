@@ -1617,7 +1617,7 @@
     display:flex;
     align-items:center;
     gap:14px;
-    flex:1;
+    flex:1; 
 }
 .faq-num{
     font-size:11px;
