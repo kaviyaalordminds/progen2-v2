@@ -233,7 +233,7 @@
     transition:opacity 0.25s;
 }
 .side-bar-ultag li:hover::before,
-.side-bar-ultag li:first-child::before{
+.side-bar-ultag li:nth-child(5)::before{
     opacity:1;
 }
 .curent-bar{
