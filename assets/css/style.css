@@ -5232,11 +5232,12 @@ nav .nav-link {
     background: none !important;
     animation: none !important;
     font-family: "Host Grotesk", sans-serif !important;
-    font-size: clamp(1.75rem, 3.5vw, 2.75rem) !important;
+    font-size: clamp(1.35rem, 2.5vw, 2.55rem) !important;
     font-weight: 700 !important;
     text-align: center !important;
     line-height: 1.2 !important;
     letter-spacing: -0.02em !important;
+    margin-bottom: 15px !important;
 }
 
 /* Contact heading stays white (dark bg) */
