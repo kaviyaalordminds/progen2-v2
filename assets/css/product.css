@@ -277,7 +277,7 @@
 /* ── Products Grid Section ── */
 .products-grid-section {
     position: relative;
-    padding: 5rem 3rem 6rem;
+    padding: 3rem 3rem 6rem;
     background: #fff;
     box-sizing: border-box;
     overflow: hidden;
@@ -312,7 +312,7 @@
     position: relative;
     z-index: 1;
     text-align: center;
-    margin-bottom: 3.5rem;
+    margin-bottom: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
