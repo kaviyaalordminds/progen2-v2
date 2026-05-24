@@ -1373,8 +1373,9 @@
 
 .form-group label{
     font-size:14px;
-    font-weight:700;
-    color:#000;
+    font-weight: 500;
+    color: #3e3535;
+    font-family:"Host Grotesk",sans-serif;
     letter-spacing:.05em;
     text-transform:uppercase;
     display:flex;
