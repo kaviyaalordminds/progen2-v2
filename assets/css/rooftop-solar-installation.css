@@ -789,6 +789,7 @@
     font-size:15px;
     color:var(--color-text-secondary);
     line-height:1.75;
+    font-weight: 300 !important;
 }
 
 /* CARD THEMES */
