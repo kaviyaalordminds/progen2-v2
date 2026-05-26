@@ -634,7 +634,7 @@
     padding:24px 22px 22px;
     position:relative;
     display:flex;
-    flex-direction:column;
+    flex-direction:column; 
     transition:
         transform .35s cubic-bezier(.22,.61,.36,1),
         box-shadow .35s cubic-bezier(.22,.61,.36,1);

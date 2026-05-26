@@ -720,7 +720,7 @@
 
   .s4 .aida-letter-circle { background: #3EADA4; }
   .s4 .aida-icon-circle { border-color: #3EADA4; color: #3EADA4; }
-  .s4 .aida-pill-title { color: #0F6E56; }
+  .s4 .aida-pill-title { color: #0F6E56; } 
 
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(16px); }
