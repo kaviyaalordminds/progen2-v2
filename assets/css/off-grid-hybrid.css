@@ -87,7 +87,7 @@
 }
 
 @keyframes barGrow{
-    from{
+    from{ 
         width:0;
     }
     to{
