@@ -249,7 +249,7 @@
 /* ═══════════════ Certifications Info Section ═══════════════ */
 .certifications-info {
     font-family: "Host Grotesk", sans-serif;
-    background: #fafaf9;
+    background: #fefbf4;
 }
 
 .cert-wrap {
@@ -359,7 +359,7 @@
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: #fefbf4;
+    color: #aeaca7;
     margin: 0 0 1.5rem;
     font-weight: 600;
 }
