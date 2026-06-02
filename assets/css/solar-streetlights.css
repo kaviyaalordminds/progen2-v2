@@ -973,7 +973,7 @@
     grid-template-columns: 1fr 420px;
     gap: 3rem;
     align-items: start;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 .solar-txt {
@@ -1054,7 +1054,7 @@
 .solar-section .card-5 .card-icon svg { stroke: #a78bfa; }
 .solar-section .card-label {
     display: block;
-    font-size: 11px;
+    font-size: 17px;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.08em;
@@ -1066,7 +1066,7 @@
 .solar-section .card-4 .card-label { color: #6bb0f0; }
 .solar-section .card-5 .card-label { color: #c4b5fd; }
 .solar-section .card-text {
-    font-size: 14px;
+    font-size: 16px;
     color: #b8d4ec;
     line-height: 1.6;
     margin: 0;
