@@ -510,6 +510,244 @@
         margin: 0 auto;
     }
 }
+/* ============================================================
+   Certifications Page — Animations & Effects Add-on
+   ============================================================ */
+
+.cert-benefit-item,
+.cert-benefit-icon,
+.cert-details-card,
+.cert-detail-row,
+.pdf-download-card,
+.pdf-download-btn,
+.pdf-icon-wrapper,
+.cert-badge {
+  transition: transform .4s cubic-bezier(.2,.8,.2,1),
+              box-shadow .4s cubic-bezier(.2,.8,.2,1),
+              background .3s ease,
+              border-color .3s ease,
+              color .3s ease;
+}
+
+.certifications-info {
+  position: relative;
+  overflow: hidden;
+}
+.certifications-info::before {
+  content: "";
+  position: absolute;
+  inset: -20% -10% auto auto;
+  width: 520px; height: 520px;
+  background: radial-gradient(circle, rgba(232,81,26,.10), transparent 70%);
+  border-radius: 50%;
+  filter: blur(20px);
+  animation: certFloat 14s ease-in-out infinite alternate;
+  pointer-events: none;
+  z-index: 0;
+}
+.certifications-info::after {
+  content: "";
+  position: absolute;
+  left: -120px; bottom: -120px;
+  width: 360px; height: 360px;
+  background: radial-gradient(circle, rgba(216,90,48,.08), transparent 70%);
+  border-radius: 50%;
+  filter: blur(20px);
+  animation: certFloat 18s ease-in-out infinite alternate-reverse;
+  pointer-events: none;
+  z-index: 0;
+}
+.cert-wrap { position: relative; z-index: 1; }
+
+@keyframes certFloat {
+  0%   { transform: translate(0,0) scale(1); }
+  100% { transform: translate(-40px, 30px) scale(1.15); }
+}
+
+.cert-badge {
+  position: relative;
+  overflow: hidden;
+  animation: badgeFadeIn .8s ease both;
+}
+.cert-badge::after {
+  content: "";
+  position: absolute; top: 0; left: -75%;
+  width: 50%; height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,.7), transparent);
+  transform: skewX(-20deg);
+  animation: badgeShimmer 3.5s ease-in-out infinite;
+}
+@keyframes badgeShimmer {
+  0%   { left: -75%; }
+  60%  { left: 130%; }
+  100% { left: 130%; }
+}
+.cert-badge-dot {
+  animation: dotPulse 1.8s ease-in-out infinite;
+  box-shadow: 0 0 0 0 rgba(216,90,48,.6);
+}
+@keyframes dotPulse {
+  0%,100% { box-shadow: 0 0 0 0   rgba(216,90,48,.6); transform: scale(1); }
+  50%     { box-shadow: 0 0 0 6px rgba(216,90,48,0);  transform: scale(1.15); }
+}
+@keyframes badgeFadeIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- 4. Headline + paragraph entrance ---------- */
+.cert-intro-left h2 { animation: fadeUp .9s .15s ease both; }
+.cert-intro-left p  { animation: fadeUp .9s .30s ease both; }
+.cert-details-card  { animation: fadeUp .9s .35s ease both; }
+.cert-benefits-heading { animation: fadeUp .8s .1s ease both; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.cert-details-card {
+  position: relative;
+}
+.cert-details-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 50px rgba(232,81,26,.12), 0 4px 12px rgba(0,0,0,.06);
+  border-color: #f0a070;
+}
+.cert-detail-row:hover .cert-detail-label { color: #D85A30; }
+.cert-detail-row:hover .cert-detail-val   { transform: translateX(4px); }
+.cert-detail-val { transition: transform .3s ease; }
+.cert-detail-label { transition: color .3s ease; }
+
+.cert-benefit-item {
+  opacity: 0;
+  transform: translateY(24px);
+  position: relative;
+  overflow: hidden;
+}
+.cert-benefit-item.in-view {
+  animation: fadeUp .7s ease forwards;
+}
+.cert-benefit-item:nth-child(1).in-view { animation-delay: .05s; }
+.cert-benefit-item:nth-child(2).in-view { animation-delay: .15s; }
+.cert-benefit-item:nth-child(3).in-view { animation-delay: .25s; }
+.cert-benefit-item:nth-child(4).in-view { animation-delay: .35s; }
+.cert-benefit-item:nth-child(5).in-view { animation-delay: .45s; }
+.cert-benefit-item:nth-child(6).in-view { animation-delay: .55s; }
+
+.cert-benefit-item::before {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(232,81,26,.06), rgba(216,90,48,.02));
+  opacity: 0;
+  transition: opacity .35s ease;
+  pointer-events: none;
+}
+.cert-benefit-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(232,81,26,.12), 0 4px 10px rgba(0,0,0,.05);
+  border-color: #f0a070;
+}
+.cert-benefit-item:hover::before { opacity: 1; }
+
+.cert-benefit-icon {
+  transition: transform .5s cubic-bezier(.2,.8,.2,1),
+              background .3s ease, border-color .3s ease;
+}
+.cert-benefit-item:hover .cert-benefit-icon {
+  transform: rotate(-8deg) scale(1.1);
+  background: #fde2d2;
+  border-color: #D85A30;
+}
+.cert-benefit-text strong { transition: color .3s ease; }
+.cert-benefit-item:hover .cert-benefit-text strong { color: #D85A30; }
+
+.cert-divider {
+  transform-origin: left center;
+  animation: dividerGrow 1s .2s ease both;
+}
+@keyframes dividerGrow {
+  from { transform: scaleX(0); opacity: 0; }
+  to   { transform: scaleX(1); opacity: 1; }
+}
+.pdf-download-section {
+  position: relative;
+  overflow: hidden;
+}
+.pdf-download-section::before {
+  content: "";
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(600px circle at 10% 20%, rgba(232,81,26,.08), transparent 40%),
+    radial-gradient(500px circle at 90% 80%, rgba(59,130,246,.06), transparent 40%);
+  animation: bgShift 12s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+@keyframes bgShift {
+  0%   { transform: translate(0,0); }
+  100% { transform: translate(20px, -20px); }
+}
+
+.pdf-download-card {
+  position: relative;
+  animation: fadeUp 1s ease both;
+}
+.pdf-download-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 50px rgba(0,0,0,.12), 0 6px 14px rgba(232,81,26,.10);
+  border-left-color: #d04413;
+}
+.pdf-download-card::after {
+  content: "";
+  position: absolute; top: 0; left: 0;
+  width: 6px; height: 100%;
+  background: linear-gradient(180deg, #e8511a, #ff8a4c, #e8511a);
+  background-size: 100% 200%;
+  animation: borderFlow 3s linear infinite;
+}
+@keyframes borderFlow {
+  0%   { background-position: 0 0; }
+  100% { background-position: 0 200%; }
+}
+
+.pdf-icon-wrapper {
+  animation: floatY 4s ease-in-out infinite;
+}
+.pdf-download-card:hover .pdf-icon-wrapper {
+  transform: scale(1.06) rotate(-3deg);
+  box-shadow: 0 10px 28px rgba(232,81,26,.18);
+  border-color: #f0a070;
+}
+@keyframes floatY {
+  0%,100% { transform: translateY(0); }
+  50%     { transform: translateY(-6px); }
+}
+
+.pdf-download-btn {
+  position: relative;
+  overflow: hidden;
+}
+.pdf-download-btn::before {
+  content: "";
+  position: absolute; top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,.35), transparent);
+  transition: left .6s ease;
+}
+.pdf-download-btn:hover::before { left: 100%; }
+.pdf-download-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 28px rgba(232,81,26,.45);
+}
+.pdf-download-btn:active { transform: translateY(0) scale(.98); }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+  }
+  .cert-benefit-item { opacity: 1; transform: none; }
+}
 
 /* ═══════════════ ESG Info Section ═══════════════ */
 .esg-info {
