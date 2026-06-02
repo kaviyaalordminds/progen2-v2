@@ -3,7 +3,7 @@
     const items = document.querySelectorAll('.cert-benefit-item');
     if (!('IntersectionObserver' in window)) {
       items.forEach(el => el.classList.add('in-view'));
-      return;
+      return; 
     }
     const io = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
