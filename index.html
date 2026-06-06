@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -67,7 +67,7 @@
                     </div>
                 </div>
             </div>
-            <a href="contact.html" class="nav-cta">Contact Us ⚡</a>
+            <a href="contact.html" class="nav-cta">Contact Us ?</a>
             <button class="nav-hamburger" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
@@ -1269,7 +1269,7 @@
                     <span class="features-divider-line"></span>
                 </div>
             <h2 class="industries-heading">Solar Energy Applications In Diverse Sectors</h2>
-            <p class="industries-desc">Powering progress across every sector — from rooftops and farmlands to factories,
+            <p class="industries-desc">Powering progress across every sector � from rooftops and farmlands to factories,
                 campuses, and beyond with reliable solar solutions.</p>
         </div>
 
@@ -1412,7 +1412,7 @@
                     <div class="footer-logo">
                         <img src="assets/images/logo.svg" alt="Progen Logo" class="footer-logo-img">
                     </div>
-                    <p class="footer-brand-desc">Progen Solar delivers cutting-edge solar energy solutions — powering
+                    <p class="footer-brand-desc">Progen Solar delivers cutting-edge solar energy solutions � powering
                         homes, businesses, and industries with clean, sustainable energy.</p>
                 </div>
 
@@ -1572,8 +1572,14 @@
         document.querySelectorAll('.nav-dropdown > .nav-link').forEach(link => {
             link.addEventListener('click', e => {
                 if (window.innerWidth <= 900) {
-                    e.preventDefault();
-                    link.closest('.nav-dropdown').classList.toggle('active');
+                    const dropdown = link.closest('.nav-dropdown');
+                    if (!dropdown.classList.contains('active')) {
+                        e.preventDefault();
+                        dropdown.classList.add('active');
+                    } else {
+                        e.preventDefault();
+                        window.location.href = link.href;
+                    }
                 }
             });
         });
@@ -1608,3 +1614,4 @@
     </script>
 </body>
 </html>
+

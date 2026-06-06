@@ -1571,9 +1571,7 @@
     transform:translateX(3px);
 }
 
-@media(max-width:900px){
-
-    .main-card{
+@media (max-width: 1024px) { .main-card{
         grid-template-columns:1fr;
     }
 
@@ -1883,3 +1881,4 @@
     .check-list li { padding: 0.65rem 0.85rem; font-size: 0.9rem; }
     .side-bar-cta-tact { padding: 1.3rem 1.1rem; }
 }
+

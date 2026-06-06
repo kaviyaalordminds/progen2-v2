@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -71,7 +71,7 @@
                     </div>
                 </div>
             </div>
-            <a href="contact.html" class="nav-cta">Contact Us ⚡</a>
+            <a href="contact.html" class="nav-cta">Contact Us ?</a>
             <button class="nav-hamburger" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
@@ -137,7 +137,7 @@
                 <p class="about-banner-team-text">Team of passionate<br>professionals</p>
             </div>
             <div class="about-banner-coords">
-                <span>11.0168Â° N, 76.9558Â° E</span>
+                <span>11.0168° N, 76.9558° E</span>
             </div>
         </div>
     </section>
@@ -461,8 +461,14 @@
         document.querySelectorAll('.nav-dropdown > .nav-link').forEach(link => {
             link.addEventListener('click', e => {
                 if (window.innerWidth <= 900) {
-                    e.preventDefault();
-                    link.closest('.nav-dropdown').classList.toggle('active');
+                    const dropdown = link.closest('.nav-dropdown');
+                    if (!dropdown.classList.contains('active')) {
+                        e.preventDefault();
+                        dropdown.classList.add('active');
+                    } else {
+                        e.preventDefault();
+                        window.location.href = link.href;
+                    }
                 }
             });
         });
@@ -487,3 +493,4 @@
     </script>
 </body>
 </html>
+

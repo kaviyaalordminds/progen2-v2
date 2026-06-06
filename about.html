@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -73,7 +73,7 @@
                     </div>
                 </div>
             </div>
-            <a href="contact.html" class="nav-cta">Contact Us ⚡</a>
+            <a href="contact.html" class="nav-cta">Contact Us ?</a>
             <button class="nav-hamburger" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
@@ -143,7 +143,7 @@
                 <p class="about-banner-team-text">Team of passionate<br>professionals</p>
             </div>
             <div class="about-banner-coords">
-                <span>11.0168Â° N, 76.9558Â° E</span>
+                <span>11.0168° N, 76.9558° E</span>
             </div>
         </div>
     </section>
@@ -551,8 +551,8 @@
                                 <span class="testimonial-tag">Rooftop</span>
                             </div>
                             <div class="testimonial-stats">
-                                <span>âš¡ 250 kW</span>
-                                <span>â˜… 5.0</span>
+                                <span>⚡ 250 kW</span>
+                                <span>★ 5.0</span>
                             </div>
                         </div>
                     </div>
@@ -576,8 +576,8 @@
                                 <span class="testimonial-tag">Pumps</span>
                             </div>
                             <div class="testimonial-stats">
-                                <span>âš¡ 75 kW</span>
-                                <span>â˜… 4.9</span>
+                                <span>⚡ 75 kW</span>
+                                <span>★ 4.9</span>
                             </div>
                         </div>
                     </div>
@@ -601,8 +601,8 @@
                                 <span class="testimonial-tag">Storage</span>
                             </div>
                             <div class="testimonial-stats">
-                                <span>âš¡ 500 kW</span>
-                                <span>â˜… 5.0</span>
+                                <span>⚡ 500 kW</span>
+                                <span>★ 5.0</span>
                             </div>
                         </div>
                     </div>
@@ -626,8 +626,8 @@
                                 <span class="testimonial-tag">Hybrid</span>
                             </div>
                             <div class="testimonial-stats">
-                                <span>âš¡ 320 kW</span>
-                                <span>â˜… 4.8</span>
+                                <span>⚡ 320 kW</span>
+                                <span>★ 4.8</span>
                             </div>
                         </div>
                     </div>
@@ -829,8 +829,14 @@
         document.querySelectorAll('.nav-dropdown > .nav-link').forEach(link => {
             link.addEventListener('click', e => {
                 if (window.innerWidth <= 900) {
-                    e.preventDefault();
-                    link.closest('.nav-dropdown').classList.toggle('active');
+                    const dropdown = link.closest('.nav-dropdown');
+                    if (!dropdown.classList.contains('active')) {
+                        e.preventDefault();
+                        dropdown.classList.add('active');
+                    } else {
+                        e.preventDefault();
+                        window.location.href = link.href;
+                    }
                 }
             });
         });
@@ -838,7 +844,7 @@
         const videoBtn = document.getElementById('aboutVideoPause');
         const video = document.getElementById('aboutVideo');
 
-        // â”€â”€â”€ Testimonial Stack â”€â”€â”€
+        // ─── Testimonial Stack ───
         (function () {
             const stack = document.getElementById('testimonialsStack');
             if (!stack) return;
@@ -955,3 +961,4 @@
     </script>
 </body>
 </html>
+

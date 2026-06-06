@@ -739,8 +739,14 @@
         document.querySelectorAll('.nav-dropdown > .nav-link').forEach(link => {
             link.addEventListener('click', e => {
                 if (window.innerWidth <= 900) {
-                    e.preventDefault();
-                    link.closest('.nav-dropdown').classList.toggle('active');
+                    const dropdown = link.closest('.nav-dropdown');
+                    if (!dropdown.classList.contains('active')) {
+                        e.preventDefault();
+                        dropdown.classList.add('active');
+                    } else {
+                        e.preventDefault();
+                        window.location.href = link.href;
+                    }
                 }
             });
         });
@@ -786,3 +792,4 @@
     </script>
 </body>
 </html>
+

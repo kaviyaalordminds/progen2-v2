@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -72,7 +72,7 @@
                     </div>
                 </div>
             </div>
-            <a href="contact.html" class="nav-cta">Contact Us ⚡</a>
+            <a href="contact.html" class="nav-cta">Contact Us ?</a>
             <button class="nav-hamburger" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
@@ -175,7 +175,7 @@
                 <div class="product-card-body">
                     <h4>Solar Modules</h4>
                     <p>Solar modules supplied by Progen are high-efficiency, durable, and eco-friendly. Designed for maximum energy output and perfect for residential, commercial, and industrial use.</p>
-                    <a href="solar-panel-module-supplier.html" class="product-card-link">Explore More <span>→</span></a>
+                    <a href="solar-panel-module-supplier.html" class="product-card-link">Explore More <span>?</span></a>
                 </div>
             </div>
 
@@ -194,7 +194,7 @@
                 <div class="product-card-body">
                     <h4>Solar Inverters</h4>
                     <p>Progen's solar inverters transform DC to AC power with remarkable efficiency. These dependable devices maximize energy from solar panels, ensuring optimal conversion for all uses.</p>
-                    <a href="solar-inverter-distributors-residential.html" class="product-card-link">Explore More <span>→</span></a>
+                    <a href="solar-inverter-distributors-residential.html" class="product-card-link">Explore More <span>?</span></a>
                 </div>
             </div>
 
@@ -216,7 +216,7 @@
                 <div class="product-card-body">
                     <h4>Energy Storage Systems</h4>
                     <p>Progen's energy storage systems store excess energy, ensuring reliable power during peak demand or outages. They improve energy independence and support sustainability.</p>
-                    <a href="solar-energy-storage-system.html" class="product-card-link">Explore More <span>→</span></a>
+                    <a href="solar-energy-storage-system.html" class="product-card-link">Explore More <span>?</span></a>
                 </div>
             </div>
         </div>
@@ -239,7 +239,7 @@
                 <div class="product-card-body">
                     <h4>Solar Pumps</h4>
                     <p>Solar-powered versatile Progen pumps harness the sun's energy to move water, serving farmers, ranchers, and factories. Eco-friendly and economical for off-grid locations.</p>
-                    <a href="solar-water-pumps-system-provider.html" class="product-card-link">Explore More <span>→</span></a>
+                    <a href="solar-water-pumps-system-provider.html" class="product-card-link">Explore More <span>?</span></a>
                 </div>
             </div>
 
@@ -260,7 +260,7 @@
                 <div class="product-card-body">
                     <h4>Solar Streetlights</h4>
                     <p>Solar-powered Progen Streetlights illuminate roads, parks, and distant locales with clean energy. These eco-friendly fixtures slash costs and upkeep while delivering dependable light.</p>
-                    <a href="led-solar-street-light-dealers.html" class="product-card-link">Explore More <span>→</span></a>
+                    <a href="led-solar-street-light-dealers.html" class="product-card-link">Explore More <span>?</span></a>
                 </div>
             </div>
         </div>
@@ -307,7 +307,7 @@
                         <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
                     </button>
                     <div class="faq-answer">
-                        <p>On average, energy storage systems, particularly lithium-ion batteries, last between 10–15 years. The lifespan may vary depending on factors like battery type, usage, and maintenance.</p>
+                        <p>On average, energy storage systems, particularly lithium-ion batteries, last between 10�15 years. The lifespan may vary depending on factors like battery type, usage, and maintenance.</p>
                     </div>
                 </div>
 
@@ -333,7 +333,7 @@
                     <div class="footer-logo">
                         <img src="assets/images/logo.svg" alt="Progen Logo" class="footer-logo-img">
                     </div>
-                    <p class="footer-brand-desc">Progen Solar delivers cutting-edge solar energy solutions — powering
+                    <p class="footer-brand-desc">Progen Solar delivers cutting-edge solar energy solutions � powering
                         homes, businesses, and industries with clean, sustainable energy.</p>
                 </div>
 
@@ -505,8 +505,14 @@
         document.querySelectorAll('.nav-dropdown > .nav-link').forEach(link => {
             link.addEventListener('click', e => {
                 if (window.innerWidth <= 900) {
-                    e.preventDefault();
-                    link.closest('.nav-dropdown').classList.toggle('active');
+                    const dropdown = link.closest('.nav-dropdown');
+                    if (!dropdown.classList.contains('active')) {
+                        e.preventDefault();
+                        dropdown.classList.add('active');
+                    } else {
+                        e.preventDefault();
+                        window.location.href = link.href;
+                    }
                 }
             });
         });
@@ -542,3 +548,4 @@
     </script>
 </body>
 </html>
+

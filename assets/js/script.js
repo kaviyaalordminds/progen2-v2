@@ -401,17 +401,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-// Handle mobile dropdown toggle
-document.addEventListener('DOMContentLoaded', () => {
-    const dropdowns = document.querySelectorAll('.nav-dropdown');
-    dropdowns.forEach(dropdown => {
-        const link = dropdown.querySelector('a');
-        if(link) {
-            link.addEventListener('click', (e) => {
-                if(window.innerWidth <= 768) {
-                    dropdown.classList.toggle('active');
-                }
-            });
+
         }
     });
 });
+

@@ -1491,6 +1491,8 @@
     font-size: clamp(0.95rem, 0.95vw, 1.1rem);
     font-weight: 700;
     letter-spacing: 0.5px;
+    text-transform: uppercase;
+    white-space: nowrap;
     transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
 }
 
