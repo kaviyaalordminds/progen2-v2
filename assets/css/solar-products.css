@@ -1,0 +1,191 @@
+/* 
+ * solar-products.css
+ * Styling for the solar energy products page
+ */
+
+.peogen-sole-detil {
+    padding: 80px 0;
+    background-color: #f9fafb;
+}
+
+.im-dec-tion-solar {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.service-pahh-detil p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4b5563;
+    margin-bottom: 24px;
+}
+
+.product-listing-servve {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.title-highit {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.sec-small-title {
+    color: #f0a060;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+}
+
+.sec-big-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 40px;
+    line-height: 1.3;
+}
+
+.product-space {
+    padding: 15px;
+    height: 100%;
+}
+
+.solar-industr {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 30px;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.solar-industr:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-color: #f0a060;
+}
+
+.indust-img-solar {
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    aspect-ratio: 4/3;
+}
+
+.indust-img-solar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.solar-industr:hover .indust-img-solar img {
+    transform: scale(1.05);
+}
+
+.icon-induss {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+.icon-induss img {
+    width: 35px;
+    height: 35px;
+}
+
+.indu-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.indu-title a {
+    color: #111827;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.indu-title a:hover {
+    color: #f0a060;
+}
+
+.solar-industr p {
+    color: #6b7280;
+    line-height: 1.7;
+    flex-grow: 1;
+    margin-bottom: 25px;
+}
+
+.btn-indus {
+    display: inline-flex;
+    align-items: center;
+    color: #f0a060;
+    font-weight: 600;
+    text-decoration: none;
+    transition: gap 0.3s, color 0.3s;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.btn-indus:hover {
+    color: #d98a4a;
+    gap: 12px;
+}
+
+/* FAQ section styling if missing */
+.faq-section-page {
+    padding: 80px 0;
+    background-color: #f9fafb;
+}
+
+.soloe-sun-light {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Specific overrides for layout if Bootstrap isn't fully loaded */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+.col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.justify-content-center {
+    justify-content: center;
+}
+
+@media (max-width: 991px) {
+    .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+@media (max-width: 767px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .sec-big-title {
+        font-size: 2rem;
+    }
+}
