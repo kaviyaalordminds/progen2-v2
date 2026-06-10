@@ -1117,7 +1117,8 @@ function renderAll() {
 
 /* ===== Init ===== */
 document.addEventListener('DOMContentLoaded', () => {
-  $('#year').textContent = new Date().getFullYear();
+  const yearEl = $('#year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
   $('#searchInput').addEventListener('input', (e) => { query = e.target.value; renderGroups(); });
 
   // Collapsible group cards
