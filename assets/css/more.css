@@ -9,6 +9,8 @@
     align-items: center;
     overflow: hidden;
     background: #fefbf4;
+    padding: 6rem 1.5rem 5rem;
+    box-sizing: border-box;
 }
 
 .more-banner::after {
@@ -98,6 +100,7 @@
 }
 
 .more-banner-tag {
+    margin-top:50px;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;

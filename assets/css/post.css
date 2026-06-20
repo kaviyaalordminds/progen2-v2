@@ -1,0 +1,244 @@
+/* ==========================================================================
+   post.css — styles for the single blog post detail page (post.html)
+========================================================================== */
+
+/* Fix: remove underline from the "Contact Us" nav button */
+.nav-cta,
+.nav-cta:hover,
+.nav-cta:focus {
+  text-decoration: none !important;
+}
+
+.post-section,
+.post-section * {
+  font-family: "Host Grotesk", sans-serif;
+}
+
+.post-banner-meta {
+  margin-top: 14px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  letter-spacing: 0.2px;
+}
+
+.post-section {
+  padding: 70px 0 100px;
+  background: #fafafa;
+}
+
+.post-container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.post-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2c8c4b;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+
+.post-back-link svg {
+  width: 16px;
+  height: 16px;
+}
+
+.post-back-link:hover {
+  text-decoration: underline;
+}
+
+.post-article {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid #efefef;
+  animation: postFadeUp 0.5s ease both;
+}
+
+@keyframes postFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.post-hero-image {
+  width: 100%;
+  aspect-ratio: 16 / 8;
+  overflow: hidden;
+  background: #eee;
+}
+
+.post-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.post-hero-image:hover img {
+  transform: scale(1.04);
+}
+
+.post-content {
+  padding: 40px 44px 16px;
+  font-size: 16.5px;
+  line-height: 1.85;
+  color: #3a3a3a;
+}
+
+.post-content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 28px 0 12px;
+  color: #1a1a1a;
+}
+
+.post-content p {
+  margin: 0 0 16px;
+}
+
+.post-content ul {
+  margin: 0 0 16px;
+  padding-left: 22px;
+}
+
+.post-content li {
+  margin-bottom: 8px;
+}
+
+.post-share {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 24px 44px 36px;
+  border-top: 1px solid #f0f0f0;
+  margin-top: 20px;
+}
+
+.post-share span {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #777;
+}
+
+.post-share a {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e2e2e2;
+  color: #555;
+  transition: all 0.2s ease;
+}
+
+.post-share a svg {
+  width: 16px;
+  height: 16px;
+}
+
+.post-share a:hover {
+  background: #2c8c4b;
+  border-color: #2c8c4b;
+  color: #fff;
+}
+
+.post-not-found {
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #efefef;
+  padding: 70px 30px;
+  text-align: center;
+}
+
+.post-not-found h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.post-not-found p {
+  color: #777;
+  margin-bottom: 24px;
+}
+
+/* Related articles */
+.post-related {
+  margin-top: 56px;
+}
+
+.post-related h3 {
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #1a1a1a;
+}
+
+.post-related-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #efefef;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.post-related-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  color: inherit;
+}
+
+.post-related-image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #eee;
+}
+
+.post-related-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post-related-body {
+  padding: 16px 18px 20px;
+}
+
+.post-related-body span {
+  font-size: 12px;
+  color: #999;
+}
+
+.post-related-body h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 6px 0 0;
+  line-height: 1.4;
+  color: #1a1a1a;
+}
+
+@media (max-width: 600px) {
+  .post-content {
+    padding: 28px 22px 8px;
+  }
+  .post-share {
+    padding: 20px 22px 28px;
+  }
+}
