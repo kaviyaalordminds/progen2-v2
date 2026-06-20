@@ -19,19 +19,34 @@
   color: rgba(255, 255, 255, 0.85);
   font-size: 14px;
   letter-spacing: 0.2px;
+  animation: postFadeUp 0.6s ease 0.15s both;
+}
+
+.post-banner .more-banner-title {
+  color: #ffd166;
+  animation: postFadeUp 0.6s ease both;
+}
+
+.more-banner-tag {
+  animation: postFadeUp 0.6s ease both;
 }
 
 .post-section {
   padding: 70px 0 100px;
-  background: #fafafa;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
 }
 
 .post-container {
-  max-width: 860px;
+  max-width: 1080px;
   margin: 0 auto;
   padding: 0 24px;
+  position: relative;
+  z-index: 1;
 }
 
+/* Back link */
 .post-back-link {
   display: inline-flex;
   align-items: center;
@@ -41,24 +56,60 @@
   color: #2c8c4b;
   text-decoration: none;
   margin-bottom: 30px;
+  padding: 8px 16px 8px 10px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: background 0.25s ease, border-color 0.25s ease,
+    transform 0.25s ease, gap 0.25s ease;
+  animation: postFadeUp 0.5s ease both;
 }
 
 .post-back-link svg {
   width: 16px;
   height: 16px;
+  transition: transform 0.25s ease;
 }
 
 .post-back-link:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  background: #fff;
+  border-color: rgba(44, 140, 75, 0.25);
+  box-shadow: 0 6px 16px rgba(44, 140, 75, 0.12);
+  transform: translateX(-2px);
 }
 
+.post-back-link:hover svg {
+  transform: translateX(-4px);
+}
+
+/* Article card */
 .post-article {
   background: #fff;
-  border-radius: 16px;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.07);
   border: 1px solid #efefef;
-  animation: postFadeUp 0.5s ease both;
+  animation: postFadeUp 0.6s ease 0.1s both;
+  position: relative;
+  transition: box-shadow 0.4s ease;
+}
+
+.post-article::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #2c8c4b, #ffd166, #2c8c4b);
+  background-size: 200% auto;
+  animation: postGradientMove 6s linear infinite;
+}
+
+@keyframes postGradientMove {
+  to {
+    background-position: 200% center;
+  }
 }
 
 @keyframes postFadeUp {
@@ -72,40 +123,72 @@
   }
 }
 
+/* Hero image — reduced height + framed style */
 .post-hero-image {
   width: 100%;
+  max-width: 760px;
   aspect-ratio: 16 / 8;
+  max-height: 360px;
   overflow: hidden;
-  background: #eee;
+  background: linear-gradient(135deg, #eef4ee, #e3ebe3);
+  margin: 32px auto 0;
+  border-radius: 14px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+  position: relative;
+}
+
+.post-hero-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.15) 100%);
+  pointer-events: none;
 }
 
 .post-hero-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  color: transparent;
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .post-hero-image:hover img {
-  transform: scale(1.04);
+  transform: scale(1.06);
 }
 
 .post-content {
-  padding: 40px 44px 16px;
-  font-size: 16.5px;
-  line-height: 1.85;
+  padding: 40px 56px 20px;
+  font-size: 18px;
+  line-height: 1.9;
   color: #3a3a3a;
+  animation: postFadeUp 0.6s ease 0.2s both;
 }
 
 .post-content h3 {
-  font-size: 20px;
-  font-weight: 600;
-  margin: 28px 0 12px;
-  color: #1a1a1a;
+  font-size: 23px;
+  font-weight: 700;
+  margin: 32px 0 14px;
+  color: #1b5e3a;
+  position: relative;
+  padding-left: 18px;
+}
+
+.post-content h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  bottom: 4px;
+  width: 4px;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #2c8c4b, #ffd166);
 }
 
 .post-content p {
   margin: 0 0 16px;
+  font-size: 16px !important;
+  transition: color 0.2s ease;
 }
 
 .post-content ul {
@@ -114,16 +197,29 @@
 }
 
 .post-content li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 6px;
+  transition: transform 0.2s ease;
 }
 
+.post-content li::marker {
+  color: #2c8c4b;
+}
+
+.post-content li:hover {
+  transform: translateX(4px);
+}
+
+/* Share row */
 .post-share {
   display: flex;
   align-items: center;
   gap: 14px;
-  padding: 24px 44px 36px;
+  padding: 24px 56px 40px;
   border-top: 1px solid #f0f0f0;
   margin-top: 20px;
+  animation: postFadeUp 0.6s ease 0.3s both;
 }
 
 .post-share span {
@@ -133,15 +229,17 @@
 }
 
 .post-share a {
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #e2e2e2;
   color: #555;
-  transition: all 0.2s ease;
+  transition: background 0.3s ease, border-color 0.3s ease,
+    color 0.3s ease, transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.3s ease;
 }
 
 .post-share a svg {
@@ -153,14 +251,18 @@
   background: #2c8c4b;
   border-color: #2c8c4b;
   color: #fff;
+  transform: translateY(-4px) scale(1.08);
+  box-shadow: 0 10px 18px rgba(44, 140, 75, 0.3);
 }
 
+/* Not found state */
 .post-not-found {
   background: #fff;
   border-radius: 16px;
   border: 1px solid #efefef;
   padding: 70px 30px;
   text-align: center;
+  animation: postFadeUp 0.5s ease both;
 }
 
 .post-not-found h2 {
@@ -173,72 +275,16 @@
   margin-bottom: 24px;
 }
 
-/* Related articles */
-.post-related {
-  margin-top: 56px;
-}
-
-.post-related h3 {
-  font-size: 21px;
-  font-weight: 600;
-  margin-bottom: 24px;
-  color: #1a1a1a;
-}
-
-.post-related-card {
-  display: flex;
-  flex-direction: column;
-  background: #fff;
-  border-radius: 12px;
-  overflow: hidden;
-  border: 1px solid #efefef;
-  text-decoration: none;
-  color: inherit;
-  height: 100%;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.post-related-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
-  color: inherit;
-}
-
-.post-related-image {
-  width: 100%;
-  aspect-ratio: 16 / 10;
-  overflow: hidden;
-  background: #eee;
-}
-
-.post-related-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.post-related-body {
-  padding: 16px 18px 20px;
-}
-
-.post-related-body span {
-  font-size: 12px;
-  color: #999;
-}
-
-.post-related-body h4 {
-  font-size: 15px;
-  font-weight: 600;
-  margin: 6px 0 0;
-  line-height: 1.4;
-  color: #1a1a1a;
-}
-
 @media (max-width: 600px) {
   .post-content {
     padding: 28px 22px 8px;
   }
   .post-share {
     padding: 20px 22px 28px;
+  }
+  .post-hero-image {
+    margin: 22px auto 0;
+    max-height: 240px;
+    border-radius: 10px;
   }
 }

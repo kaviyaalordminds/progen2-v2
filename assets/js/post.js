@@ -13,8 +13,6 @@
   const bannerTitleEl = document.getElementById("postBannerTitle");
   const bannerMetaEl = document.getElementById("postBannerMeta");
   const categoryTagEl = document.getElementById("postCategoryTag");
-  const relatedSectionEl = document.getElementById("postRelated");
-  const relatedGridEl = document.getElementById("postRelatedGrid");
   const pageTitleEl = document.getElementById("postPageTitle");
 
   function formatDate(dateStr) {
@@ -25,35 +23,6 @@
   function getPostIdFromUrl() {
     const params = new URLSearchParams(window.location.search);
     return params.get("id");
-  }
-
-  function renderRelated(post) {
-    const related = BLOG_POSTS.filter(
-      (p) => p.id !== post.id && p.category === post.category
-    ).slice(0, 3);
-
-    if (related.length === 0) {
-      relatedSectionEl.classList.add("d-none");
-      return;
-    }
-
-    relatedGridEl.innerHTML = related
-      .map(
-        (p) => `
-        <div class="col-12 col-md-4">
-          <a href="post.html?id=${encodeURIComponent(p.id)}" class="post-related-card">
-            <div class="post-related-image">
-              <img src="${p.image}" alt="${p.title}" loading="lazy">
-            </div>
-            <div class="post-related-body">
-              <span>${formatDate(p.date)}</span>
-              <h4>${p.title}</h4>
-            </div>
-          </a>
-        </div>
-      `
-      )
-      .join("");
   }
 
   function renderPost(post) {
@@ -85,13 +54,10 @@
         </a>
       </div>
     `;
-
-    renderRelated(post);
   }
 
   function renderNotFound() {
     articleEl.classList.add("d-none");
-    relatedSectionEl.classList.add("d-none");
     notFoundEl.classList.remove("d-none");
     bannerTitleEl.textContent = "Article Not Found";
     bannerMetaEl.textContent = "";
