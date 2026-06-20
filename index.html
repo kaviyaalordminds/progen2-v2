@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -67,7 +67,7 @@
                     </div>
                 </div>
             </div>
-            <a href="contact.html" class="nav-cta">Contact Us ?</a>
+            <a href="contact.html" class="nav-cta">Contact Us <svg width="14" height="14" viewBox="0 0 24 24" fill="#f15a24"><path d="M13 2 3 14h7l-1 8 11-14h-7l1-6z" /></svg></a>
             <button class="nav-hamburger" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
@@ -99,8 +99,10 @@
         </div>
     </div>
     
-    <section class="hero">
-        <canvas class="canvas"></canvas>
+    <section class="hero" style="position: relative; overflow: hidden; min-height: 100vh;">
+        <video class="hero-video-bg" autoplay loop muted playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+            <source src="video/progenherosection.MOV">
+        </video>
 
         <div class="hero-cards">
             <!-- Big left card -->
@@ -1269,7 +1271,7 @@
                     <span class="features-divider-line"></span>
                 </div>
             <h2 class="industries-heading">Solar Energy Applications In Diverse Sectors</h2>
-            <p class="industries-desc">Powering progress across every sector � from rooftops and farmlands to factories,
+            <p class="industries-desc">Powering progress across every sector ï¿½ from rooftops and farmlands to factories,
                 campuses, and beyond with reliable solar solutions.</p>
         </div>
 
@@ -1613,4 +1615,5 @@
     </script>
 </body>
 </html>
+
 
