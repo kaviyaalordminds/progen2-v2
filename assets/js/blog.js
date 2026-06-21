@@ -59,7 +59,6 @@
             <span class="blog-card-category">${post.category}</span>
           </div>
           <div class="blog-card-body">
-            <span class="blog-card-date">${formatDate(post.date)}</span>
             <h4 class="blog-card-title">${post.title}</h4>
             <p class="blog-card-excerpt">${post.excerpt}</p>
             <span class="blog-card-readmore">Read More

@@ -164,8 +164,7 @@
 /* Hero image */
 .post-hero-image {
   width: 100%;
-  aspect-ratio: 16 / 9;
-  max-height: 480px;
+  max-height: 600px;
   overflow: hidden;
   background: linear-gradient(135deg, #eef4ee, #e3ebe3);
   border-radius: 12px;
@@ -194,7 +193,8 @@
 
 .post-hero-image img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  max-height: 600px;
   object-fit: contain;
   object-position: center;
   color: transparent;
