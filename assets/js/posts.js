@@ -8,301 +8,294 @@
 
 const BLOG_POSTS = [
   {
-    id: "4th-power-hike-solar-surcharge-update",
-    title: "4th Power Hike In 5 Months: Solar Surcharge Update",
-    category: "Industry News",
+    id: "smarter-approach-business-energy-strategy",
+    title: "A Smarter Approach to Business Energy: Strategy Over Expense",
+    category: "Energy Strategy",
     author: "Progen Team",
-    date: "2025-12-17",
-    image: "assets/images/servicesimg1.png",
-    excerpt: "Electricity tariffs have risen for the fourth time in five months. Here's what the latest surcharge means for your power bill and why solar is becoming the obvious hedge.",
+    date: "2026-06-21",
+    image: "assets/images/blog/smarter-business-energy.jpg",
+    excerpt: "Is energy just another monthly expense or a strategic business asset? Forward-thinking businesses are transforming energy into a long-term strategy for stability, efficiency, and growth.",
     content: `
-      <p>Electricity tariffs have been revised upward for the fourth time in just five months, putting renewed pressure on household and commercial power bills across the region.</p>
-      <h3>What changed</h3>
-      <p>The latest surcharge adjustment reflects rising fuel costs and grid infrastructure spending being passed on to consumers. For an average household, this translates to a noticeable jump in the monthly electricity bill.</p>
-      <h3>Why solar insulates you from this</h3>
-      <p>A rooftop solar installation locks in a large share of your energy costs at the time of installation. Once your system is commissioned, the electricity it generates is effectively immune to future tariff hikes, surcharges, and fuel cost adjustments.</p>
-      <h3>What you can do</h3>
-      <p>If you've been on the fence about going solar, repeated tariff hikes are a strong signal that grid electricity costs will keep climbing. A simple savings audit can show you exactly how much a rooftop system could save over its lifetime.</p>
-    `
-  },
-  {
-    id: "solar-om-keeps-plants-running-better",
-    title: "How Solar O&M Keeps Plants Running Better",
-    category: "Maintenance",
-    author: "Progen Team",
-    date: "2022-03-30",
-    image: "assets/images/servicesimg2.jpg",
-    excerpt: "Operations and Maintenance (O&M) is the most overlooked factor in long-term solar performance. Here's how a disciplined O&M plan protects your investment.",
-    content: `
-      <p>A solar plant's performance doesn't end at commissioning — it begins there. Operations and Maintenance (O&M) is what determines whether a plant performs at 95% of its rated capacity or quietly degrades to 70% over a few years.</p>
-      <h3>Core O&M activities</h3>
+      <h2>Energy as Strategy, Not Just Expense</h2>
+      <p>Is energy just another monthly expense or a strategic business asset? Forward-thinking businesses are no longer treating electricity as an uncontrollable cost. They are transforming energy into a long-term strategy for stability, efficiency, and growth.</p>
+      
+      <h3>The Traditional Approach: Energy as Cost</h3>
+      <p>For decades, businesses treated energy like any other utility expense — a line item on the budget that fluctuates with market conditions, fuel prices, and regulatory changes. Companies write checks to their utility companies every month, watching their energy costs climb year after year, with little control or predictability.</p>
+      
+      <h3>The Smart Approach: Energy as Asset</h3>
+      <p>Today's most successful businesses have flipped this paradigm. They're asking different questions: "What if we owned our energy? What if we could lock in costs? What if energy became a source of competitive advantage instead of a drag on profits?"</p>
+      
+      <p>With solar energy, companies can move beyond simply consuming power towards owning and managing their energy future with confidence.</p>
+      
+      <h3>Four Strategic Benefits of Solar Energy</h3>
+      
       <ul>
-        <li>Regular module cleaning to remove dust, pollen, and bird droppings</li>
-        <li>Thermal imaging to catch hotspots before they become failures</li>
-        <li>Inverter health checks and firmware updates</li>
-        <li>Vegetation management around ground-mount arrays</li>
-        <li>String-level monitoring to catch underperforming panels early</li>
+        <li><strong>Reduce dependency on fluctuating power costs</strong>
+          <p>Once your solar system is installed, you're protected from utility rate increases. Your energy costs become predictable and stable, allowing for more accurate financial forecasting and long-term planning.</p>
+        </li>
+        <li><strong>Improve operational efficiency</strong>
+          <p>Real-time monitoring of energy production and consumption helps you understand your facility's power patterns. This visibility leads to smarter operational decisions and continuous efficiency improvements.</p>
+        </li>
+        <li><strong>Build long-term energy security</strong>
+          <p>Grid outages and reliability concerns are becoming more frequent. A solar system with battery storage ensures your critical operations continue running even when the grid fails.</p>
+        </li>
+        <li><strong>Create a competitive financial advantage</strong>
+          <p>Lower energy costs mean higher profit margins. The money you save on electricity can be reinvested in growth, innovation, and employee development — giving you a competitive edge over competitors still paying market rates for power.</p>
+        </li>
       </ul>
-      <h3>The financial case for O&M</h3>
-      <p>A well-maintained plant typically retains 1-2% more annual energy yield compared to a poorly maintained one, which compounds significantly over a 25-year system life. O&M cost is a fraction of the revenue it protects.</p>
+      
+      <h3>The Strategic Mindset Shift</h3>
+      <p>Companies that adopt solar energy aren't just reducing costs — they're taking control. They're making a strategic choice to own their energy future rather than leaving it to market forces. This shift in mindset has ripple effects throughout the organization: improved financial planning, enhanced operational resilience, better sustainability positioning, and a more agile competitive posture.</p>
+      
+      <h3>Why Now is the Time</h3>
+      <p>Solar technology has matured, prices have fallen, and the business case is overwhelming. Add in government incentives, accelerated depreciation benefits, and the competitive advantage of lower energy costs, and the strategic argument for solar becomes undeniable. Businesses waiting to adopt solar energy are losing money every single month.</p>
+      
+      <h3>Your Energy Strategy Starts Here</h3>
+      <p>The future belongs to businesses that plan ahead. Those that treat energy as a strategic asset rather than a cost will outperform their competitors. At Progen Renewables, we help businesses move from energy consumers to energy strategists — designing solar solutions that align with your growth plans and financial goals.</p>
+      
+      <p>Ready to shift your energy strategy? Let's start with an assessment of your current energy costs, facility potential, and strategic opportunities. The conversation could be the most profitable one your business has all year.</p>
     `
   },
   {
-    id: "rooftop-vs-ground-mount-solar",
-    title: "Rooftop vs Ground-Mount Solar: Which Is Right for You?",
-    category: "Guides",
+    id: "sustainability-growth-solar-production",
+    title: "Sustainability Growth in Solar Production: Driving Innovation, Efficiency, and a Greener Future",
+    category: "Sustainability",
     author: "Progen Team",
-    date: "2025-11-02",
-    image: "assets/images/servicesimg3.jpg",
-    excerpt: "Choosing between rooftop and ground-mounted solar depends on land availability, roof condition, and your energy goals. We break down the trade-offs.",
+    date: "2026-06-21",
+    image: "assets/images/blog/sustainability-growth-solar.jpg",
+    excerpt: "Sustainable growth is no longer a choice — it's the future of smart business. Today's leading brands are proving that profitability and environmental responsibility can go hand in hand through clean energy solutions.",
     content: `
-      <p>Both rooftop and ground-mount solar systems convert sunlight into electricity, but the right choice depends on your site conditions and goals.</p>
-      <h3>Rooftop solar</h3>
-      <p>Ideal when usable land is limited. Rooftop systems make use of otherwise unused space and typically have lower installation costs since they don't require separate mounting structures or land clearing.</p>
-      <h3>Ground-mount solar</h3>
-      <p>Better suited for utility-scale or large commercial projects where land is available. Ground-mount arrays allow for optimal panel orientation and easier maintenance access, often resulting in higher energy yield per panel.</p>
-      <h3>Our recommendation</h3>
-      <p>For residential and most commercial properties, rooftop is usually the more cost-effective starting point. For industrial or utility-scale needs, ground-mount unlocks greater scale and efficiency.</p>
-    `
-  },
-  {
-    id: "understanding-net-metering-india",
-    title: "Understanding Net Metering: A Homeowner's Guide",
-    category: "Guides",
-    author: "Progen Team",
-    date: "2025-10-15",
-    image: "assets/images/servicesimg4.jpg",
-    excerpt: "Net metering lets you sell excess solar power back to the grid. Here's how it works, what to expect on your bill, and how to apply.",
-    content: `
-      <p>Net metering is the billing mechanism that makes rooftop solar financially attractive for most homeowners. It allows excess electricity generated by your panels to be exported to the grid in exchange for credits.</p>
-      <h3>How it works</h3>
-      <p>During the day, your solar system generates more power than your home may be using. This surplus flows back to the grid through a bi-directional meter. At night or on cloudy days, you draw power back from the grid, and your bill reflects the net of what you exported versus what you consumed.</p>
-      <h3>Getting connected</h3>
-      <p>Net metering applications are typically processed through your local electricity distribution company, and your installer can usually handle this paperwork on your behalf as part of the installation process.</p>
-    `
-  },
-  {
-    id: "solar-panel-degradation-explained",
-    title: "Solar Panel Degradation: What's Normal and What's Not",
-    category: "Education",
-    author: "Progen Team",
-    date: "2025-09-20",
-    image: "assets/images/servicesimg5.jpg",
-    excerpt: "All solar panels lose efficiency over time — but how much, and how fast? We explain typical degradation rates and warning signs to watch for.",
-    content: `
-      <p>Solar panels don't suddenly stop working — they degrade gradually. Understanding normal degradation helps you know when something's actually wrong.</p>
-      <h3>Typical degradation rates</h3>
-      <p>Quality crystalline silicon panels typically degrade at around 0.5% per year, meaning a panel rated at 100% output in year one might still produce around 87-88% of its original output after 25 years. Most manufacturers warranty against degradation exceeding this rate.</p>
-      <h3>Warning signs of abnormal degradation</h3>
+      <h2>Profitability Meets Purpose</h2>
+      <p>Sustainable growth is no longer a choice — it's the future of smart business. 🌱☀️ Today's leading brands are proving that profitability and environmental responsibility can go hand in hand.</p>
+      
+      <h3>The Business Case for Sustainability</h3>
+      <p>The narrative has shifted. Companies that invest in clean energy aren't making an environmental sacrifice — they're making a strategic business decision. By adopting clean energy solutions, businesses are reducing costs, strengthening brand reputation, attracting conscious customers, and preparing for a greener future.</p>
+      
+      <h3>How Solar Drives Sustainable Growth</h3>
       <ul>
-        <li>Sudden drops in output not explained by weather or shading</li>
-        <li>Visible discoloration or delamination on panel surfaces</li>
-        <li>Hotspots detected during thermal scans</li>
-        <li>Inverter error codes pointing to string-level faults</li>
+        <li><strong>Cost efficiency:</strong> Solar energy dramatically lowers operational expenses, improving your bottom line while reducing environmental impact.</li>
+        <li><strong>Brand strength:</strong> Sustainability commitments resonate with modern consumers. Companies with clean energy credentials attract better talent, customers, and investment.</li>
+        <li><strong>Regulatory advantage:</strong> As environmental regulations tighten worldwide, solar-powered businesses stay ahead of compliance requirements.</li>
+        <li><strong>Long-term resilience:</strong> Clean energy insulates your business from fossil fuel price volatility and supply chain disruptions.</li>
+        <li><strong>Competitive differentiation:</strong> In crowded markets, sustainability becomes a powerful differentiator that attracts values-aligned customers.</li>
+        <li><strong>Innovation enablement:</strong> Clean energy investments signal forward-thinking leadership and attract innovative talent and partnerships.</li>
       </ul>
+      
+      <h3>Real Impact: What the Data Shows</h3>
+      <p>Global solar production has grown exponentially, with industry efficiency gains of 60% over the past decade. Companies embracing solar report average energy cost reductions of 40-70%, which translates directly to improved profitability. More importantly, their brand reputation and customer loyalty improve — studies show 73% of consumers are willing to pay more for sustainable products and services.</p>
+      
+      <h3>The Path to Sustainable Growth</h3>
+      <p>Sustainable growth isn't about choosing between profit and planet. It's about recognizing that they're intertwined. Every solar installation is a statement — not just about renewable energy, but about the kind of future your business wants to build. When you go solar, you're investing in cost savings today and creating competitive advantages for tomorrow.</p>
+      
+      <h3>Your Next Step</h3>
+      <p>Growing your business with purpose means making smart decisions about energy. It means understanding that sustainability is profitability, that innovation requires clean foundations, and that the businesses that thrive in the next decade will be those that embrace clean energy today. Let's show you how solar can power your sustainable growth story.</p>
+      
+      <h3>Grow with Purpose. Grow with Progen Renewables.</h3>
+      <p>We're committed to helping businesses of all sizes discover how clean energy solutions drive sustainable growth. From rooftop systems to utility-scale installations, we design solar strategies that strengthen your bottom line while building a better world.</p>
     `
   },
   {
-    id: "commercial-solar-roi-breakdown",
-    title: "Commercial Solar ROI: A Realistic Breakdown",
-    category: "Finance",
+    id: "rooftop-solar-projects-transform-energy",
+    title: "Rooftop Solar Projects: Transform Your Energy Future",
+    category: "Commercial Solutions",
     author: "Progen Team",
-    date: "2025-08-11",
-    image: "assets/images/servicesimg1.png",
-    excerpt: "How long does it actually take a commercial solar investment to pay for itself? We walk through the real numbers businesses should expect.",
+    date: "2026-06-21",
+    image: "assets/images/blog/rooftop-solar-projects.jpg",
+    excerpt: "Rising energy costs shouldn't limit your growth. Transform your rooftop into a power-generating asset and take control of your energy future with smart solar solutions.",
     content: `
-      <p>Business owners considering solar often ask one question first: when does it pay for itself? The honest answer depends on several factors, but typical commercial systems achieve payback within 3-6 years.</p>
-      <h3>Factors that affect ROI</h3>
+      <h2>Turn Your Rooftop Into a Revenue Stream</h2>
+      <p>Rising energy costs shouldn't limit your growth. Transform your rooftop into a power-generating asset and take control of your energy future with smart solar solutions.</p>
+      
+      <h3>Why Rooftop Solar Makes Business Sense</h3>
+      <p>Commercial and industrial rooftops represent enormous untapped potential. They're already there, already owned by your business, and perfectly positioned to capture sunlight throughout the day. Installing solar panels on your rooftop isn't just an environmental statement — it's a smart financial decision.</p>
+      
+      <h3>Key Benefits of Rooftop Solar Systems</h3>
       <ul>
-        <li>Current electricity tariff and expected future increases</li>
-        <li>Available roof or land area and system size</li>
-        <li>Applicable depreciation benefits and incentives</li>
-        <li>Financing structure — cash purchase vs loan vs lease</li>
+        <li><strong>Immediate cost reduction:</strong> Cut your electricity bills by 40-70% depending on system size and usage patterns.</li>
+        <li><strong>No additional land required:</strong> Use existing rooftop space without taking land out of production or operation.</li>
+        <li><strong>Faster ROI:</strong> Rooftop systems typically pay for themselves within 3-6 years on a commercial facility.</li>
+        <li><strong>Tax incentives:</strong> Access depreciation benefits and government subsidies for renewable energy installations.</li>
+        <li><strong>Energy independence:</strong> Reduce reliance on grid fluctuations and rising utility rates.</li>
+        <li><strong>Property value increase:</strong> Solar installations add tangible value to commercial real estate.</li>
       </ul>
-      <h3>Beyond payback period</h3>
-      <p>After the payback period, a commercial system continues generating nearly free electricity for 20+ more years, which is where the real long-term value is created.</p>
+      
+      <h3>What a Rooftop Solar Project Involves</h3>
+      <p>A professional rooftop solar installation begins with a detailed site assessment. Our team evaluates your roof condition, structural capacity, shading patterns, and current energy consumption to design a system perfectly matched to your needs. We handle all structural reinforcement, electrical integration, permits, and grid connection paperwork — you focus on running your business while we manage the energy transformation.</p>
+      
+      <h3>Real-World Impact</h3>
+      <p>Industrial and commercial facilities with rooftop solar systems report not only lower energy costs but also improved operational resilience. When the grid goes down, your solar system continues generating power. When tariffs spike, you're protected. Your facility becomes more independent, more efficient, and more profitable.</p>
+      
+      <h3>Ready to Grow Without Energy Limits?</h3>
+      <p>If your rooftop is exposed to good sunlight, you have untapped potential waiting to be captured. Let's assess your facility and show you exactly how much you could save with rooftop solar. Contact us for a free energy audit and rooftop analysis.</p>
     `
   },
   {
-    id: "off-grid-vs-hybrid-solar-systems",
-    title: "Off-Grid vs Hybrid Solar: Choosing the Right Setup",
-    category: "Guides",
+    id: "smart-planning-energy-future",
+    title: "Smart Planning: Taking the Uncertainty Out of Your Energy Future",
+    category: "Business Strategy",
     author: "Progen Team",
-    date: "2025-07-22",
-    image: "assets/images/servicesimg2.jpg",
-    excerpt: "Not every property has reliable grid access. Here's how off-grid and hybrid solar systems differ, and which makes sense for your situation.",
+    date: "2026-06-21",
+    image: "assets/images/blog/smart-planning-hero.jpg",
+    excerpt: "Energy costs should never be a guessing game. In today's fast-changing world, businesses need stability, control, and smarter planning. Discover how solar energy helps you lock in predictable power costs and build a stronger, future-ready business.",
     content: `
-      <p>For properties with unreliable or no grid access, off-grid and hybrid solar systems offer independent power solutions — but they work quite differently.</p>
-      <h3>Off-grid systems</h3>
-      <p>Completely disconnected from the utility grid, off-grid systems rely entirely on battery storage to power your property when the sun isn't shining. They require larger battery banks and careful load planning.</p>
-      <h3>Hybrid systems</h3>
-      <p>Hybrid systems combine solar, battery storage, and a grid connection, giving you the best of both worlds — battery backup during outages and the ability to draw from or export to the grid as needed.</p>
-      <h3>Which to choose</h3>
-      <p>If you have grid access, hybrid is almost always the more flexible and cost-effective choice. Off-grid makes sense primarily for remote sites with no practical grid connection.</p>
-    `
-  },
-  {
-    id: "solar-water-pumps-for-agriculture",
-    title: "How Solar Water Pumps Are Transforming Agriculture",
-    category: "Applications",
-    author: "Progen Team",
-    date: "2025-06-18",
-    image: "assets/images/servicesimg3.jpg",
-    excerpt: "Solar-powered irrigation is cutting diesel costs and improving reliability for farmers. Here's how solar pumping systems work and what to expect.",
-    content: `
-      <p>Diesel and grid-dependent irrigation pumps are a major recurring cost for farmers. Solar water pumps eliminate fuel costs entirely and run reliably during daylight hours when irrigation is typically needed most.</p>
-      <h3>How solar pumping works</h3>
-      <p>Solar panels power a specialized pump controller that drives a submersible or surface pump directly, without needing batteries in most agricultural applications, since pumping happens during sunlight hours.</p>
-      <h3>Benefits for farmers</h3>
+      <h2>Plan Smarter. Save Bigger. Grow Stronger.</h2>
+      <p>Energy costs should never be a guessing game. ⚡☀️ In today's fast-changing world, businesses need stability, control, and smarter planning.</p>
+      
+      <h3>Why Energy Predictability Matters</h3>
+      <p>Traditional grid electricity exposes your business to unpredictable cost increases driven by fuel prices, infrastructure spending, and market volatility. This uncertainty makes long-term financial planning difficult and erodes profit margins without warning.</p>
+      
+      <h3>How Solar Brings Control Back to Your Business</h3>
+      <p>Solar energy helps you lock in predictable power costs, monitor energy usage in real time, and protect operations from unexpected power disruptions.</p>
+      
       <ul>
-        <li>Zero fuel cost after installation</li>
-        <li>Minimal maintenance compared to diesel pumps</li>
-        <li>No dependency on unreliable grid power in rural areas</li>
-        <li>Often eligible for government subsidy schemes</li>
+        <li><strong>Fixed energy costs:</strong> Once your system is installed, the electricity it generates is yours — immune to future tariff hikes and surcharges.</li>
+        <li><strong>Real-time monitoring:</strong> Track energy production and consumption minute-by-minute with advanced monitoring systems.</li>
+        <li><strong>Operational resilience:</strong> Reduce the impact of grid outages and keep critical systems running during disruptions.</li>
+        <li><strong>Financial predictability:</strong> Replace volatile electricity bills with stable, known costs over the system's 25+ year lifespan.</li>
       </ul>
+      
+      <h3>More Than Just Savings</h3>
+      <p>With the right solar strategy, you're not just reducing electricity bills — you're building a stronger, future-ready business. Customers increasingly prefer suppliers with sustainable operations, regulators favor energy-efficient facilities, and your balance sheet benefits from years of predictable, low-cost power generation.</p>
+      
+      <h3>Ready to Plan Smarter?</h3>
+      <p>A solar energy audit can show you exactly how much your business could save, what your payback timeline looks like, and how your operations would benefit from stable, self-generated power. Let's talk about your energy future.</p>
     `
   },
   {
-    id: "energy-storage-systems-explained",
-    title: "Battery Energy Storage: Do You Really Need One?",
-    category: "Education",
+    id: "solar-shift-exiting-the-utility-trap",
+    title: "The Solar Shift: Why Smart Businesses Are Exiting the Utility Trap",
+    category: "Energy Strategy",
     author: "Progen Team",
-    date: "2025-05-09",
-    image: "assets/images/servicesimg4.jpg",
-    excerpt: "Battery storage adds resilience and flexibility to a solar system, but it's not always necessary. We break down when it makes sense.",
+    date: "2026-06-22",
+    image: "assets/images/blog/solar-shift-utility-trap.jpg",
+    excerpt: "Electricity is no longer just an expense — it's a strategic decision. See why forward-thinking companies are leaving the utility 'rental model' behind and moving to energy ownership through solar.",
     content: `
-      <p>Adding battery storage to a solar system increases upfront cost significantly, so it's worth understanding exactly what it does and doesn't solve for.</p>
-      <h3>What batteries solve</h3>
+      <h2>The Rental Model Trap</h2>
+      <p>Electricity is no longer just an expense — it's a strategic decision. For years, businesses have operated in a "rental model," paying rising utility bills every month with no long-term return. They pour money into power they'll never own, with rates dictated by forces entirely outside their control.</p>
+      
+      <h3>What the Utility Trap Really Costs</h3>
+      <p>The utility trap isn't just about high bills. It's about the compounding opportunity cost of capital that disappears every month with nothing to show for it. Every rupee spent on rented power is a rupee that could have gone toward an asset that pays you back for 25+ years. The longer a business stays in the rental model, the more ground it cedes to competitors who've already made the switch.</p>
+      
+      <h3>Why Businesses Are Making the Shift</h3>
       <ul>
-        <li>Backup power during grid outages</li>
-        <li>Storing excess solar generation for use after sunset</li>
-        <li>Reducing reliance on the grid during peak tariff hours</li>
+        <li><strong>Ownership over rental:</strong> Solar converts your roof and land from a cost center into a power-generating asset you own outright.</li>
+        <li><strong>Protection against energy inflation:</strong> Utility rates only move one direction over time. A solar system locks in your generation cost for decades.</li>
+        <li><strong>Predictability for financial planning:</strong> Stable energy costs make budgeting, forecasting, and investor conversations far easier.</li>
+        <li><strong>Turning unused space into value:</strong> Rooftops, carports, and unused land become revenue-generating infrastructure instead of dead space.</li>
+        <li><strong>Long-term control:</strong> You're no longer at the mercy of utility pricing decisions, fuel surcharges, or grid politics.</li>
       </ul>
-      <h3>When you might skip it</h3>
-      <p>If your area has stable grid power and net metering is available with favorable export rates, a battery may not be financially necessary — exporting excess solar to the grid can be just as effective as storing it.</p>
+      
+      <h3>From "Should We?" to "How Soon?"</h3>
+      <p>The conversation around solar has fundamentally changed. It's no longer a question of whether solar makes sense — the economics have settled that. The real question businesses are asking now is how quickly they can make the transition and start capturing the savings they've been leaving on the table.</p>
+      
+      <h3>Exit the Trap, Own Your Energy</h3>
+      <p>Every month a business delays is another month of rental payments with zero equity built. At Progen Renewables, we help businesses exit the utility trap and step into energy ownership — with solar systems engineered around your facility, your consumption, and your growth plans.</p>
+      
+      <p>Ready to stop renting your power? Let's talk about how fast your business can make the shift.</p>
     `
   },
   {
-    id: "street-lighting-solar-led-benefits",
-    title: "Why Cities Are Switching to Solar LED Street Lighting",
-    category: "Applications",
+    id: "beat-energy-inflation-with-solar-power",
+    title: "Beat Energy Inflation with Solar Power: Secure Your Future, Start Saving Today",
+    category: "Energy Strategy",
     author: "Progen Team",
-    date: "2025-04-14",
-    image: "assets/images/servicesimg5.jpg",
-    excerpt: "Solar street lights are cutting municipal energy costs and improving uptime in areas with unreliable grid infrastructure.",
+    date: "2026-06-23",
+    image: "assets/images/blog/beat-energy-inflation.jpg",
+    excerpt: "Utility costs keep climbing every year, eating into profitability and complicating long-term planning. Solar energy helps businesses lock in costs, cut grid dependence, and turn idle land into a revenue-generating asset.",
     content: `
-      <p>Municipalities are increasingly turning to solar-powered LED street lighting to reduce both energy costs and infrastructure complexity.</p>
-      <h3>Key advantages</h3>
+      <h2>The Rising Cost That Never Stops Rising</h2>
+      <p>Utility costs continue to rise every year, impacting business profitability and long-term financial planning. Unlike most operating expenses, energy costs are largely outside a business's control — set by utilities, regulators, and fuel markets that show no sign of slowing down.</p>
+      
+      <h3>Why Energy Inflation Hurts More Than It Looks</h3>
+      <p>A few percentage points of annual rate increase doesn't sound alarming in isolation. But compounded over five, ten, or twenty years, it quietly erodes margins, distorts budgeting, and makes it harder to price products and services with confidence. Businesses that don't act end up absorbing costs they have no way to predict or prevent.</p>
+      
+      <h3>How Solar Power Beats Energy Inflation</h3>
       <ul>
-        <li>No trenching or grid cabling required — each unit is self-contained</li>
-        <li>Continues operating during grid outages</li>
-        <li>Significantly lower operating cost versus grid-powered lighting</li>
-        <li>Faster deployment in rural or hard-to-reach areas</li>
+        <li><strong>Lock in your energy costs:</strong> A solar system generates power at a fixed, known cost for the life of the asset — insulating you from year-over-year tariff hikes.</li>
+        <li><strong>Reduce grid dependence:</strong> The less power you pull from the grid, the less exposure you have to rate increases, surcharges, and supply constraints.</li>
+        <li><strong>Turn unused land into revenue:</strong> Rooftops, parking structures, and idle land become productive assets that generate savings instead of sitting unused.</li>
+        <li><strong>Protect your profit margins:</strong> Stable energy costs mean fewer surprises on your P&L and more predictable margins quarter over quarter.</li>
+        <li><strong>Gain a competitive edge:</strong> In an increasingly energy-driven economy, businesses with lower, predictable energy costs can price more competitively and reinvest savings into growth.</li>
       </ul>
-      <h3>Considerations</h3>
-      <p>Battery sizing needs to account for regional weather patterns and the number of cloudy days expected, to ensure lights remain reliable through the monsoon season.</p>
+      
+      <h3>Stabilize Today, Secure Tomorrow</h3>
+      <p>Every year a business stays on the grid without a solar offset is another year of exposure to forces it can't influence. Solar isn't just about saving money — it's about taking a recurring, unpredictable liability and converting it into a fixed, manageable cost that strengthens your financial position for decades.</p>
+      
+      <h3>Start Saving Today</h3>
+      <p>The businesses that act now lock in today's installation economics and tomorrow's protection from rising rates. At Progen Renewables, we help you size, design, and install a solar system that beats inflation and pays you back for the long haul.</p>
+      
+      <p>Ready to secure your future? Let's calculate exactly how much energy inflation is costing you — and how fast solar can offset it.</p>
     `
   },
   {
-    id: "epc-vs-diy-solar-installation",
-    title: "EPC vs DIY: Why Turnkey Solar Installation Wins",
-    category: "Guides",
+    id: "ground-mount-solar-unused-land-into-savings",
+    title: "Ground Mount Solar: Turning Unused Land Into Long-Term Savings",
+    category: "Utility-Scale Solar",
     author: "Progen Team",
-    date: "2025-03-08",
-    image: "assets/images/servicesimg1.png",
-    excerpt: "Doing solar installation piecemeal can lead to mismatched components and compliance headaches. Here's why an EPC approach is usually smarter.",
+    date: "2026-06-24",
+    image: "assets/images/blog/ground-mount-solar-inverter.jpg",
+    excerpt: "Power your business with smarter energy. Ground mount solar turns unused land into long-term savings and reliable power — invest today for a sustainable tomorrow.",
     content: `
-      <p>EPC stands for Engineering, Procurement, and Construction — a turnkey approach where a single provider handles design, equipment sourcing, and installation end to end.</p>
-      <h3>Why turnkey matters</h3>
-      <p>Solar systems involve multiple interdependent components: panels, inverters, mounting structures, wiring, and grid connection equipment. Sourcing these separately risks compatibility issues and voided warranties.</p>
-      <h3>What a good EPC partner provides</h3>
+      <h2>Power Your Business With Smarter Energy</h2>
+      <p>Ground mount solar turns unused land into long-term savings and reliable power. For businesses sitting on open acreage — whether it's a buffer zone, an unused field, or land earmarked for future expansion — that space represents an opportunity most companies are leaving untapped.</p>
+      
+      <h3>Why Ground Mount Solar Makes Sense</h3>
+      <p>Unlike rooftop installations, ground mount solar systems aren't constrained by roof orientation, structural load limits, or shading from nearby buildings. They can be engineered for optimal tilt and orientation, scaled to multi-megawatt capacity, and built with industrial-grade inverter and switchgear infrastructure designed for decades of reliable operation.</p>
+      
+      <h3>Key Advantages of Ground Mount Systems</h3>
       <ul>
-        <li>Site assessment and system design tailored to your load</li>
-        <li>Single point of accountability for performance</li>
-        <li>Handling of permits, net metering applications, and compliance</li>
-        <li>Coordinated warranties across all system components</li>
+        <li><strong>Unlock idle land value:</strong> Convert unused acreage into an asset that generates power and savings year after year.</li>
+        <li><strong>Optimized energy yield:</strong> Ground mount arrays can be precisely angled and positioned for maximum sun exposure, often outperforming rooftop systems per panel.</li>
+        <li><strong>Scalable capacity:</strong> From a few hundred kilowatts to multi-megawatt installations, ground mount systems scale to match your business's full energy demand.</li>
+        <li><strong>Easier maintenance access:</strong> Ground-level installation simplifies inspection, cleaning, and servicing compared to rooftop arrays.</li>
+        <li><strong>Built for the long haul:</strong> Industrial inverter stations and switchgear are engineered for high-capacity, continuous operation with minimal downtime.</li>
       </ul>
+      
+      <h3>The Infrastructure Behind the Savings</h3>
+      <p>A ground mount solar plant is more than panels in a field — it's a complete power generation facility. High-capacity inverters convert and condition the power, switchgear manages safe distribution, and monitoring systems track performance in real time. This industrial-grade infrastructure is what allows ground mount systems to deliver megawatt-scale output reliably, year after year.</p>
+      
+      <h3>Invest Today for a Sustainable Tomorrow</h3>
+      <p>Land that sits idle generates nothing. Land with a ground mount solar system generates power, savings, and long-term value for your business — every single day the sun rises. The earlier you invest, the sooner that land starts paying you back.</p>
+      
+      <h3>See What Your Land Could Generate</h3>
+      <p>At Progen Renewables, we design and build ground mount solar systems engineered around your land, your energy needs, and your growth plans. Let's assess your site and show you exactly how much unused land could be worth as a power asset.</p>
     `
   },
   {
-    id: "solar-inverter-types-explained",
-    title: "String, Central, or Microinverters: Which Is Best?",
-    category: "Education",
+    id: "rooftop-vs-ground-mount-strategic-comparison",
+    title: "Rooftop vs Ground Mount – A Strategic Comparison",
+    category: "Commercial Solutions",
     author: "Progen Team",
-    date: "2025-02-19",
-    image: "assets/images/servicesimg2.jpg",
-    excerpt: "The inverter is the brain of your solar system. We compare the three main types and explain where each one fits best.",
+    date: "2026-06-25",
+    image: "assets/images/blog/rooftop-vs-ground-mount.png",
+    excerpt: "Rooftop or ground mount — which solar solution is right for your business? The right choice depends on your site conditions and energy goals.",
     content: `
-      <p>Inverters convert the DC electricity generated by solar panels into the AC electricity used by homes and the grid. The type you choose affects performance, cost, and resilience to shading.</p>
-      <h3>String inverters</h3>
-      <p>The most common and cost-effective choice for residential and commercial systems with consistent sun exposure across the array.</p>
-      <h3>Microinverters</h3>
-      <p>Installed per-panel, microinverters optimize each panel individually, making them ideal for roofs with partial shading or multiple orientations.</p>
-      <h3>Central inverters</h3>
-      <p>Used in utility-scale plants where a small number of large inverters manage massive arrays efficiently.</p>
-    `
-  },
-  {
-    id: "solar-subsidy-schemes-update",
-    title: "Latest Government Solar Subsidy Schemes: What's Available",
-    category: "Industry News",
-    author: "Progen Team",
-    date: "2025-01-25",
-    image: "assets/images/servicesimg3.jpg",
-    excerpt: "Government incentives can meaningfully reduce your solar installation cost. Here's a roundup of current schemes worth knowing about.",
-    content: `
-      <p>Various central and state-level subsidy schemes exist to make solar adoption more affordable for residential and agricultural consumers.</p>
-      <h3>What's typically covered</h3>
+      <h2>Rooftop or Ground Mount: Which Is Right for Your Business?</h2>
+      <p>Not every business has the same site conditions, energy demands, or growth plans — which is why solar isn't a one-size-fits-all decision. Two of the most common deployment options, rooftop and ground-mount solar, each offer distinct advantages depending on what your business needs.</p>
+      
+      <h3>Rooftop Solar</h3>
+      <p>Rooftop systems use existing building space to generate solar power. By installing directly on a structure you already own, rooftop solar offers faster installation timelines and lower upfront investment compared to ground-based alternatives — making it a strong fit for both residential and commercial energy needs.</p>
       <ul>
-        <li>Capital subsidies on residential rooftop installations up to a defined capacity</li>
-        <li>Subsidized solar pump schemes for farmers</li>
-        <li>Accelerated depreciation benefits for commercial and industrial installations</li>
+        <li><strong>Faster installation:</strong> No land prep or extensive civil work required.</li>
+        <li><strong>Lower upfront investment:</strong> Uses existing structure, reducing mounting and site costs.</li>
+        <li><strong>No additional land use:</strong> Keeps your land free for operations or future expansion.</li>
       </ul>
-      <h3>Note on changing policy</h3>
-      <p>Subsidy schemes and their terms are revised periodically, so it's worth confirming current eligibility and benefit amounts with your installer before finalizing a system size.</p>
-    `
-  },
-  {
-    id: "utility-scale-solar-grid-integration",
-    title: "Utility-Scale Solar: Challenges of Grid Integration",
-    category: "Industry News",
-    author: "Progen Team",
-    date: "2024-12-12",
-    image: "assets/images/servicesimg4.jpg",
-    excerpt: "Large-scale solar plants face unique technical challenges connecting to the grid. Here's what utility-scale developers need to plan for.",
-    content: `
-      <p>Unlike small rooftop systems, utility-scale solar plants must be carefully integrated with the broader grid to maintain stability and reliability.</p>
-      <h3>Key challenges</h3>
+      
+      <h3>Ground-Mount Solar</h3>
+      <p>Ground-mount systems are designed for open land and higher-capacity installations. They provide greater flexibility in panel orientation and layout, and are ideal for businesses with large energy demands that exceed what a rooftop footprint can support.</p>
       <ul>
-        <li>Voltage and frequency regulation as large amounts of variable power enter the grid</li>
-        <li>Transmission infrastructure capacity near the plant site</li>
-        <li>Forecasting generation accurately to support grid balancing</li>
-        <li>Coordinating with grid operators on connection agreements and protocols</li>
+        <li><strong>Higher capacity potential:</strong> Scales to multi-megawatt installations on open land.</li>
+        <li><strong>Greater design flexibility:</strong> Optimal tilt, orientation, and spacing for maximum yield.</li>
+        <li><strong>Ideal for large energy demands:</strong> Built to match the consumption of bigger industrial and commercial operations.</li>
       </ul>
-      <h3>Why this matters for developers</h3>
-      <p>Grid integration studies should be conducted early in project planning, since transmission constraints can significantly affect project viability and timelines.</p>
-    `
-  },
-  {
-    id: "solar-myths-debunked",
-    title: "5 Solar Myths That Are Costing You Money",
-    category: "Education",
-    author: "Progen Team",
-    date: "2024-11-05",
-    image: "assets/images/servicesimg5.jpg",
-    excerpt: "Misconceptions about solar power often hold people back from making the switch. Let's clear up some of the most common myths.",
-    content: `
-      <p>Despite solar's growing adoption, several persistent myths continue to create hesitation. Here are five worth clearing up.</p>
-      <h3>Myth 1: Solar doesn't work on cloudy days</h3>
-      <p>Panels still generate power in diffuse light, just at reduced output — they don't stop working entirely.</p>
-      <h3>Myth 2: Solar panels require constant maintenance</h3>
-      <p>Beyond periodic cleaning and occasional inspections, solar systems are largely maintenance-free, with no moving parts in the panels themselves.</p>
-      <h3>Myth 3: Solar isn't worth it if you're renting or might move</h3>
-      <p>Many systems add resale value to a property, and the investment is increasingly seen as a value-add during property sales.</p>
-      <h3>Myth 4: It's too expensive to be worth it</h3>
-      <p>With falling equipment costs and available incentives, payback periods have shortened considerably in recent years.</p>
-      <h3>Myth 5: Solar panels are bad for the roof</h3>
-      <p>Professionally installed systems are designed to protect, not damage, your roof, and many installations actually extend roof lifespan by shielding it from direct weather exposure.</p>
+      
+      <h3>So, Which One Is Right for You?</h3>
+      <p>The right choice depends on your site conditions and energy goals. A business with limited land but ample roof space and moderate energy needs will likely benefit most from rooftop solar. A business with large energy demands and available open land may find ground-mount solar delivers far greater long-term capacity and return.</p>
+      
+      <h3>Progen Expertise</h3>
+      <p>Progen designs customized solar systems based on site conditions and energy goals. Every project focuses on efficiency, reliability, and long-term return on investment — whether that means maximizing your rooftop, developing a ground-mount installation, or combining both for maximum capacity.</p>
+      
+      <p>Not sure which solution fits your business? Let's evaluate your site and energy profile, and design the solar strategy that delivers the best return.</p>
     `
   }
 ];
