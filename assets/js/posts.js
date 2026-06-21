@@ -297,6 +297,39 @@ const BLOG_POSTS = [
       
       <p>Not sure which solution fits your business? Let's evaluate your site and energy profile, and design the solar strategy that delivers the best return.</p>
     `
+  },
+  {
+    id: "why-businesses-are-moving-to-ground-mount-solar",
+    title: "Why Businesses Are Moving to Ground Mount Solar",
+    category: "Utility-Scale Solar",
+    author: "Progen Team",
+    date: "2026-06-26",
+    image: "assets/images/blog/why-businesses-moving-ground-mount.png",
+    excerpt: "Ground-mounted solar systems provide predictable energy costs, improved operational resilience, and long-term asset value. It's not just about clean energy — it's about smarter, more stable business operations.",
+    content: `
+      <h2>A Shift Driven by Stability, Not Just Sustainability</h2>
+      <p>Why are more businesses shifting to ground mount solar? The answer goes beyond environmental goals. Ground-mounted solar systems provide predictable energy costs, improved operational resilience, and long-term asset value — three things every business wants, regardless of industry.</p>
+      
+      <h3>Predictable Overheads</h3>
+      <p>Solar power runs on sunlight, a fuel source with zero cost. Businesses gain stable energy expenses by avoiding future tariff increases and market fluctuations. Once a ground mount system is installed, your generation cost is effectively locked in for the life of the system, freeing your budget from the unpredictability of utility pricing.</p>
+      
+      <h3>Operational Resilience</h3>
+      <p>Generating power on your own land reduces dependence on the grid. This ensures smoother operations even during power outages or supply instability. For businesses where downtime is costly — manufacturing, logistics, cold storage, data-driven operations — that resilience translates directly into protected revenue.</p>
+      
+      <h3>Asset Appreciation</h3>
+      <p>Unused land can be converted into a productive solar asset. Ground-mount systems add long-term value while delivering clean energy for decades. Rather than sitting idle on the balance sheet, that land becomes an income-generating piece of infrastructure with a multi-decade lifespan.</p>
+      
+      <h3>Turning Idle Land Into a Strategic Asset</h3>
+      <p>By generating power on-site, businesses can reduce dependence on the grid while turning unused land into a productive energy asset. This isn't a marginal improvement — it's a fundamental shift in how a piece of land contributes to the business. Instead of representing unused potential, it becomes a consistent source of savings and value.</p>
+      
+      <h3>It's Not Just About Clean Energy</h3>
+      <p>It's not just about clean energy — it's about smarter, more stable business operations. Predictable costs, resilient operations, and appreciating assets are the kind of fundamentals that matter to any CFO or operations leader, independent of sustainability goals. Ground mount solar happens to deliver both.</p>
+      
+      <h3>Is Your Land Ready to Work Harder?</h3>
+      <p>If your business has open land that isn't generating value, it's worth finding out what a ground mount solar system could deliver. At Progen Renewables, we assess your site and design systems engineered for maximum yield, resilience, and long-term return.</p>
+      
+      <p>Let's evaluate your land and show you what it could be worth as a solar asset.</p>
+    `
   }
 ];
 
