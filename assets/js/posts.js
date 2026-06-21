@@ -330,6 +330,146 @@ const BLOG_POSTS = [
       
       <p>Let's evaluate your land and show you what it could be worth as a solar asset.</p>
     `
+  },
+  {
+    id: "guide-to-rooftop-solar-essential-steps",
+    title: "Guide to Rooftop Solar: Maximize Energy, Minimize Costs, Go Green",
+    category: "Commercial Solutions",
+    author: "Progen Team",
+    date: "2026-06-27",
+    image: "assets/images/blog/guide-to-rooftop-solar.jpg",
+    excerpt: "Your roof is more valuable than you think. For many businesses, rooftops remain unused — simply covering operations without adding any real value. With rooftop solar, that same space becomes a consistent source of energy and savings.",
+    content: `
+      <h2>Your Roof Is More Valuable Than You Think</h2>
+      <p>For many businesses, rooftops remain unused — simply covering operations without adding any real value. They sit exposed to the sun every single day, doing nothing but providing shelter. But with rooftop solar, that same space can become a consistent source of energy and long-term savings.</p>
+      
+      <h3>Why Rooftop Solar Is No Longer Optional</h3>
+      <p>From reducing EB bills and protecting against rising energy costs to generating power exactly where it's needed, rooftop solar is no longer an option — it's a smart business move. The roof you already own can offset the very electricity bill that arrives every month, without requiring any additional land.</p>
+      
+      <h3>Essential Steps to Going Rooftop Solar</h3>
+      <ul>
+        <li><strong>Site assessment:</strong> Evaluate roof condition, structural capacity, orientation, and shading to determine system feasibility.</li>
+        <li><strong>System design:</strong> Engineer a layout sized to your facility's energy consumption and available roof area.</li>
+        <li><strong>Permits and approvals:</strong> Secure the necessary regulatory and utility approvals before installation begins.</li>
+        <li><strong>Installation:</strong> Mount panels, wire the system, and connect inverters with minimal disruption to daily operations.</li>
+        <li><strong>Commissioning and monitoring:</strong> Activate the system and track performance through real-time monitoring dashboards.</li>
+      </ul>
+      
+      <h3>Key Benefits</h3>
+      <ul>
+        <li><strong>Lower EB bills:</strong> Generate a meaningful share of your own power and cut dependence on grid electricity.</li>
+        <li><strong>Protection from rising costs:</strong> Insulate your business from future tariff hikes and energy inflation.</li>
+        <li><strong>Power where it's needed:</strong> On-site generation means less transmission loss and more reliable supply to your operations.</li>
+        <li><strong>No extra land required:</strong> Makes use of space you already own and aren't using for anything else.</li>
+        <li><strong>Faster payback:</strong> Lower installation complexity compared to ground mount systems often means quicker ROI.</li>
+      </ul>
+      
+      <h3>The Shift Is Simple</h3>
+      <p>Stop treating your roof as space. Start treating it as an asset. That single mindset shift is what separates businesses still paying full-price utility bills from those generating their own savings every single day the sun is out.</p>
+      
+      <h3>Maximize Energy. Minimize Costs. Go Green.</h3>
+      <p>At Progen Renewables, we guide businesses through every essential step of rooftop solar — from initial assessment to installation and ongoing savings. Let's find out exactly what your roof could be worth as a power asset.</p>
+    `
+  },
+  {
+    id: "energy-independence-why-your-business-needs-its-own-power-source",
+    title: "Energy Independence: Why Your Business Needs Its Own Power Source",
+    category: "Energy Strategy",
+    author: "Progen Team",
+    date: "2026-06-28",
+    image: "assets/images/blog/energy-independence-power-hub.jpg",
+    excerpt: "Many businesses are facing rising electricity costs and power issues. What if your business could generate its own power and reduce dependency on the grid? This is where energy independence becomes important.",
+    content: `
+      <h2>The Problem Every Business Knows Too Well</h2>
+      <p>Many businesses are facing rising electricity costs and power issues. Tariffs climb year after year, grid reliability varies by region and season, and every outage or surcharge eats into operations that were never designed to absorb that kind of uncertainty.</p>
+      
+      <h3>A Different Question to Ask</h3>
+      <p>What if your business could generate its own power and reduce dependency on the grid? This is where energy independence becomes important — not as an abstract sustainability goal, but as a practical answer to the cost and reliability problems businesses face every day.</p>
+      
+      <h3>What Energy Independence Actually Looks Like</h3>
+      <p>True energy independence isn't just solar panels on a roof. It's a complete power ecosystem: on-site solar generation, battery storage for resilience, and a dedicated power hub that manages how energy is produced, stored, and distributed across your facility — keeping critical operations running even when the grid can't.</p>
+      
+      <h3>Why It Matters for Your Business</h3>
+      <ul>
+        <li><strong>Secure:</strong> Battery storage and on-site generation mean your operations keep running through grid outages and supply instability.</li>
+        <li><strong>Sustainable:</strong> Reduced reliance on fossil-fuel-based grid power lowers your carbon footprint while strengthening your sustainability credentials.</li>
+        <li><strong>Resilient:</strong> A power hub architecture is built to handle fluctuating demand, EV charging, and growing facility needs without straining the system.</li>
+        <li><strong>Cost control:</strong> Generating your own power reduces exposure to rising tariffs and unpredictable EB bills.</li>
+        <li><strong>24/7 reliability:</strong> Combining generation with storage ensures power availability around the clock, not just when the sun is shining.</li>
+      </ul>
+      
+      <h3>Beyond Cost Savings</h3>
+      <p>Energy independence also future-proofs your business. As EV fleets, electrified operations, and energy-intensive technology become standard, businesses with their own power infrastructure will have a structural advantage over those still entirely dependent on the grid.</p>
+      
+      <h3>Secure. Sustainable. Resilient.</h3>
+      <p>At Progen Renewables, we design complete energy independence solutions — solar generation, storage, and power management — tailored to your facility's needs. Let's talk about what energy independence could look like for your business.</p>
+    `
+  },
+  {
+    id: "clean-energy-for-smarter-businesses",
+    title: "Clean Energy for Smarter Businesses",
+    category: "Sustainability",
+    author: "Progen Team",
+    date: "2026-06-29",
+    image: "assets/images/blog/clean-energy-smarter-businesses.jpg",
+    excerpt: "Cleaner energy. Smarter business. Greener future. Solar energy supports sustainable industrial growth by reducing carbon emissions and improving long-term energy efficiency.",
+    content: `
+      <h2>Cleaner Energy. Smarter Business. Greener Future.</h2>
+      <p>Solar energy supports sustainable industrial growth by reducing carbon emissions and improving long-term energy efficiency. For businesses operating energy-intensive facilities, that combination — lower emissions and better efficiency — isn't a trade-off. It's a single strategic upgrade.</p>
+      
+      <h3>Why Clean Energy and Smart Business Go Together</h3>
+      <p>Industrial operations have traditionally relied on grid power sourced from a mix of fossil fuels, with emissions and costs that rise in tandem. Solar changes that equation by generating power on-site, cutting both the carbon footprint and the operating cost of every unit of electricity consumed.</p>
+      
+      <h3>How Solar Supports Sustainable Industrial Growth</h3>
+      <ul>
+        <li><strong>Reduced carbon emissions:</strong> Every kilowatt-hour generated from solar is a kilowatt-hour not drawn from fossil-fuel-based grid power.</li>
+        <li><strong>Improved energy efficiency:</strong> Real-time monitoring and on-site generation reduce transmission losses and give facilities better visibility into consumption patterns.</li>
+        <li><strong>Lower operating costs:</strong> Reduced grid dependence means more predictable, often lower, energy expenses over the system's lifespan.</li>
+        <li><strong>Stronger compliance positioning:</strong> As emissions regulations and reporting requirements tighten, solar-powered facilities are better positioned to meet them.</li>
+        <li><strong>Brand and stakeholder value:</strong> Clean energy adoption strengthens ESG credentials with customers, investors, and partners increasingly prioritizing sustainability.</li>
+      </ul>
+      
+      <h3>Industrial Scale, Industrial Impact</h3>
+      <p>For industries with heavy energy demands — manufacturing, processing, logistics — the impact of solar adoption compounds at scale. Larger systems mean larger emissions reductions and larger cost savings, making solar one of the highest-leverage sustainability investments available to industrial businesses today.</p>
+      
+      <h3>Empower Your Operations</h3>
+      <p>Empower your operations with sustainable solar solutions from Progen Renewables. We design solar systems engineered around your facility's energy profile, helping you cut emissions, improve efficiency, and build a smarter, greener operation for the long term.</p>
+      
+      <p>Ready to make the shift? Let's design a clean energy solution built for your business.</p>
+    `
+  },
+  {
+    id: "solar-roi-perspective-financial-asset-not-just-energy-choice",
+    title: "Solar ROI Perspective: A Financial Asset, Not Just an Energy Choice",
+    category: "Energy Strategy",
+    author: "Progen Team",
+    date: "2026-06-30",
+    image: "assets/images/blog/solar-roi-financial-asset.jpg",
+    excerpt: "Analyzing solar installations as high-yield, long-term investments. With faster payback periods, tax benefits, and protection against rising electricity costs, businesses in 2026 are choosing solar as a strategic investment.",
+    content: `
+      <h2>Beyond an Energy Alternative</h2>
+      <p>From reducing operational costs to building long-term financial stability, solar energy is no longer just an energy alternative — it's a smart financial asset. Analyzing solar installations as high-yield, long-term investments changes how the decision should be evaluated, and by whom.</p>
+      
+      <h3>Reframing the Investment Case</h3>
+      <p>Traditionally, solar has been pitched primarily on environmental grounds or as a way to cut electricity bills. But viewed through a financial lens, a solar installation behaves much like any other capital asset: it has an upfront cost, a payback period, an ongoing yield, and a long useful life — often 25+ years.</p>
+      
+      <h3>What Makes Solar a Strong Financial Asset</h3>
+      <ul>
+        <li><strong>Faster payback periods:</strong> Improved technology and falling installation costs have shortened payback timelines significantly compared to just a few years ago.</li>
+        <li><strong>Tax benefits:</strong> Depreciation benefits and available incentives improve the effective return on a solar investment.</li>
+        <li><strong>Protection against rising electricity costs:</strong> Every year electricity tariffs increase, the relative value of a fixed-cost solar system grows.</li>
+        <li><strong>Cumulative savings:</strong> Unlike many investments, the return compounds steadily over the system's lifetime as electricity costs continue climbing.</li>
+        <li><strong>Asset value:</strong> A solar system adds tangible value to commercial property, beyond the energy savings it generates.</li>
+      </ul>
+      
+      <h3>Why 2026 Is the Inflection Point</h3>
+      <p>Businesses in 2026 are choosing solar as a strategic investment for sustainable growth, not simply an operational upgrade. The combination of mature technology, attractive financing options, and persistent electricity cost inflation has shifted solar from a discretionary upgrade to a core part of capital allocation strategy for forward-looking businesses.</p>
+      
+      <h3>Your Rooftop, Reframed</h3>
+      <p>Discover how solar can turn your rooftop into a revenue-saving powerhouse with Progen Renewables. When you evaluate solar the way you'd evaluate any other investment — payback period, yield, risk profile — the case for moving now becomes difficult to ignore.</p>
+      
+      <p>Ready to see the numbers for your business? Let's run the ROI analysis on your facility.</p>
+    `
   }
 ];
 
