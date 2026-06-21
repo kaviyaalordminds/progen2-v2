@@ -12,7 +12,7 @@ const BLOG_POSTS = [
     title: "A Smarter Approach to Business Energy: Strategy Over Expense",
     category: "Energy Strategy",
     author: "Progen Team",
-    date: "2026-06-21",
+    date: "2026-02-03",
     image: "assets/images/blog/smarter-business-energy.jpg",
     excerpt: "Is energy just another monthly expense or a strategic business asset? Forward-thinking businesses are transforming energy into a long-term strategy for stability, efficiency, and growth.",
     content: `
@@ -61,7 +61,7 @@ const BLOG_POSTS = [
     title: "Sustainability Growth in Solar Production: Driving Innovation, Efficiency, and a Greener Future",
     category: "Sustainability",
     author: "Progen Team",
-    date: "2026-06-21",
+    date: "2026-02-12",
     image: "assets/images/blog/sustainability-growth-solar.jpg",
     excerpt: "Sustainable growth is no longer a choice — it's the future of smart business. Today's leading brands are proving that profitability and environmental responsibility can go hand in hand through clean energy solutions.",
     content: `
@@ -99,7 +99,7 @@ const BLOG_POSTS = [
     title: "Rooftop Solar Projects: Transform Your Energy Future",
     category: "Commercial Solutions",
     author: "Progen Team",
-    date: "2026-06-21",
+    date: "2026-02-21",
     image: "assets/images/blog/rooftop-solar-projects.jpg",
     excerpt: "Rising energy costs shouldn't limit your growth. Transform your rooftop into a power-generating asset and take control of your energy future with smart solar solutions.",
     content: `
@@ -134,7 +134,7 @@ const BLOG_POSTS = [
     title: "Smart Planning: Taking the Uncertainty Out of Your Energy Future",
     category: "Business Strategy",
     author: "Progen Team",
-    date: "2026-06-21",
+    date: "2026-03-02",
     image: "assets/images/blog/smart-planning-hero.jpg",
     excerpt: "Energy costs should never be a guessing game. In today's fast-changing world, businesses need stability, control, and smarter planning. Discover how solar energy helps you lock in predictable power costs and build a stronger, future-ready business.",
     content: `
@@ -166,7 +166,7 @@ const BLOG_POSTS = [
     title: "The Solar Shift: Why Smart Businesses Are Exiting the Utility Trap",
     category: "Energy Strategy",
     author: "Progen Team",
-    date: "2026-06-22",
+    date: "2026-03-11",
     image: "assets/images/blog/solar-shift-utility-trap.jpg",
     excerpt: "Electricity is no longer just an expense — it's a strategic decision. See why forward-thinking companies are leaving the utility 'rental model' behind and moving to energy ownership through solar.",
     content: `
@@ -199,7 +199,7 @@ const BLOG_POSTS = [
     title: "Beat Energy Inflation with Solar Power: Secure Your Future, Start Saving Today",
     category: "Energy Strategy",
     author: "Progen Team",
-    date: "2026-06-23",
+    date: "2026-03-20",
     image: "assets/images/blog/beat-energy-inflation.jpg",
     excerpt: "Utility costs keep climbing every year, eating into profitability and complicating long-term planning. Solar energy helps businesses lock in costs, cut grid dependence, and turn idle land into a revenue-generating asset.",
     content: `
@@ -232,7 +232,7 @@ const BLOG_POSTS = [
     title: "Ground Mount Solar: Turning Unused Land Into Long-Term Savings",
     category: "Utility-Scale Solar",
     author: "Progen Team",
-    date: "2026-06-24",
+    date: "2026-03-29",
     image: "assets/images/blog/ground-mount-solar-inverter.jpg",
     excerpt: "Power your business with smarter energy. Ground mount solar turns unused land into long-term savings and reliable power — invest today for a sustainable tomorrow.",
     content: `
@@ -266,7 +266,7 @@ const BLOG_POSTS = [
     title: "Rooftop vs Ground Mount – A Strategic Comparison",
     category: "Commercial Solutions",
     author: "Progen Team",
-    date: "2026-06-25",
+    date: "2026-04-07",
     image: "assets/images/blog/rooftop-vs-ground-mount.png",
     excerpt: "Rooftop or ground mount — which solar solution is right for your business? The right choice depends on your site conditions and energy goals.",
     content: `
@@ -303,7 +303,7 @@ const BLOG_POSTS = [
     title: "Why Businesses Are Moving to Ground Mount Solar",
     category: "Utility-Scale Solar",
     author: "Progen Team",
-    date: "2026-06-26",
+    date: "2026-04-16",
     image: "assets/images/blog/why-businesses-moving-ground-mount.png",
     excerpt: "Ground-mounted solar systems provide predictable energy costs, improved operational resilience, and long-term asset value. It's not just about clean energy — it's about smarter, more stable business operations.",
     content: `
@@ -336,7 +336,7 @@ const BLOG_POSTS = [
     title: "Guide to Rooftop Solar: Maximize Energy, Minimize Costs, Go Green",
     category: "Commercial Solutions",
     author: "Progen Team",
-    date: "2026-06-27",
+    date: "2026-04-25",
     image: "assets/images/blog/guide-to-rooftop-solar.jpg",
     excerpt: "Your roof is more valuable than you think. For many businesses, rooftops remain unused — simply covering operations without adding any real value. With rooftop solar, that same space becomes a consistent source of energy and savings.",
     content: `
@@ -376,7 +376,7 @@ const BLOG_POSTS = [
     title: "Energy Independence: Why Your Business Needs Its Own Power Source",
     category: "Energy Strategy",
     author: "Progen Team",
-    date: "2026-06-28",
+    date: "2026-05-04",
     image: "assets/images/blog/energy-independence-power-hub.jpg",
     excerpt: "Many businesses are facing rising electricity costs and power issues. What if your business could generate its own power and reduce dependency on the grid? This is where energy independence becomes important.",
     content: `
@@ -410,7 +410,7 @@ const BLOG_POSTS = [
     title: "Clean Energy for Smarter Businesses",
     category: "Sustainability",
     author: "Progen Team",
-    date: "2026-06-29",
+    date: "2026-05-13",
     image: "assets/images/blog/clean-energy-smarter-businesses.jpg",
     excerpt: "Cleaner energy. Smarter business. Greener future. Solar energy supports sustainable industrial growth by reducing carbon emissions and improving long-term energy efficiency.",
     content: `
@@ -443,7 +443,7 @@ const BLOG_POSTS = [
     title: "Solar ROI Perspective: A Financial Asset, Not Just an Energy Choice",
     category: "Energy Strategy",
     author: "Progen Team",
-    date: "2026-06-30",
+    date: "2026-05-22",
     image: "assets/images/blog/solar-roi-financial-asset.jpg",
     excerpt: "Analyzing solar installations as high-yield, long-term investments. With faster payback periods, tax benefits, and protection against rising electricity costs, businesses in 2026 are choosing solar as a strategic investment.",
     content: `
@@ -469,6 +469,73 @@ const BLOG_POSTS = [
       <p>Discover how solar can turn your rooftop into a revenue-saving powerhouse with Progen Renewables. When you evaluate solar the way you'd evaluate any other investment — payback period, yield, risk profile — the case for moving now becomes difficult to ignore.</p>
       
       <p>Ready to see the numbers for your business? Let's run the ROI analysis on your facility.</p>
+    `
+  },
+  {
+    id: "how-solar-works-in-real-time-benefits-for-businesses",
+    title: "How Solar Works in Real Time: Benefits of Solar Energy for Businesses",
+    category: "Energy Strategy",
+    author: "Progen Team",
+    date: "2026-05-31",
+    image: "assets/images/blog/how-solar-works-real-time.png",
+    excerpt: "Rising electricity costs are a major concern for industries and commercial spaces. Solar energy offers a reliable and cost-effective solution to manage energy expenses — saving money, reducing EB dependency, and shifting to clean energy.",
+    content: `
+      <h2>The Real-Time Reality of Rising Costs</h2>
+      <p>Rising electricity costs are a major concern for industries and commercial spaces. Every billing cycle brings the same question: how much higher will the rate go next time? Solar energy offers a reliable and cost-effective solution to manage energy expenses, turning that uncertainty into something businesses can actually plan around.</p>
+      
+      <h3>How Solar Works, Step by Step</h3>
+      <p>At its core, a solar system follows a simple cycle: sunlight is captured by panels and converted into electricity, that power is used to run your operations in real time, and any surplus can be stored or fed back to offset future consumption. The cycle repeats every day the sun is up — turning a free, renewable resource into a continuous stream of savings.</p>
+      
+      <h3>Core Benefits for Businesses</h3>
+      <ul>
+        <li><strong>Save money on electricity bills:</strong> Generating your own power directly reduces the amount you pay for grid electricity every month.</li>
+        <li><strong>Reduce dependency on EB power:</strong> Less reliance on the grid means less exposure to outages, surcharges, and supply constraints.</li>
+        <li><strong>Shift towards clean and sustainable energy:</strong> Lower emissions and a stronger sustainability profile come as a built-in benefit of the switch.</li>
+      </ul>
+      
+      <h3>More Than a Cost-Saving Measure</h3>
+      <p>Investing in solar is not just about saving costs — it's about building a smarter and sustainable future for your business. The savings are real and immediate, but the bigger shift is structural: your business moves from being a passive consumer of energy to an active generator of it, with more control over costs, supply, and long-term planning.</p>
+      
+      <h3>Power Your Business With Progen</h3>
+      <p>Partner with Progen to power your business with efficient solar solutions. From system design to installation and ongoing monitoring, we help you put real-time solar generation to work for your bottom line.</p>
+      
+      <p>Ready to see what solar could save your business? Let's get started.</p>
+    `
+  },
+  {
+    id: "fixed-tilt-vs-tracking-solar-which-maximises-roi",
+    title: "Fixed Tilt vs Tracking Solar – Which Maximises ROI?",
+    category: "Utility-Scale Solar",
+    author: "Progen Team",
+    date: "2026-06-09",
+    image: "assets/images/blog/fixed-tilt-vs-tracking-solar.jpg",
+    excerpt: "Choosing the right solar system can make a big difference in your energy output and ROI. Fixed tilt offers reliability and low maintenance, while tracking systems follow the sun to maximise generation.",
+    content: `
+      <h2>A Choice That Shapes Your Returns</h2>
+      <p>Choosing the right solar system can make a big difference in your energy output and ROI. For ground mount and utility-scale installations, one of the most consequential design decisions is whether to go with fixed tilt or tracking solar — and the right answer depends entirely on your site and your goals.</p>
+      
+      <h3>Fixed Tilt – The Sturdy Standard</h3>
+      <p>Fixed tilt systems remain at a constant angle once positioned for optimal sunlight. With no moving parts, they provide reliable performance, low maintenance, and cost-effective installation for long-term energy generation. For businesses prioritizing simplicity and a lower upfront cost, fixed tilt remains the dependable default.</p>
+      
+      <h3>Tracking Systems – The Sunflower Tech</h3>
+      <p>Tracking systems follow the sun from East to West using smart motorized mounts. This allows panels to capture more sunlight throughout the day, increasing energy output by 20–40% compared to fixed systems. That increased yield can translate into meaningfully better returns — but it comes with added mechanical complexity and maintenance considerations.</p>
+      
+      <h3>Comparing the Trade-offs</h3>
+      <ul>
+        <li><strong>Upfront cost:</strong> Fixed tilt is generally less expensive to install; tracking systems carry a premium for the motorized mounting hardware.</li>
+        <li><strong>Maintenance:</strong> Fixed tilt has no moving parts to service; tracking systems require periodic maintenance of motors and mounts.</li>
+        <li><strong>Energy yield:</strong> Tracking systems can boost output by 20–40%, improving generation per panel over the system's lifetime.</li>
+        <li><strong>Land requirements:</strong> Tracking systems typically need more spacing between rows to avoid self-shading as panels rotate.</li>
+        <li><strong>Reliability:</strong> Fewer moving parts in fixed tilt systems generally means fewer points of mechanical failure over decades of operation.</li>
+      </ul>
+      
+      <h3>Choosing the Right System</h3>
+      <p>The right system depends on energy needs, land availability, and ROI goals. Fixed tilt suits budget-focused projects, while tracking works best for limited land and higher energy demands where maximizing output per acre matters most.</p>
+      
+      <h3>Make a Smarter Solar Investment</h3>
+      <p>Discover which solution suits your project best and make smarter solar investments. At Progen Renewables, we evaluate your site conditions, budget, and energy goals to recommend the system architecture that delivers the best long-term ROI for your business.</p>
+      
+      <p>Not sure which fits your project? Let's run the numbers on fixed tilt versus tracking for your site.</p>
     `
   }
 ];
