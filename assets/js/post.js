@@ -27,12 +27,16 @@
   function renderPost(post) {
     pageTitleEl.textContent = post.title + " - Progen Solar Blog";
     bannerTitleEl.textContent = post.title;
-    bannerMetaEl.textContent = "";
+    bannerMetaEl.textContent = formatDate(post.date);
     categoryTagEl.textContent = post.category;
 
     // Single-column layout: hero image + content, full width (no sidebar)
     articleEl.innerHTML = `
       <div class="post-content-wrapper post-content-wrapper--full">
+        <div class="post-meta-row">
+          <span class="post-meta-category">${post.category}</span>
+          <span class="post-meta-date">${formatDate(post.date)}</span>
+        </div>
         <div class="post-hero-image">
           <img src="${post.image}" alt="${post.title}">
         </div>
