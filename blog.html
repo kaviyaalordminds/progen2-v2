@@ -282,20 +282,8 @@
 
                 <div class="service-footer-posts">
                     <h3>Recent Posts</h3>
-                    <a href="post.html?id=smarter-approach-business-energy-strategy" class="service-footer-post">
-                        <img src="assets/images/blog/smarter-business-energy.jpg" alt="">
-                        <span>
-                            <small>21 June, 2026</small>
-                            <strong>A Smarter Approach to Business Energy: Strategy Over Expense</strong>
-                        </span>
-                    </a>
-                    <a href="post.html?id=sustainability-growth-solar-production" class="service-footer-post">
-                        <img src="assets/images/blog/sustainability-growth-solar.jpg" alt="">
-                        <span>
-                            <small>21 June, 2026</small>
-                            <strong>Sustainability Growth in Solar Production: Driving Innovation, Efficiency, and a Greener Future</strong>
-                        </span>
-                    </a>
+                    <!-- Dynamically injected by blog.js from BLOG_POSTS -->
+                    <div id="footerRecentPosts"></div>
                 </div>
             </div>
 
@@ -326,9 +314,53 @@
     </footer>
 
     <!-- Bootstrap JS (bundle includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
     <!-- Blog data + render logic -->
     <script src="assets/js/posts.js"></script>
     <script src="assets/js/blog.js"></script>
+
+    <script>
+        // ── Navbar: hamburger toggle ──
+        const hamburger = document.querySelector('.nav-hamburger');
+        const navEl     = document.querySelector('nav');
+        const navGroup  = document.querySelector('.nav-group');
+
+        if (navGroup) {
+            navGroup.addEventListener('mouseenter', () => navGroup.classList.add('is-hovering'));
+            navGroup.addEventListener('mouseleave', () => navGroup.classList.remove('is-hovering'));
+        }
+        if (hamburger && navEl) {
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('open');
+                navEl.classList.toggle('open');
+            });
+        }
+
+        // ── Navbar: mobile dropdown tap-to-expand ──
+        document.querySelectorAll('.nav-dropdown > .nav-link').forEach(link => {
+            link.addEventListener('click', e => {
+                if (window.innerWidth <= 900) {
+                    const dropdown = link.closest('.nav-dropdown');
+                    if (!dropdown.classList.contains('active')) {
+                        e.preventDefault();
+                        // close all other open dropdowns
+                        document.querySelectorAll('.nav-dropdown.active').forEach(d => {
+                            if (d !== dropdown) d.classList.remove('active');
+                        });
+                        dropdown.classList.add('active');
+                    } else {
+                        e.preventDefault();
+                        if (link.href && link.href !== 'javascript:void(0)') {
+                            window.location.href = link.href;
+                        }
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>

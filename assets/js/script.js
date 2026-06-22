@@ -259,4 +259,30 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // ── Footer recent posts (also called from inline script; safe to run twice) ──
+    (function renderFooterPosts() {
+        const container = document.getElementById('footerRecentPosts');
+        if (!container || container.children.length > 0) return; // already rendered
+        if (typeof BLOG_POSTS === 'undefined') return;
+
+        const latest = [...BLOG_POSTS]
+        .sort((a, b) => new Date(b.date) - new Date(a.date))
+        .slice(0, 2);
+
+        function fmt(dateStr) {
+        return new Date(dateStr).toLocaleDateString('en-GB', {
+            day: '2-digit', month: 'long', year: 'numeric'
+        });
+        }
+
+        container.innerHTML = latest.map(post => `
+        <a href="post.html?id=${encodeURIComponent(post.id)}" class="service-footer-post">
+            <img src="${post.image}" alt="${post.title}">
+            <span>
+            <small>${fmt(post.date)}</small>
+            <strong>${post.title}</strong>
+            </span>
+        </a>
+        `).join('');
+    })();
 });

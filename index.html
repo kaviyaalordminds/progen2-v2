@@ -1524,20 +1524,8 @@
 
                 <div class="service-footer-posts">
                     <h3>Recent Posts</h3>
-                    <a href="blog.html" class="service-footer-post">
-                        <img src="assets/images/servicesimg1.png" alt="">
-                        <span>
-                            <small>17 Dec, 2025</small>
-                            <strong>4th Power Hike In 5 Months: Solar Surcharge Update</strong>
-                        </span>
-                    </a>
-                    <a href="blog.html" class="service-footer-post">
-                        <img src="assets/images/servicesimg2.jpg" alt="">
-                        <span>
-                            <small>30 March, 2022</small>
-                            <strong>How Solar O&M Keeps Plants Running Better</strong>
-                        </span>
-                    </a>
+                    <!-- Dynamically injected by blog.js from BLOG_POSTS -->
+                    <div id="footerRecentPosts"></div>
                 </div>
             </div>
 
@@ -1590,6 +1578,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/posts.js"></script> 
 
     <!-- Image Lightbox -->
     <div id="imgLightbox" class="img-lightbox" onclick="if(event.target===this)closeLightbox()">
