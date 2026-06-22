@@ -255,20 +255,8 @@
 
                 <div class="service-footer-posts">
                     <h3>Recent Posts</h3>
-                    <a href="blog.html" class="service-footer-post">
-                        <img src="assets/images/servicesimg1.png" alt="">
-                        <span>
-                            <small>17 Dec, 2025</small>
-                            <strong>4th Power Hike In 5 Months: Solar Surcharge Update</strong>
-                        </span>
-                    </a>
-                    <a href="blog.html" class="service-footer-post">
-                        <img src="assets/images/servicesimg2.jpg" alt="">
-                        <span>
-                            <small>30 March, 2022</small>
-                            <strong>How Solar O&M Keeps Plants Running Better</strong>
-                        </span>
-                    </a>
+                    <!-- Dynamically injected by blog.js from BLOG_POSTS -->
+                    <div id="footerRecentPosts"></div>
                 </div>
             </div>
 
@@ -297,6 +285,52 @@
             <p class="service-footer-copy">&copy; All Copyright 2026 Progen Renewables Limited</p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/posts.js"></script> 
+
+    <script>
+        const hamburger = document.querySelector('.nav-hamburger');
+        const navEl = document.querySelector('nav');
+        const navLinks = document.querySelector('.nav-links');
+        const navGroup = document.querySelector('.nav-group');
+
+        if (navGroup) {
+            navGroup.addEventListener('mouseenter', () => navGroup.classList.add('is-hovering'));
+            navGroup.addEventListener('mouseleave', () => navGroup.classList.remove('is-hovering'));
+        }
+
+        if (hamburger && navEl) {
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('open');
+                navEl.classList.toggle('open');
+            });
+
+            navLinks && navLinks.querySelectorAll('.nav-link').forEach((link) => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('open');
+                    navEl.classList.remove('open');
+                });
+            });
+        }
+        document.querySelectorAll('.nav-dropdown > .nav-link').forEach(link => {
+            link.addEventListener('click', e => {
+                if (window.innerWidth <= 900) {
+                    const dropdown = link.closest('.nav-dropdown');
+                    if (!dropdown.classList.contains('active')) {
+                        e.preventDefault();
+                        dropdown.classList.add('active');
+                    } else {
+                        e.preventDefault();
+                        window.location.href = link.href;
+                    }
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
