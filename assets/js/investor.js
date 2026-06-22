@@ -124,13 +124,8 @@ const DOCUMENT_GROUPS = {
     { title: 'Corporate Announcement', docs: [], comingSoon: true },
   ],
   financial: [
-    { 
-      title: 'Financial Information', docs: [
-        { name: 'Finanical Information 2022-2023', file: 'investor/Financial Information/Progen R Pvt Ltd - Annual Report 31-March-2023.pdf', date: '—' },
-        { name: 'Finanical Information 2023-2024', file: 'investor/Financial Information/Progen R Pvt Ltd - Annual Report 31-March-2024.pdf', date: '—' },
-        { name: 'Finanical Information 2024-2025', file: 'investor/Financial Information/Annual Report 2024-25.pdf', date: '—' },
-      ] 
-    },
+  { 
+    title: 'Financial Information', docs: [], comingSoon: true },
   ],
   shareholding: [
     {
@@ -858,6 +853,9 @@ function policiesSectionHTML() {
     { name: 'Vigil Mechanism Whistle Blower Policy', file: 'pdf/3. Policies/Policies/Vigil Mechanism Whistle Blower Policy.pdf' },
     { name: 'Nomination And Remuneration Policy', file: 'pdf/3. Policies/Policies/Nomination-and-Remuneration-Policy.pdf' },
     { name: 'Familiarisation Programme For Independent Directors', file: 'pdf/3. Policies/Policies/FAMILIARISATION PROGRAMME FOR INDEPENDENT DIRECTORS_ (1).pdf' },
+    { name: 'Policy for Determination of Material Subsidiaries', file: 'pdf/3. Policies/Policies/Policy for Determination of Material Subsidiaries.pdf' },
+    { name: 'Policy on Succession Planning for Board and Senior Management', file: 'pdf/3. Policies/Policies/Policy on Succession Planning for Board and Senior Management.pdf' },
+    { name: 'Dividend Distribution Policy', file: 'pdf/3. Policies/Policies/Dividend Distribution Policy.pdf' },
   ];
   const mdDocs = [
     { name: 'MR. Alfred Vinod Antony - Appointment', file: 'pdf/3. Policies/Terms of Conditions for appointment of independent directors/1. Appointment of Mananging Director/Alfred -  Appointment.pdf' },
@@ -1000,7 +998,7 @@ function renderGroups() {
   if (activeId === 'board') { area.innerHTML = boardSectionHTML(); return; }
   if (activeId === 'committees') { area.innerHTML = committeesSectionHTML(); return; }
   if (activeId === 'policies') { area.innerHTML = policiesSectionHTML(); return; }
-  if (activeId === 'financial') { area.innerHTML = financialSectionHTML(); return; }
+  // if (activeId === 'financial') { area.innerHTML = financialSectionHTML(); return; }
   if (activeId === 'shareholding') { area.innerHTML = shareholdingSectionHTML(); return; }
   if (activeId === 'investorcontact') { area.innerHTML = contactSectionHTML(); return; }
   if (activeId === 'moa') { area.innerHTML = moaSectionHTML(); return; }
