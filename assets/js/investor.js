@@ -845,7 +845,7 @@ function moaSectionHTML() {
 function policiesSectionHTML() {
   const policiesDocs = [
     { name: 'CSR Policy', file: 'pdf/3. Policies/Policies/CSR Policy.pdf' },
-    { name: 'Policy On Determination Of Materiality Of Event', file: 'pdf/3. Policies/Policies/Policy for Determination of Materiality of Event - Print.pdf' },
+    { name: 'Policy On Determination Of Materiality Of Event', file: 'pdf/3. Policies/Policies/Policy for determination of Material Event Disclosure.pdf' },
     { name: 'Policy On Related Party Transactions', file: 'pdf/3. Policies/Policies/Policy On Related Party Transactions  .pdf' },
     { name: 'Risk Management Policy', file: 'pdf/3. Policies/Policies/Risk Management Policy.pdf' },
     { name: 'Anti-Sexual Harassment Policy', file: 'pdf/3. Policies/Policies/Sexual Harassment Policy.pdf' },
@@ -872,7 +872,7 @@ function policiesSectionHTML() {
     { name: 'MR. Selvakumaran Appointment Letter', file: 'pdf/3. Policies/Terms of Conditions for appointment of independent directors/Appointment of director/MR. Selvakumaran Appointment Letter.pdf' },
   ];
   const kmpDocs = [
-    { name: 'Code of Conduct  For Directors', file: 'pdf/3. Policies/Code of Conduct for Kmp/Code of Conduct  For Directors.pdf' },
+    { name: 'Code of Conduct  For Directors', file: 'pdf/3. Policies/Terms of Conditions for appointment of independent directors/Appointment of director/Mr. Selvakumaran Appointment Letter.pdf' },
   ];
   const smpDocs = [
     { name: 'Code of Conduct For Senior Management', file: 'pdf/3. Policies/SMP-Senior Management/Code of Conduct For Senior Management.pdf' },

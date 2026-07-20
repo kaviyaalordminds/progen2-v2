@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - Progen Solar</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@300;400;500;600;700&display=swap"
@@ -528,74 +529,6 @@
     </footer>
 
     <script>
-        const hamburger = document.querySelector('.nav-hamburger');
-        const navEl = document.querySelector('nav');
-        const navGroup = document.querySelector('.nav-group');
-        if (navGroup) {
-            navGroup.addEventListener('mouseenter', () => navGroup.classList.add('is-hovering'));
-            navGroup.addEventListener('mouseleave', () => navGroup.classList.remove('is-hovering'));
-        }
-        if (hamburger && navEl) {
-            hamburger.addEventListener('click', () => {
-                hamburger.classList.toggle('open');
-                navEl.classList.toggle('open');
-            });
-        }
-        document.querySelectorAll('.nav-dropdown > .nav-link').forEach(link => {
-            link.addEventListener('click', e => {
-                if (window.innerWidth <= 900) {
-                    const dropdown = link.closest('.nav-dropdown');
-                    if (!dropdown.classList.contains('active')) {
-                        e.preventDefault();
-                        dropdown.classList.add('active');
-                    } else {
-                        e.preventDefault();
-                        window.location.href = link.href;
-                    }
-                }
-            });
-        });
-
-        document.querySelectorAll('.accordion-button').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const targetId = btn.getAttribute('data-bs-target');
-                const target = document.querySelector(targetId);
-                const isOpen = !target.classList.contains('collapse') || target.classList.contains('show');
-
-                // Close all
-                document.querySelectorAll('.accordion-collapse').forEach(el => {
-                    el.classList.remove('show');
-                    el.classList.add('collapse');
-                });
-                document.querySelectorAll('.accordion-button').forEach(b => {
-                    b.classList.add('collapsed');
-                    b.setAttribute('aria-expanded', 'false');
-                });
-                if (!isOpen) {
-                    target.classList.add('show');
-                    target.classList.remove('collapse');
-                    btn.classList.remove('collapsed');
-                    btn.setAttribute('aria-expanded', 'true');
-                }
-            });
-        });
-
-        document.getElementById('faqList').addEventListener('click', function(e) {
-            const btn = e.target.closest('.faq-btn');
-            if (!btn) return;
-            const item = btn.closest('.faq-item');
-            const isOpen = item.classList.contains('open');
-            document.querySelectorAll('.faq-item').forEach(i => {
-                i.classList.remove('open');
-                i.querySelector('.faq-btn').setAttribute('aria-expanded','false');
-            });
-            if (!isOpen) {
-                item.classList.add('open');
-                btn.setAttribute('aria-expanded','true');
-            }
-        });
-    </script>
-<script>
         const hamburger = document.querySelector('.nav-hamburger');
         const navEl = document.querySelector('nav');
         const navGroup = document.querySelector('.nav-group');
