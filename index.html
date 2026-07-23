@@ -84,6 +84,12 @@
                     </span>
                     <span>info@progenrenewables.com</span>
                 </a>
+                <a href="tel:+919047639395" class="topbar-item">
+                    <span class="topbar-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+                    </span>
+                    <span>+91 90476 39395</span>
+                </a>
                 <a href="tel:+919600445572" class="topbar-item">
                     <span class="topbar-icon" aria-hidden="true">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
@@ -100,10 +106,11 @@
         </div>
     </div>
     
-    <section class="hero" style="position: relative; overflow: hidden; min-height: 100vh;">
-        <video class="hero-video-bg" autoplay loop muted playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
-            <source src="video/progenherosection.MOV">
-        </video>
+    <section class="hero" id="heroSection" style="position: relative; overflow: hidden; height: 100vh;">
+        <canvas id="heroCanvas" class="hero-video-bg" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+        </canvas>
+        <video id="heroVideo" src="video/progenherosection.mov" muted playsinline preload="auto" style="display:none;"></video>
 
         <div class="hero-cards">
             <!-- Big left card -->
@@ -1437,7 +1444,7 @@
                     </span>
                     <span>
                         <small>Call Us 7/24</small>
-                        <strong>+91 96004 45572</strong>
+                        <strong>+91 90476 39395 / +91 96004 45572 / +0422 - 2536886</strong>
                     </span>
                 </a>
 
@@ -1603,7 +1610,108 @@
             if (e.key === 'Escape') closeLightbox();
         });
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <script>
+        (function () {
+            gsap.registerPlugin(ScrollTrigger);
+
+            const video = document.getElementById('heroVideo');
+            const canvas = document.getElementById('heroCanvas');
+            const ctx = canvas.getContext('2d');
+            const heroSection = document.getElementById('heroSection');
+
+            const SCROLL_DISTANCE_PER_SECOND = 350; // increased: smaller time-jump per scroll px
+            let st = null;
+
+            let rawTarget = 0;   // raw scroll-driven target time
+            let smoothTime = 0;  // eased time we actually seek to
+            let isSeeking = false;
+            let pendingSeek = false;
+
+            function resizeCanvas() {
+                canvas.width = canvas.clientWidth;
+                canvas.height = canvas.clientHeight;
+            }
+            window.addEventListener('resize', resizeCanvas);
+
+            function drawFrame() {
+                if (video.videoWidth) {
+                    const vw = video.videoWidth, vh = video.videoHeight;
+                    const cw = canvas.width, ch = canvas.height;
+                    const scale = Math.max(cw / vw, ch / vh);
+                    const dw = vw * scale, dh = vh * scale;
+                    const dx = (cw - dw) / 2, dy = (ch - dh) / 2;
+                    ctx.drawImage(video, dx, dy, dw, dh);
+                }
+            }
+
+            function doSeek() {
+                if (isSeeking) { pendingSeek = true; return; }
+                isSeeking = true;
+                video.currentTime = smoothTime;
+            }
+
+            video.addEventListener('seeked', () => {
+                drawFrame();
+                isSeeking = false;
+                if (pendingSeek) {
+                    pendingSeek = false;
+                    doSeek();
+                }
+            });
+
+            // Continuously ease smoothTime toward rawTarget every animation frame.
+            // This removes the "snap" feeling between scroll updates.
+            function tick() {
+                smoothTime += (rawTarget - smoothTime) * 0.18; // lower = smoother/laggier, higher = snappier
+                if (Math.abs(rawTarget - smoothTime) < 0.01) {
+                    smoothTime = rawTarget;
+                }
+                doSeek();
+                requestAnimationFrame(tick);
+            }
+
+            let scrubDistance = 0;
+
+            function initScrollTrigger() {
+                if (!video.duration || isNaN(video.duration) || video.duration === Infinity) return;
+                scrubDistance = Math.round(video.duration * SCROLL_DISTANCE_PER_SECOND);
+                if (st) st.kill();
+
+                st = ScrollTrigger.create({
+                    trigger: heroSection,
+                    start: 'top top',
+                    end: 'top+=' + scrubDistance + ' top',
+                    pin: true,
+                    pinSpacing: true,
+                    scrub: 0.5,
+                    anticipatePin: 1,
+                    invalidateOnRefresh: true,
+                    onUpdate: (self) => {
+                        const t = self.progress * video.duration;
+                        if (isFinite(t)) rawTarget = t;
+                    }
+                });
+            }
+
+            video.addEventListener('loadedmetadata', function () {
+                resizeCanvas();
+                drawFrame();
+                requestAnimationFrame(tick);
+                initScrollTrigger();
+            });
+
+            video.addEventListener('durationchange', initScrollTrigger);
+
+            window.addEventListener('load', function () {
+                setTimeout(() => ScrollTrigger.refresh(), 200);
+            });
+
+            resizeCanvas();
+        })();
+    </script>
 </body>
 </html>
-
-
