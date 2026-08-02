@@ -2012,11 +2012,11 @@
     }
 }
 .topbar-inner {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px 20px;
     align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 0.75rem 1.5rem;
+    justify-items: center;
 }
 .topbar-item {
     display: inline-flex;
